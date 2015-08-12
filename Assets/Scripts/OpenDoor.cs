@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class OpenDoor : MonoBehaviour {
+public class OpenDoor : MonoBehaviour
+{
 	public float smoothing = 15f;
 
 	private Transform door;

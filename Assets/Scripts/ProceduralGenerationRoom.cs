@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ProceduralGenerationRoom : MonoBehaviour {
+public class ProceduralGenerationRoom : MonoBehaviour
+{
 	public GameObject nextRoom;
 	public GameObject sideRoom;
 

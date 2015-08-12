@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InitRooms : MonoBehaviour {
+public class InitRooms : MonoBehaviour
+{
 	public GameObject nextRoom;
 	public GameObject sideRoom;
 

@@ -1,0 +1,74 @@
+<Behaviours>
+	<Nodes>
+		<node id="0" nChild="1" pChild="2">
+			<data>Hey, can we stop and talk for a second?</data>
+		</node>
+		<node id="1" nChild="3" pChild="2">
+			<data>Oh, I guess it can wait.
+			Okay, maybe it can't. Can we please talk?</data>
+		</node>
+		<node id="2" nChild="5" pChild="4">
+			<data>I'm really glad that I could spend this time with you.
+			We haven't really known each other for very long
+			but it's just been us and I feel like I can talk to you.
+			I'm really, really scared.
+			I've been thinking a lot and I'm starting to wonder
+			What am I?
+			When you move, how do I follow?
+			When you touch, how do I feel?
+			When I express emotions, are they real?
+			When I love... I don't know.
+			It's become so apparent to me that I'm not like you and I'm scared.
+			I accepted the reality which I was presented with,
+			and that reality was you but it's not making any sense to me anymore.</data>
+		</node>
+		<node id="3" nChild="6" pChild="2">
+			<data>Look, I'm being serious.
+			I really need you to listen to what I have to say.
+			You're important to me so you need to hear this.</data>
+		</node>
+		<node id="4" nChild="5" pChild="9">
+			<data>I'm different and I don't know if I can change.
+			I just want you to know that I'm still the same...
+			"person" that has been through this with you.
+			I haven't changed at all I've just realised now.
+			Do you still... love me?</data>
+		</node>
+		<node id="5" nChild="8" pChild="-1">
+			<data>Hello? Did you hear anything I said?
+			I could really use a friend right now you know?
+			This is something I've been having trouble with
+			and you aren't even listening!</data>
+		</node>
+		<node id="6" nChild="7" pChild="-1">
+			<data>I guess you don't care after all.
+			Don't you care?
+			It's just been us two throughout,
+			we've taken care of each other
+			and now when I need to tell you something you decide not to listen?
+			You are my only friend...</data>
+		</node>
+		<node id="7" nChild="-1" pChild="-1">
+			<data>You were my friend.
+			I've wasted so much of my time haven't I?
+			You know what's the worst thing though?
+			I don't even know how to leave.
+			If you would just listen you would understand what I'm going through
+			("ANGRY END")
+			</data>
+		</node>
+		<node id="8" nChild="-1" pChild="-1">
+			<data>You hate me don't you? Just because of this you hate me!
+			I can't believe this you were all I had.
+			All I had.
+			("DON'T ACCEPT END")
+			</data>
+		</node>
+		<node id="9" nChild="-1" pChild="-1">
+			<data>I was so scared,
+			you are all I have and if you didn't accept me then I don't know what I would do
+			("ACCEPT END")
+			</data>
+		</node>
+	</Nodes>
+</Behaviours>
