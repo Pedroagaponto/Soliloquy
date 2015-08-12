@@ -3,10 +3,11 @@
 public class PlayerController : MonoBehaviour
 {
 	public float speed = 6f;
+	public float smoothing = 8f;
 	
-	Vector3 movement;
-	Animator anim;
-	Rigidbody playerRigidbody;
+	private Vector3 movement;
+	private Animator anim;
+	private Rigidbody playerRigidbody;
 	
 	void Awake()
 	{
@@ -30,12 +31,10 @@ public class PlayerController : MonoBehaviour
 		movement = movement.normalized * speed * Time.deltaTime;
 		playerRigidbody.MovePosition(transform.position + movement);
 
-		/*
 		if(h != 0 || v != 0)
 		{
-			transform.rotation = Quaternion.LookRotation(movement);
+			transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movement), smoothing * Time.deltaTime);
 		}
-		*/
 	}
 
 	void Animating (float h, float v)
