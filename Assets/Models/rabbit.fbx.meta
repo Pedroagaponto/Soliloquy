@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: 15dcdd82298d64d13b66b480604710ac
+timeCreated: 1442310495
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Head
+    100002: joint10
+    100004: joint30
+    100006: joint33
+    100008: joint34
+    100010: joint38
+    100012: joint38 1
+    100014: joint38 2
+    100016: joint39
+    100018: joint39 1
+    100020: joint39 2
+    100022: joint70
+    100024: joint71
+    100026: joint71 1
+    100028: joint71 2
+    100030: joint76
+    100032: joint77
+    100034: joint78
+    100036: joint79
+    100038: joint86
+    100040: joint87
+    100042: joint88
+    100044: joint89
+    100046: joint90
+    100048: joint91
+    100050: joint92
+    100052: L_Cape1
+    100054: L_Cape2
+    100056: L_Cape3
+    100058: L_Ear
+    100060: L_Ear1
+    100062: L_Ear2
+    100064: L_Foot
+    100066: L_Leg
+    100068: L_Thigh
+    100070: M_Cape
+    100072: Neck
+    100074: Pelvis
+    100076: pPyramid1
+    100078: R_Cape1
+    100080: R_Cape2
+    100082: R_Cape3
+    100084: R_Ear
+    100086: R_Ear2
+    100088: R_Ear3
+    100090: R_Ear4
+    100092: R_Ear5
+    100094: R_Ear6
+    100096: R_Ear7
+    100098: R_Ear8
+    100100: R_Foot
+    100102: R_Leg
+    100104: R_Thight
+    100106: //RootNode
+    100108: Rabbit_Mesh
+    100110: Spine
+    100112: Spine2
+    400000: Head
+    400002: joint10
+    400004: joint30
+    400006: joint33
+    400008: joint34
+    400010: joint38
+    400012: joint38 1
+    400014: joint38 2
+    400016: joint39
+    400018: joint39 1
+    400020: joint39 2
+    400022: joint70
+    400024: joint71
+    400026: joint71 1
+    400028: joint71 2
+    400030: joint76
+    400032: joint77
+    400034: joint78
+    400036: joint79
+    400038: joint86
+    400040: joint87
+    400042: joint88
+    400044: joint89
+    400046: joint90
+    400048: joint91
+    400050: joint92
+    400052: L_Cape1
+    400054: L_Cape2
+    400056: L_Cape3
+    400058: L_Ear
+    400060: L_Ear1
+    400062: L_Ear2
+    400064: L_Foot
+    400066: L_Leg
+    400068: L_Thigh
+    400070: M_Cape
+    400072: Neck
+    400074: Pelvis
+    400076: pPyramid1
+    400078: R_Cape1
+    400080: R_Cape2
+    400082: R_Cape3
+    400084: R_Ear
+    400086: R_Ear2
+    400088: R_Ear3
+    400090: R_Ear4
+    400092: R_Ear5
+    400094: R_Ear6
+    400096: R_Ear7
+    400098: R_Ear8
+    400100: R_Foot
+    400102: R_Leg
+    400104: R_Thight
+    400106: //RootNode
+    400108: Rabbit_Mesh
+    400110: Spine
+    400112: Spine2
+    2300000: pPyramid1
+    3300000: pPyramid1
+    4300000: Rabbit_Mesh
+    4300002: pPyramid1
+    7400000: Interact
+    7400002: Walk Start
+    7400004: Walk Cycle
+    7400006: Walk End
+    7400008: Electrocute
+    7400010: Rest Start
+    7400012: Rest Cycle
+    7400014: Rest End
+    7400016: Idle
+    9500000: //RootNode
+    13700000: Rabbit_Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Interact
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_Leg
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot/joint70
+        weight: 1
+      - path: Pelvis/R_Leg
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot/joint10
+        weight: 1
+      - path: Pelvis/Spine
+        weight: 1
+      - path: Pelvis/Spine/Spine2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4/joint30
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8/joint92
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39/joint71
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34/joint76
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1/joint71 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2/joint71 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78/joint79
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87/joint88
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90/joint91
+        weight: 1
+      - path: pPyramid1
+        weight: 1
+      - path: Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk Start
+      takeName: Take 001
+      firstFrame: 50
+      lastFrame: 62
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_Leg
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot/joint70
+        weight: 1
+      - path: Pelvis/R_Leg
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot/joint10
+        weight: 1
+      - path: Pelvis/Spine
+        weight: 1
+      - path: Pelvis/Spine/Spine2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4/joint30
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8/joint92
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39/joint71
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34/joint76
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1/joint71 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2/joint71 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78/joint79
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87/joint88
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90/joint91
+        weight: 1
+      - path: pPyramid1
+        weight: 1
+      - path: Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk Cycle
+      takeName: Take 001
+      firstFrame: 62
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_Leg
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot/joint70
+        weight: 1
+      - path: Pelvis/R_Leg
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot/joint10
+        weight: 1
+      - path: Pelvis/Spine
+        weight: 1
+      - path: Pelvis/Spine/Spine2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4/joint30
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8/joint92
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39/joint71
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34/joint76
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1/joint71 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2/joint71 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78/joint79
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87/joint88
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90/joint91
+        weight: 1
+      - path: pPyramid1
+        weight: 1
+      - path: Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk End
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_Leg
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot/joint70
+        weight: 1
+      - path: Pelvis/R_Leg
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot/joint10
+        weight: 1
+      - path: Pelvis/Spine
+        weight: 1
+      - path: Pelvis/Spine/Spine2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4/joint30
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8/joint92
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39/joint71
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34/joint76
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1/joint71 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2/joint71 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78/joint79
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87/joint88
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90/joint91
+        weight: 1
+      - path: pPyramid1
+        weight: 1
+      - path: Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Electrocute
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_Leg
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot/joint70
+        weight: 1
+      - path: Pelvis/R_Leg
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot/joint10
+        weight: 1
+      - path: Pelvis/Spine
+        weight: 1
+      - path: Pelvis/Spine/Spine2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4/joint30
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8/joint92
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39/joint71
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34/joint76
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1/joint71 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2/joint71 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78/joint79
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87/joint88
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90/joint91
+        weight: 1
+      - path: pPyramid1
+        weight: 1
+      - path: Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rest Start
+      takeName: Take 001
+      firstFrame: 140
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_Leg
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot/joint70
+        weight: 1
+      - path: Pelvis/R_Leg
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot/joint10
+        weight: 1
+      - path: Pelvis/Spine
+        weight: 1
+      - path: Pelvis/Spine/Spine2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4/joint30
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8/joint92
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39/joint71
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34/joint76
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1/joint71 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2/joint71 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78/joint79
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87/joint88
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90/joint91
+        weight: 1
+      - path: pPyramid1
+        weight: 1
+      - path: Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rest Cycle
+      takeName: Take 001
+      firstFrame: 170
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_Leg
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot/joint70
+        weight: 1
+      - path: Pelvis/R_Leg
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot/joint10
+        weight: 1
+      - path: Pelvis/Spine
+        weight: 1
+      - path: Pelvis/Spine/Spine2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4/joint30
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8/joint92
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39/joint71
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34/joint76
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1/joint71 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2/joint71 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78/joint79
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87/joint88
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90/joint91
+        weight: 1
+      - path: pPyramid1
+        weight: 1
+      - path: Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rest End
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_Leg
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot/joint70
+        weight: 1
+      - path: Pelvis/R_Leg
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot/joint10
+        weight: 1
+      - path: Pelvis/Spine
+        weight: 1
+      - path: Pelvis/Spine/Spine2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4/joint30
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8/joint92
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39/joint71
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34/joint76
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1/joint71 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2/joint71 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78/joint79
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87/joint88
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90/joint91
+        weight: 1
+      - path: pPyramid1
+        weight: 1
+      - path: Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 220
+      lastFrame: 300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Pelvis
+        weight: 1
+      - path: Pelvis/L_Leg
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot
+        weight: 1
+      - path: Pelvis/L_Leg/L_Thigh/L_Foot/joint70
+        weight: 1
+      - path: Pelvis/R_Leg
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot
+        weight: 1
+      - path: Pelvis/R_Leg/R_Thight/R_Foot/joint10
+        weight: 1
+      - path: Pelvis/Spine
+        weight: 1
+      - path: Pelvis/Spine/Spine2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/L_Ear/L_Ear1/R_Ear2/R_Ear3/R_Ear4/joint30
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Head/R_Ear5/L_Ear2/R_Ear6/R_Ear7/R_Ear8/joint92
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39
+        weight: 1
+      - path: Pelvis/Spine/Spine2/L_Cape3/joint38/joint39/joint71
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape1/joint33/joint34/joint76
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/L_Cape2/joint38 1/joint39 1/joint71 1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/M_Cape/joint38 2/joint39 2/joint71 2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape1/joint77/joint78/joint79
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape2/joint86/joint87/joint88
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90
+        weight: 1
+      - path: Pelvis/Spine/Spine2/Neck/R_Cape3/joint89/joint90/joint91
+        weight: 1
+      - path: pPyramid1
+        weight: 1
+      - path: Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
