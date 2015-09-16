@@ -11,9 +11,9 @@ public class BehaviourTree : MonoBehaviour {
 
 	void Start()
 	{
-		TweeParser parser = TweeParser.getInstance();
+		TweeParser parser = TweeParser.getInstance ();
 		List<Node> nodeList = parser.getNodeList (); 
-		initTree(nodeList);
+		initTree (nodeList);
 		printNode(behaviour);
 	}
 
@@ -21,8 +21,8 @@ public class BehaviourTree : MonoBehaviour {
 	{
 		foreach (Node element in list)
 		{
-			element.RightChild = findNodeById(element.RChildId, list);
 			element.LeftChild = findNodeById(element.LChildId, list);
+			element.RightChild = findNodeById(element.RChildId, list);
 		}
 		behaviour = list[0];
 	}
@@ -39,7 +39,7 @@ public class BehaviourTree : MonoBehaviour {
 
 	private Node findNodeById(string id, List<Node> nodeList) {
 		foreach (Node node in nodeList) {
-			if (node.Id == id)
+			if (id != null && id.StartsWith(node.Id))
 				return node;
 		}
 		return null;
