@@ -24,7 +24,7 @@ public class TableInteraction : MonoBehaviour {
 	}
 
 	void Update() {
-		if (activated && Input.GetKeyDown(KeyCode.Space) && insideCollider) {
+		if (activated && Input.GetButtonDown("Interact") && insideCollider) {
 			GameObject behaviourTree = new GameObject();
 			behaviourTree = GameObject.Find("BehaviourTree");
 			behaviourTree.SendMessage("TriggerNextChoice", triggerId);

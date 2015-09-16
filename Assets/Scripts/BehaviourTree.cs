@@ -50,7 +50,7 @@ public class BehaviourTree : MonoBehaviour {
 
 	void Update()
 	{
-		if (!Input.GetKeyDown (KeyCode.Space))
+		if (!Input.GetButtonDown ("Interact"))
 			return;
 
 		for(int i = 0; i < behaviour.Triggers.Count; i++) {

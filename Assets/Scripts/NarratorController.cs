@@ -32,8 +32,7 @@ public class NarratorController : MonoBehaviour {
 	
 	public List<CallLine> callLines = new List<CallLine>();
 	public List<SubLine> subLines = new List<SubLine>();
-	public int nextSub, nextCall;
-	
+
 	public static NarratorController Instance {get; private set;}
 
 	public GameObject subtitleGameObject;
@@ -53,8 +52,6 @@ public class NarratorController : MonoBehaviour {
 		narratorAudio = GetComponent<AudioSource> ();
 
 
-
-
 	}
 
 	public void playDialog(string clipName)
@@ -64,24 +61,31 @@ public class NarratorController : MonoBehaviour {
 		dialogClip = Resources.Load ("Narrator/" + clipName) as AudioClip;
 		TextAsset textFile = Resources.Load ("Subtitles/" + clipName) as TextAsset;
 
-		Parser (textFile);
+		if (textFile != null)
+			Parser (textFile);
 
+		
 		if (dialogClip != null) {
 			narratorAudio.clip = dialogClip;
 			narratorAudio.Play ();
-			StartCoroutine ("showSubtitleAudio");
-			StartCoroutine ("showCallAudio");
-		} else {
-			StartCoroutine ("showSubtitle");
 		}
+
+		if(textFile != null)
+		{	
+			StartCoroutine ("showCallAudio");
+
+			if (dialogClip != null)
+				StartCoroutine ("showSubtitleAudio");
+			else
+				StartCoroutine ("showSubtitle");
+		}
+
 
 	}
 
 	private void Reset() {
 		callLines = new List<CallLine>();
 		subLines = new List<SubLine>();
-		nextSub = 0;
-		nextCall = 0;
 		dialogClip = null;
 	}
 
@@ -127,7 +131,7 @@ public class NarratorController : MonoBehaviour {
 			while (s.timing > narratorAudio.time &&
 			       !(narratorAudio.time == 0 && !narratorAudio.isPlaying))
 			{
-				Debug.Log("wait:" + (s.timing - narratorAudio.time) + "time:" + narratorAudio.time + " s.timing:" + s.timing);
+				//Debug.Log("wait:" + (s.timing - narratorAudio.time) + "time:" + narratorAudio.time + " s.timing:" + s.timing);
 				yield return new WaitForSeconds(s.timing - narratorAudio.time);
 			}
 
@@ -140,7 +144,7 @@ public class NarratorController : MonoBehaviour {
 			while (s.timing > narratorAudio.time &&
 			       !(narratorAudio.time == 0 && !narratorAudio.isPlaying))
 			{
-				Debug.Log("call:" + (s.timing - narratorAudio.time) + "time:" + narratorAudio.time + " s.timing:" + s.timing);
+				//Debug.Log("call:" + (s.timing - narratorAudio.time) + "time:" + narratorAudio.time + " s.timing:" + s.timing);
 				yield return new WaitForSeconds(s.timing - narratorAudio.time);
 			}
 
@@ -154,8 +158,6 @@ public class NarratorController : MonoBehaviour {
 	void Start () {
 		subtitleText = subtitleGameObject.GetComponent<Text>();
 		subtitleText.supportRichText = true;
-		
-		playDialog("test");
 	}
 	
 	// Update is called once per frame

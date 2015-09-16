@@ -27,7 +27,7 @@ public class RabbitAnimations : MonoBehaviour {
 
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space))
+		if (Input.GetButtonDown("Interact"))
 			anim.SetTrigger("Interact");
 	}
 	
