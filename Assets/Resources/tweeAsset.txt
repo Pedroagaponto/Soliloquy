@@ -1,0 +1,23 @@
+﻿:: Start
+>Narrator-narrator test
+
+[[autointeract-obj-|node2]]
+[[buttoninteract-obj2-|node3]]
+
+
+:: node2
+>Narrator-testando node 2
+
+
+:: StoryTitle
+Untitled Story
+
+
+:: node3
+>narrator-testando node 3
+
+
+:: StoryAuthor
+Anonymous
+
+
