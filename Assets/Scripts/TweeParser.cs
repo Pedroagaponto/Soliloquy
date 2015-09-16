@@ -39,18 +39,18 @@ public class TweeParser {
 		lines = tweeAsset.text.Replace("\r\n", "\n").Split('\n');
 		
 		for (int i = 0; i < lines.Length; i++) {
-			line = lines[i].ToLower();
+			line = lines[i];
 			if (line.Length == 0) {
 				continue;
-			} if (line.StartsWith(":: ")) {
+			} if (line.ToLower().ToLower().StartsWith(":: ")) {
 				if (node != null) {
 					nodeList.Add(node);
 				}
 				node = newNode();
-				node.Id = line.Substring(3);
+				node.Id = line.Substring(3).ToLower();
 			} else {
 				elements = line.Split(new string[] {"-"}, System.StringSplitOptions.None);
-				if (elements[0].StartsWith(">narrator")) {
+				if (elements[0].ToLower().StartsWith(">narrator")) {
 					if (elements.Length < 2) {
 						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \">narrator\" command. Try to use \"-\" after \">narrator\".");
 						error = true;
@@ -61,8 +61,8 @@ public class TweeParser {
 						error = true;
 						continue;
 					}
-					node.Narrator = elements[1];
-				} else if (elements[0].StartsWith(">animation")) {
+					node.Narrator = elements[1].ToLower();
+				} else if (elements[0].ToLower().StartsWith(">animation")) {
 					if (elements.Length < 3) {
 						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \">animation\" command. Try to use \"-\" to separate contents.");
 						error = true;
@@ -77,7 +77,7 @@ public class TweeParser {
 						continue;
 					}
 					node.objAnims.Add(new ObjectAnimation(elements[1], elements[2]));
-				} else if (line.StartsWith(">loadroom")) {
+				} else if (line.ToLower().ToLower().StartsWith(">loadroom")) {
 					if (elements.Length < 3) {
 						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \">loadroom\" command. Try to use \"-\" after \">loadroom\".");
 						error = true;
@@ -88,7 +88,7 @@ public class TweeParser {
 						continue;
 					}
 					node.Room = elements[1];				
-				} else if (line.StartsWith(">playerspeed")) {
+				} else if (line.ToLower().ToLower().StartsWith(">playerspeed")) {
 					if (elements.Length < 2) {
 						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \">playerspeed\" command. Try to use \"-\" after \">playerspeed\".");
 						error = true;
@@ -104,7 +104,7 @@ public class TweeParser {
 						continue;
 					}
 					node.PlayerSpeed = aux;
-				} else if (line.StartsWith("[[autointeract")) {
+				} else if (line.ToLower().ToLower().StartsWith("[[autointeract")) {
 					if (elements.Length < 3) {
 						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \"autointeract\" command. Try to use \"-\" to separate contents.");
 						error = true;
@@ -119,10 +119,10 @@ public class TweeParser {
 						continue;
 					}
 					node.Triggers.Add((int) Trigger.autointeract);
-					node.TriggeredObjects.Add(GameObject.Find(elements[1]));
+					node.TriggersNames.Add(elements[1]);
 					elements[2] = elements[2].Substring(1).Replace("]", string.Empty);
-					node.ChildId.Add(elements[2]);
-				} else if (line.StartsWith("[[buttoninteract")) {
+					node.ChildId.Add(elements[2].ToLower());
+				} else if (line.ToLower().ToLower().StartsWith("[[buttoninteract")) {
 					if (elements.Length < 3) {
 						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \"buttoninteract\" command. Try to use \"-\" to separate contents.");
 						error = true;
@@ -137,10 +137,10 @@ public class TweeParser {
 						continue;
 					}
 					node.Triggers.Add((int) Trigger.buttoninteract);
-					node.TriggeredObjects.Add(GameObject.Find(elements[1]));
+					node.TriggersNames.Add(elements[1]);
 					elements[2] = elements[2].Substring(1).Replace("]", string.Empty);
-					node.ChildId.Add(elements[2]);
-				} else if (line.StartsWith("[[wait")) {
+					node.ChildId.Add(elements[2].ToLower());
+				} else if (line.ToLower().ToLower().StartsWith("[[wait")) {
 					if (elements.Length < 3) {
 						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \"wait\" command. Try to use \"-\" to separate contents.");
 						error = true;
@@ -160,10 +160,10 @@ public class TweeParser {
 					}
 					node.Triggers.Add((int) Trigger.wait);
 					node.WaitTime = aux;
-					node.TriggeredObjects.Add(null);
+					node.TriggersNames.Add(null);
 					elements[2] = elements[2].Substring(1).Replace("]", string.Empty);
-					node.ChildId.Add(elements[2]);
-				} else if (line.StartsWith("[[actionbutton")) {
+					node.ChildId.Add(elements[2].ToLower());
+				} else if (line.ToLower().ToLower().StartsWith("[[actionbutton")) {
 					if (elements.Length < 2) {
 						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \"actionbutton\" command. Try to use \"-\" to separate contents.");
 						error = true;
@@ -174,10 +174,10 @@ public class TweeParser {
 						continue;
 					} 
 					node.Triggers.Add((int) Trigger.actionbutton);
-					node.TriggeredObjects.Add(GameObject.Find(elements[1]));
+					node.TriggersNames.Add(null);
 					elements[1] = elements[1].Substring(1).Replace("]", string.Empty);
-					node.ChildId.Add(elements[1]);
-				} else if (line.StartsWith(">") || line.StartsWith("[[")) {
+					node.ChildId.Add(elements[1].ToLower());
+				} else if (line.ToLower().ToLower().StartsWith(">") || line.ToLower().ToLower().StartsWith("[[")) {
 					Debug.Log("Error in node \"" + node.Id + "\": Invalid tag.");
 					error = true;
 						continue;
@@ -195,7 +195,7 @@ public class TweeParser {
 		node.Triggers = new List<int> ();
 		node.objAnims = new List<ObjectAnimation>();
 		node.ChildNode = new List<Node>();
-		node.TriggeredObjects = new List<GameObject>();
+		node.TriggersNames = new List<string>();
 
 		return node;
 	}
