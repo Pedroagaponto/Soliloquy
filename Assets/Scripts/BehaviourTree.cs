@@ -9,52 +9,76 @@ public class BehaviourTree : MonoBehaviour {
 	private int oldTime, newTime;
 	private bool printed, positiveBehaviour;
 
-	void Start()
+	public void TriggerNextChoice(int i) {
+		behaviour = behaviour.ChildNode[i];
+		oldTime = newTime = System.DateTime.Now.Second;
+		Debug.Log(behaviour.Narrator);
+	}
+
+	void Awake()
 	{
-		TweeParser parser = TweeParser.getInstance ();
-		List<Node> nodeList = parser.getNodeList (); 
-		initTree (nodeList);
-		printNode(behaviour);
+		behaviour = null;
+		TweeParser parser = TweeParser.getInstance();
+		List<Node> nodeList = parser.getNodeList();
+		if (nodeList == null) {
+			Debug.Break();
+			Application.Quit();
+		}
+		initTree(nodeList);
+		oldTime = newTime = System.DateTime.Now.Second;
+		SetTriggers();
+		Debug.Log(behaviour.Narrator);
 	}
 
 	void initTree(List<Node> list)
 	{
 		foreach (Node element in list)
 		{
-			element.LeftChild = findNodeById(element.LChildId, list);
-			element.RightChild = findNodeById(element.RChildId, list);
+			for (int i = 0; i < element.ChildId.Count; i++) {
+				element.ChildNode.Insert(i, FindNodeById(element.ChildId[i], list));
+			}
 		}
 		behaviour = list[0];
 	}
 
 	void Update()
 	{
-		//TODO
+		if (!Input.GetKeyDown (KeyCode.Space))
+			return;
+
+		for(int i = 0; i < behaviour.Triggers.Count; i++) {
+			if (behaviour.Triggers[i] == (int) Trigger.actionbutton) {
+				TriggerNextChoice(i);
+			}
+		}
 	}
 
 	void FixedUpdate()
 	{
-		//TODO
+		newTime = System.DateTime.Now.Second;
+		for(int i = 0; i < behaviour.Triggers.Count; i++) {
+			if (behaviour.Triggers[i] == (int) Trigger.wait
+			    && newTime - oldTime > behaviour.WaitTime) {
+				TriggerNextChoice(i);
+				break;
+			}
+		}
 	}
 
-	private Node findNodeById(string id, List<Node> nodeList) {
+	private Node FindNodeById(string id, List<Node> nodeList) {
 		foreach (Node node in nodeList) {
-			if (id != null && id.StartsWith(node.Id))
+			if (id != null && id.Equals(node.Id))
 				return node;
 		}
 		return null;
 	}
 
-	private void printNode(Node node) {
-		Debug.Log("Node: " + node.Id);
-		Debug.Log("left child: " + node.LChildId + ", right child: " + node.RChildId);
-		Debug.Log("Narrator: " + node.Narrator);
-		Debug.Log("-----------");
-		if (node.LeftChild != null) {
-			printNode(node.LeftChild);
-		}
-		if (node.RightChild != null) {
-			printNode(node.RightChild);
+	private void SetTriggers() {
+		for(int i = 0; i < behaviour.Triggers.Count; i++) {
+			if (behaviour.Triggers[i] == (int) Trigger.autointeract ||
+			    behaviour.Triggers[i] == (int) Trigger.buttoninteract) {
+				behaviour.TriggeredObjects[i].SendMessage("activateTrigger", i);
+			}
 		}
 	}
 }

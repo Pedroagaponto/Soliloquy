@@ -1,14 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class OpenDoor : MonoBehaviour
+public class OpenDoor : MonoBehaviour, MyObjectTrigger
 {
 	public float smoothing = 15f;
 
 	private Transform door;
 	private Vector3 origin;
+	private int triggerId;
+	private bool lockedDoor = true;
 	private bool rotating = false, open = false;
 	private float angle = 0;
+
+	public void ActivateTrigger(int i) {
+		triggerId = i;
+		lockedDoor = false;
+	}
 
 	void Start()
 	{
@@ -18,7 +25,9 @@ public class OpenDoor : MonoBehaviour
 	
 	void OnTriggerStay(Collider other)
 	{
-		rotating = true;
+		if (!lockedDoor) {
+			rotating = true;
+		}
 	}
 
 	void FixedUpdate()
@@ -27,7 +36,10 @@ public class OpenDoor : MonoBehaviour
 		{
 			door.RotateAround(origin, Vector3.up, -smoothing * Time.deltaTime);
 			angle += -smoothing * Time.deltaTime;
-
+			GameObject behaviourTree = new GameObject();
+			behaviourTree = GameObject.Find("BehaviourTree");
+			behaviourTree.SendMessage("TriggerNextChoice");
+			lockedDoor = true;
 			if (angle <= -95)
 			{
 				rotating = false;
