@@ -35,4 +35,9 @@ public class OpenDoor : MonoBehaviour
 			}
 		}
 	}
+
+	void Open()
+	{
+		rotating = true;
+	}
 }

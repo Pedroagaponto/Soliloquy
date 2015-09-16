@@ -1,0 +1,16 @@
+00.00|Hello?
+01.00|\clear
+01.55|<b><i>Oh, uh...</i></b> Hi! Hello?
+//02.00|\call-1STARTROOM/Door 1-Open
+06.35|Oh, good! You can hear me! That's a relief.
+09.55| 
+10.53|Uhm... well, ok! Eager to get going, I see. All good.
+15.70|Heh, you're funny.
+17.53|I think this is the first time I've talked to anyone.
+20.08|I kinda like it.
+21.30|Hey, why don't we check out that thing?
+24.80|
+26.08|I'm sorry to be a bother, but... truth is, I was pretty excited when I saw you just then!
+31.20|I really hoped we could get along.
+33.02|Do you want to start afresh? I'm sure we could be great friends!
+35.90|\clear
