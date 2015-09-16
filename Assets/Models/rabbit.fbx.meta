@@ -157,7 +157,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Interact
       takeName: Take 001
-      firstFrame: 1
+      firstFrame: 5
       lastFrame: 50
       wrapMode: 0
       orientationOffsetY: 0
