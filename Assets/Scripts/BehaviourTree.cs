@@ -5,61 +5,56 @@ using System.Xml.Serialization;
 using System.IO;
 
 public class BehaviourTree : MonoBehaviour {
-	private Node behaviour;
+	public Node behaviour;
 	private int oldTime, newTime;
 	private bool printed, positiveBehaviour;
 
 	void Start()
 	{
-		var behaviourContainer = BehaviourContainer.Load();
-		initTree(behaviourContainer.nodes);
-		resetBehaviour();
+		TweeParser parser = TweeParser.getInstance();
+		List<Node> nodeList = parser.getNodeList (); 
+		initTree(nodeList);
+		printNode(behaviour);
 	}
 
 	void initTree(List<Node> list)
 	{
 		foreach (Node element in list)
 		{
-			element.setNegativeChild((element.nChild >= 0) ? list[element.nChild] : null);
-			element.setPositiveChild((element.pChild >= 0) ? list[element.pChild] : null);
+			element.RightChild = findNodeById(element.RChildId, list);
+			element.LeftChild = findNodeById(element.LChildId, list);
 		}
 		behaviour = list[0];
 	}
 
-	void resetBehaviour()
-	{
-		oldTime = newTime = System.DateTime.Now.Second;
-		printed = positiveBehaviour = false;
-	}
-
 	void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Space))
-			positiveBehaviour = true;
+		//TODO
 	}
 
 	void FixedUpdate()
 	{
-		if (behaviour == null)
-			return;
+		//TODO
+	}
 
-		if (!printed)
-		{
-			print(behaviour.data);
-			printed = true;
+	private Node findNodeById(string id, List<Node> nodeList) {
+		foreach (Node node in nodeList) {
+			if (node.Id == id)
+				return node;
 		}
+		return null;
+	}
 
-		newTime = System.DateTime.Now.Second;
-		if (positiveBehaviour) {
-			behaviour = (behaviour.getPositiveChild() != null) ?
-				behaviour.getPositiveChild() : behaviour.getNegativeChild();
-			resetBehaviour();
+	private void printNode(Node node) {
+		Debug.Log("Node: " + node.Id);
+		Debug.Log("left child: " + node.LChildId + ", right child: " + node.RChildId);
+		Debug.Log("Narrator: " + node.Narrator);
+		Debug.Log("-----------");
+		if (node.LeftChild != null) {
+			printNode(node.LeftChild);
 		}
-		else if (newTime - oldTime > 2)
-		{
-			behaviour = (behaviour.getNegativeChild() != null) ?
-				behaviour.getNegativeChild() : behaviour.getPositiveChild();
-			resetBehaviour();
+		if (node.RightChild != null) {
+			printNode(node.RightChild);
 		}
 	}
 }
