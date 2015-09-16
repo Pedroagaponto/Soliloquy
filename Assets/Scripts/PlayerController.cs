@@ -6,13 +6,13 @@ public class PlayerController : MonoBehaviour
 	public float smoothing = 8f;
 	
 	private Vector3 movement;
-	private Animator anim;
+	//public Animator anim;
 	private Rigidbody playerRigidbody;
 	
 	void Awake()
 	{
 		playerRigidbody = GetComponent <Rigidbody> ();
-		anim = GetComponent <Animator> ();
+		//anim = GetComponent <Animator> ();
 	}
 
 	void FixedUpdate()
@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 		float v = Input.GetAxisRaw("Vertical");
 
 		Move(h, v);
-		Animating(h, v);
+		//Animating(h, v);
 	}
 	
 	void Move (float h, float v)
@@ -29,7 +29,8 @@ public class PlayerController : MonoBehaviour
 		movement.Set(h, 0f, v);
 		movement = Quaternion.AngleAxis(Camera.main.transform.eulerAngles.y, Vector3.up) * movement;
 		movement = movement.normalized * speed * Time.deltaTime;
-		playerRigidbody.MovePosition(transform.position + movement);
+		//playerRigidbody.MovePosition(transform.position + movement);
+		transform.position = transform.position + movement;
 
 		if(h != 0 || v != 0)
 		{
@@ -37,9 +38,9 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	void Animating (float h, float v)
+	/*void Animating (float h, float v)
 	{
 		bool walking = h != 0f || v != 0f;
 		anim.SetBool ("IsWalking", walking);
-	}
+	}*/
 }
