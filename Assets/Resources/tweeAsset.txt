@@ -8,14 +8,14 @@
 >narrator-Ooh, how interesting! Looks like a cute little toy, eh? Maybe their owner forgot about it. Oh well, not much use to us.
 
 [[Wait-3-|walk5]]
-[[buttoninteract-toy-|Interact Toy]]
+[[buttoninteract-FirstRoom/Table-|Interact Toy]]
 
 
 :: walk5
 >narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.
 
-[[buttoninteract-toy-|Interact Toy]]
-[[autointeract-FirstRoom/Door-|Walk 6]]
+[[buttoninteract-FirstRoom/Table-|Interact Toy]]
+[[autointeract-FirstRoom/WallX/Door-|Walk 6]]
 
 
 :: stop
@@ -28,11 +28,18 @@
 :: interact
 >narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?
 
-[[buttoninteract-toy-|thingtouch]]
+[[buttoninteract-FirstRoom/Table-|thingtouch]]
 [[Wait-3-|auxnode]]
 
 
-:: Walk 6 [PARLOUR]
+:: walk
+>narrator-Oh, uh... Hi! Hello?
+
+[[actionbutton-|stop]]
+[[Wait-3-|walk2]]
+
+
+:: Walk 6
 >narrator-Do you ever wonder why we are here or what we are? Hahaha, such a silly thought really. All that matter is now right!?
 
 [[autointeract-photo-|Photo]]
@@ -85,22 +92,11 @@
 
 
 
-:: StoryTitle 1
-Untitled Story
-
-
-:: walk
->narrator-Oh, uh... Hi! Hello?
-
-[[actionbutton-|stop]]
-[[Wait-3-|walk2]]
-
-
 :: Toy giggle
 >narrator-*slight giggle*
 
-[[buttoninteract-toy-|Toy giggle]]
-[[autointeract-door-|Walk 6]]
+[[buttoninteract-FirstRoom/Table-|Toy giggle]]
+[[autointeract-FirstRoom/WallX/Door-|Walk 6]]
 
 
 :: Walk 7 [RECROOM]
@@ -112,15 +108,14 @@ Untitled Story
 :: Interact Toy
 >narrator-Oh, wow! That looks like a lot of fun, haha!! Take your time to play with it, it's not everyday we get to just spend our time the way we want to!
 
-//Player has the choice to continue playing until they continue walking//
-[[buttoninteract-toy-|Toy continue interaction]]
+[[buttoninteract-FirstRoom/Table-|Toy continue interaction]]
 [[Wait-3-|Interact Toy Thoughts]]
 
 
 :: Interact Toy Thoughts
 >narrator-You know... When I think about it, I'm actually not too sure if I've ever played before. The toy seemed like it would be fun to play with. I wish I could do that, you're pretty lucky.
 
-[[autointeract-door-|Walk 6]]
+[[autointeract-FirstRoom/WallX/Door-|Walk 6]]
 [[buttoninteract-toy-|Toy giggle]]
 
 
@@ -167,26 +162,22 @@ I... didn't expect that to happen. Well... there you go.
 
 
 :: Toy continue interaction
-[[buttoninteract-toy-|Toy continue interaction]]
+[[buttoninteract-FirstRoom/Table-|Toy continue interaction]]
 [[Wait-6-|Interact Toy Thoughts]]
-
-
-:: StoryAuthor 1
-Anonymous
 
 
 :: walk3
 >narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.
 
 [[actionbutton-|stop2]]
-[[Wait-3-|walk4]]
+[[Wait-6-|walk4]]
 
 
 :: walk4
 >narrator-Oh... 
 
-[[Autointeract-door-|please]]
-[[buttoninteract-toy-|Toy not interested]]
+[[Autointeract-FirstRoom/WallX/Door-|please]]
+[[buttoninteract-FirstRoom/Table-|Toy not interested]]
 
 
 :: Please 2 [PARLOUR]
@@ -218,7 +209,7 @@ Anonymous
 :: Toy not interested
 >narrator-It's not interesting
 
-[[autointeract-door-|please]]
+[[autointeract-FirstRoom/WallX/Door-|please]]
 
 
 :: please [PARLOUR]

@@ -6,12 +6,19 @@ using System.IO;
 
 public class BehaviourTree : MonoBehaviour {
 	public Node behaviour;
+
+	private GameObject gameObject = null;
 	private int oldTime, newTime;
 	private bool printed, positiveBehaviour;
 
 	public void TriggerNextChoice(int i) {
+		if (gameObject != null) {
+			gameObject.SendMessage("DeactivateTrigger");
+			gameObject = null;
+		}
 		behaviour = behaviour.ChildNode[i];
 		oldTime = newTime = System.DateTime.Now.Second;
+		SetTriggers();
 		Debug.Log(behaviour.Narrator);
 	}
 
@@ -74,10 +81,13 @@ public class BehaviourTree : MonoBehaviour {
 	}
 
 	private void SetTriggers() {
-		for(int i = 0; i < behaviour.Triggers.Count; i++) {
-			if (behaviour.Triggers[i] == (int) Trigger.autointeract ||
-			    behaviour.Triggers[i] == (int) Trigger.buttoninteract) {
-				behaviour.TriggeredObjects[i].SendMessage("activateTrigger", i);
+		if (behaviour == null || behaviour.Triggers == null)
+			return;
+		for (int i = 0; i < behaviour.Triggers.Count; i++) {
+			if (behaviour.TriggersNames[i] != null) {
+				gameObject = GameObject.Find(behaviour.TriggersNames[i]);
+				Debug.Log(behaviour.TriggersNames[i]);
+				gameObject.SendMessage ("ActivateTrigger", i);
 			}
 		}
 	}

@@ -7,7 +7,7 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 
 	private Transform door;
 	private Vector3 origin;
-	private int triggerId;
+	private int triggerId = -1;
 	private bool lockedDoor = true;
 	private bool rotating = false, open = false;
 	private float angle = 0;
@@ -15,6 +15,11 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 	public void ActivateTrigger(int i) {
 		triggerId = i;
 		lockedDoor = false;
+	}
+
+	public void DeactivateTrigger() {
+		triggerId = -1;
+		lockedDoor = true;
 	}
 
 	void Start()
@@ -25,7 +30,7 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 	
 	void OnTriggerStay(Collider other)
 	{
-		if (!lockedDoor) {
+		if (!lockedDoor){
 			rotating = true;
 		}
 	}
@@ -36,14 +41,15 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 		{
 			door.RotateAround(origin, Vector3.up, -smoothing * Time.deltaTime);
 			angle += -smoothing * Time.deltaTime;
-			GameObject behaviourTree = new GameObject();
-			behaviourTree = GameObject.Find("BehaviourTree");
-			behaviourTree.SendMessage("TriggerNextChoice");
-			lockedDoor = true;
 			if (angle <= -95)
 			{
 				rotating = false;
 				open = true;
+				if (!lockedDoor){
+					GameObject behaviourTree = new GameObject();
+					behaviourTree = GameObject.Find("BehaviourTree");
+					behaviourTree.SendMessage("TriggerNextChoice", triggerId);
+				}
 			}
 		}
 	}

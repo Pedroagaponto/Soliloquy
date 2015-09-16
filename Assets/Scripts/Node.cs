@@ -12,7 +12,7 @@ public class Node{
 	public int PlayerSpeed { get; set; }
 	public List<int> Triggers { get; set; }
 	public int WaitTime { get; set; }
-	public List<GameObject> TriggeredObjects { get; set; }
+	public List<string> TriggersNames { get; set; }
 	public List<Node> ChildNode { get; set; }
 	public List<ObjectAnimation> objAnims = new List<ObjectAnimation>();
 }
