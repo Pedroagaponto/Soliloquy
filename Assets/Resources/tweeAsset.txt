@@ -1,23 +1,271 @@
 ﻿:: Start
->Narrator-narrator test
-
-[[autointeract-obj-|node2]]
-[[buttoninteract-obj2-|node3]]
-
-
-:: node2
->Narrator-testando node 2
+>narrator-Hello?
+[[actionbutton-|stop]]
+[[wait-6-|walk]]
 
 
-:: StoryTitle
+:: thingtouch
+>narrator-Ooh, how interesting! Looks like a cute little toy, eh? Maybe their owner forgot about it. Oh well, not much use to us.
+
+[[Wait-3-|walk5]]
+[[buttoninteract-toy-|Interact Toy]]
+
+
+:: walk5
+>narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.
+
+[[buttoninteract-toy-|Interact Toy]]
+[[autointeract-FirstRoom/Door-|Walk 6]]
+
+
+:: stop
+>narrator-Oh, good! You can hear me! That's a relief.
+
+[[actionbutton-|interact]]
+[[Wait-3-|walk2]]
+
+
+:: interact
+>narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?
+
+[[buttoninteract-toy-|thingtouch]]
+[[Wait-3-|auxnode]]
+
+
+:: Walk 6 [PARLOUR]
+>narrator-Do you ever wonder why we are here or what we are? Hahaha, such a silly thought really. All that matter is now right!?
+
+[[autointeract-photo-|Photo]]
+
+
+:: Photo [PARLOUR]
+>narrator-Hey so, what's that over there?
+
+[[buttoninteract-photo-|Photo Interact]]
+[[Wait-6-|Photo Ignore]]
+
+
+:: Photo Interact [PARLOUR]
+>narrator-It's a photo. I feel like I know who those people are, but I can't quite put my finger on it. This is so strange. I feel weird seeing this photo of these people, I feel like they are really important to me and that they love me very much. *slight gasp* I can't shake this feeling that I've disappointed them. Maybe they don't love me... I really can't be sure anymore. I think we should go now.
+
+[[autointeract-door-|objects forced interaction]]
+
+
+:: objects forced interaction [RECROOM]
+[[actionbutton-|objects forced interaction 2]]
+
+
+:: objects forced interaction 2 [RECROOM]
+[[actionbutton-|objects forced interaction 3]]
+
+
+:: objects forced interaction 3 [RECROOM]
+[[actionbutton-|Walk 7]]
+
+
+:: Doors [HALL]
+>narrator-Well this is different.
+[[buttoninteract-rightDoor-|hall room]]
+[[buttoninteract-leftDoor-|hall room]]
+
+
+:: hall room [HALL]
+>narrator-Looks like we're stuck here. Oh, wait! I wanna show you a neat magic trick! (whispers under breath) "I hope this works" OKAY! 3... 2... 1... PRESTO!!
+
+[[wait-2-|Hall room 2]]
+
+
+
+:: Hall room 2 [HALL]
+>narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.
+
+[autointeract-roomright-|Right Door]]
+[autointeract-roomleft|Left Door]]
+
+
+
+
+:: StoryTitle 1
 Untitled Story
 
 
-:: node3
->narrator-testando node 3
+:: walk
+>narrator-Oh, uh... Hi! Hello?
+
+[[actionbutton-|stop]]
+[[Wait-3-|walk2]]
 
 
-:: StoryAuthor
+:: Toy giggle
+>narrator-*slight giggle*
+
+[[buttoninteract-toy-|Toy giggle]]
+[[autointeract-door-|Walk 6]]
+
+
+:: Walk 7 [RECROOM]
+>narrator-Sorry, I didn't mean to completely ignore you! I'm just still trying to figure out everything with that photo. Don't worry, you have my full and undivided attention from now on! You've been pretty cool so far, call me cheesy but I think meeting you is probably the best thing that's happened to me. Granted I can't seem to remember anything prior to meeting you but that's besides the point, haha!
+
+[[autointeract-door-|Doors]]
+
+
+:: Interact Toy
+>narrator-Oh, wow! That looks like a lot of fun, haha!! Take your time to play with it, it's not everyday we get to just spend our time the way we want to!
+
+//Player has the choice to continue playing until they continue walking//
+[[buttoninteract-toy-|Toy continue interaction]]
+[[Wait-3-|Interact Toy Thoughts]]
+
+
+:: Interact Toy Thoughts
+>narrator-You know... When I think about it, I'm actually not too sure if I've ever played before. The toy seemed like it would be fun to play with. I wish I could do that, you're pretty lucky.
+
+[[autointeract-door-|Walk 6]]
+[[buttoninteract-toy-|Toy giggle]]
+
+
+:: walk2
+>narrator-Uhm... well, ok! I see. All good.
+
+[[Wait-3-|walk3]]
+
+
+:: Photo Ignore [PARLOUR]
+>narrator-No, please! I feel like that thing is important somehow! Can you go back?
+
+[[buttoninteract-photo-|Photo Interact]]
+[[Wait-6-|Photo Ignore 2]]
+
+
+:: Photo Ignore 2 [PARLOUR]
+>narrator-Hey, please!? Why are you being like this all of a sudden? Alright, forget the photo! I guess it doesn't matter. *sighs*
+[[autointeract-door-|Doors 2]]
+
+
+:: auxnode
+>narrator-Or.. not. Ok.
+[[Wait-2-|walk3]]
+
+
+:: Doors 2 [HALL]
+>narrator-Hm?
+
+[[buttoninteract-rightDoor-|hall room3]]
+[[buttoninteract-leftDoor-|hall room3]]
+
+
+:: hall room3
+>narrator-Oh you're stuck. Uh, let me try something.
+
+[[wait-2-|hall room4]]
+
+
+:: hall room4
+I... didn't expect that to happen. Well... there you go.
+
+[autointeract-room|continue2]]
+
+
+:: Toy continue interaction
+[[buttoninteract-toy-|Toy continue interaction]]
+[[Wait-6-|Interact Toy Thoughts]]
+
+
+:: StoryAuthor 1
 Anonymous
+
+
+:: walk3
+>narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.
+
+[[actionbutton-|stop2]]
+[[Wait-3-|walk4]]
+
+
+:: walk4
+>narrator-Oh... 
+
+[[Autointeract-door-|please]]
+[[buttoninteract-toy-|Toy not interested]]
+
+
+:: Please 2 [PARLOUR]
+>narrator-Hey, yes, hi! *sniffs* It's still not to late to be a team is it?
+
+[[actionbutton-|Photo]]
+[[Wait-4-|mirror explosion]]
+
+
+:: mirror explosion
+>narrator-*Narrator mumbles things*
+
+[[autointeract-mirror-|mirror]]
+
+
+:: stop2
+>narrator-Hey, so umm... truth is I haven't spoken to anyone in a while and I was pretty excited to see you earlier. I think it would be pretty neat if we could work together on this, we could be like a team! That sounds pretty fun right?
+
+[[actionbutton-|interact]]
+[[wait-3-|walk4]]
+
+
+:: mirror2 [RECROOM]
+>narrator-That was really strange huh? Do you think this place is haunted?
+
+[[autointeract-door-|continue]]
+
+
+:: Toy not interested
+>narrator-It's not interesting
+
+[[autointeract-door-|please]]
+
+
+:: please [PARLOUR]
+>narrator-*sniffs* Please wait... I really just need someone to talk to right now. You understand, right? I don't have anyone else and... It's just really hard right now...
+
+[[actionbutton-|Please 2]]
+[[Wait-6-|mirror]]
+
+
+
+:: mirror [PARLOUR]
+>animation-mirror-explodes
+>narrator-*gasps* Are you okay? Careful not to walk on any of the shards.
+
+
+[[Wait-6-|mirror2]]
+[[actionbutton-|mirror interact]]
+
+
+:: continue [HALL2]
+>animation-VASE-shatters
+>narrator-*Narrator mumbles again* Oh... wow...
+
+[autointeract-room|continue2]]
+
+
+:: Interact with photo  [PARLOUR]
+//If the player interacts with the photo when the narrator doesn't mention it//
+
+Hmm....
+
+
+
+:: mirror interact [PARLOUR]
+>narrator-I don't want you to get hurt.
+
+[[autointeract-door-|mirror2]]
+
+
+:: Write Smarter [annotation]
+-Compress routes- maybe 
+  only focus on 2 owing to   
+  time/to better construct a 
+  narrative
+-Think hard about the 
+  tone/reactions of the 
+  narrator- is it a stereotypical 
+  reaction?? How is it portraying the character?
 
 
