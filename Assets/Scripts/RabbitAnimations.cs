@@ -3,6 +3,8 @@ using System.Collections;
 
 public class RabbitAnimations : MonoBehaviour {
 	private Animator anim;
+	public AudioClip myClip;
+	public AudioClip myClip1;
 	// Use this for initialization
 	void Awake()
 	{
@@ -11,6 +13,25 @@ public class RabbitAnimations : MonoBehaviour {
 	void Start () {
 	
 	}
+	void Interact ()
+	{
+		GetComponent<AudioSource>().PlayOneShot(myClip);
+		
+	}
+	
+	void Walking ()
+	{
+		GetComponent<AudioSource>().PlayOneShot(myClip1);
+		
+	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
+			anim.SetTrigger("Interact");
+	}
+	
+
 	void FixedUpdate()
 	{
 		float h = Input.GetAxisRaw("Horizontal");
