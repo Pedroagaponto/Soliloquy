@@ -1,8 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c17fbd1cf3b8b42c7911d3f6170d9a77
 folderAsset: yes
 timeCreated: 1442296854
 licenseType: Free
+=======
+guid: 53da4c2bdcb464c47b3c27dad719ac56
+folderAsset: yes
+timeCreated: 1441686445
+licenseType: Pro
+>>>>>>> origin/Rooms
 DefaultImporter:
   userData: 
   assetBundleName: 

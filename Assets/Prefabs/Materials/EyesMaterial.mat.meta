@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 51a92ffc4760b499fbcc6c417a9a38a6
 timeCreated: 1442296770
 licenseType: Free
+=======
+guid: 5bcb5ae715358ac40b451f926708068a
+timeCreated: 1441686290
+licenseType: Pro
+>>>>>>> origin/Rooms
 NativeFormatImporter:
   userData: 
   assetBundleName: 
