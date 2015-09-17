@@ -39,6 +39,8 @@ public class NarratorController : MonoBehaviour {
 	private Text subtitleText;
 	private AudioClip dialogClip;
 	public AudioSource narratorAudio;
+	private IEnumerator subCoroutine;
+	private IEnumerator callCoroutine;
 
 
 	void Awake()
@@ -72,12 +74,11 @@ public class NarratorController : MonoBehaviour {
 
 		if(textFile != null)
 		{	
-			StartCoroutine ("showCallAudio");
+			subCoroutine = (dialogClip != null) ? showSubtitleAudio() : showSubtitle();
+			callCoroutine = showCallAudio();
 
-			if (dialogClip != null)
-				StartCoroutine ("showSubtitleAudio");
-			else
-				StartCoroutine ("showSubtitle");
+			StartCoroutine (callCoroutine);
+			StartCoroutine (subCoroutine);
 		}
 
 
@@ -86,6 +87,11 @@ public class NarratorController : MonoBehaviour {
 	private void Reset() {
 		callLines = new List<CallLine>();
 		subLines = new List<SubLine>();
+		
+		if (callCoroutine != null) StopCoroutine (callCoroutine);
+		if (subCoroutine != null) StopCoroutine (subCoroutine);
+		callCoroutine = callCoroutine = null;
+
 		dialogClip = null;
 		subtitleText.text = "";
 	}
@@ -159,6 +165,8 @@ public class NarratorController : MonoBehaviour {
 	void Start () {
 		subtitleText = subtitleGameObject.GetComponent<Text>();
 		subtitleText.supportRichText = true;
+
+		playDialog ("test");
 	}
 	
 	// Update is called once per frame
