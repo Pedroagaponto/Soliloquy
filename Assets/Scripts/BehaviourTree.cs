@@ -7,6 +7,7 @@ using System.IO;
 public class BehaviourTree : MonoBehaviour {
 	public Node behaviour;
 
+	private NarratorController narrator;
 	private GameObject gameObject = null;
 	private int oldTime, newTime;
 	private bool printed, positiveBehaviour;
@@ -20,10 +21,12 @@ public class BehaviourTree : MonoBehaviour {
 		oldTime = newTime = System.DateTime.Now.Second;
 		SetTriggers();
 		Debug.Log(behaviour.Narrator);
+		narrator.playDialog (behaviour.Id);
 	}
 
-	void Awake()
+	void Start()
 	{
+		narrator = NarratorController.Instance;
 		behaviour = null;
 		TweeParser parser = TweeParser.getInstance();
 		List<Node> nodeList = parser.getNodeList();
@@ -35,6 +38,7 @@ public class BehaviourTree : MonoBehaviour {
 		oldTime = newTime = System.DateTime.Now.Second;
 		SetTriggers();
 		Debug.Log(behaviour.Narrator);
+		narrator.playDialog(behaviour.Id);
 	}
 
 	void initTree(List<Node> list)

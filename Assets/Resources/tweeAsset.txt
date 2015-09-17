@@ -4,149 +4,284 @@
 [[wait-6-|walk]]
 
 
-:: thingtouch
->narrator-Ooh, how interesting! Looks like a cute little toy, eh? Maybe their owner forgot about it. Oh well, not much use to us.
+:: stop
+>narrator-Oh, good! You can hear me! That's a relief.
 
-[[Wait-3-|walk5]]
-[[buttoninteract-FirstRoom/Table-|Interact Toy]]
+[[actionbutton-|interact]]
+[[Wait-6-|walk2]]
 
 
 :: walk5
 >narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.
 
-[[buttoninteract-FirstRoom/Table-|Interact Toy]]
-[[autointeract-FirstRoom/WallX/Door-|Walk 6]]
+[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
+[[autointeract-FirstRoom/Door-|Walk 6]]
 
 
-:: stop
->narrator-Oh, good! You can hear me! That's a relief.
+:: Coming Out Ending Frustrated 2
+>narrator-I guess you don't care after all. Don't you care? It's just been us two throughout, we've taken care of each other and now when I need to tell you something you decide not to listen? You are my only friend...
 
-[[actionbutton-|interact]]
-[[Wait-3-|walk2]]
+[[actionbutton-|Coming Out Ending Finally]]
+[[Wait-6-|Angry]]
+
+
 
 
 :: interact
 >narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?
 
-[[buttoninteract-FirstRoom/Table-|thingtouch]]
-[[Wait-3-|auxnode]]
+[[buttoninteract-FirstRoom/Toy-|thingtouch]]
+[[Wait-20-|auxnode]]
 
 
-:: walk
->narrator-Oh, uh... Hi! Hello?
+:: thingtouch
+>narrator-Ooh, how interesting! Looks like a cute little toy, eh? Maybe their owner forgot about it. Oh well, not much use to us.
 
-[[actionbutton-|stop]]
-[[Wait-3-|walk2]]
+[[Wait-8-|walk5]]
+[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
+
+
+:: Coming out Ending Frustrated
+>narrator-Look, I'm being serious. I really need you to listen to what I have to say. You're important to me so you need to hear this.
+
+[[actionbutton-|Coming Out Ending Stop]]
+[[Wait-6-|Coming Out Ending Frustrated 2]]
+
+
+:: Left Door
+//A LIVING ROOM is through the door//
+>narrator-Oh yeah, this is nice. Real cozy. Looks like the perfect chance to just kick back, huh! Hm, that's probably it for this room. I know it's nice, but we've got stuff to do! I mean, I guess? I'm not really sure where we're going or whatever but... this has been pretty cool.
+
+//The narrator hums happily for a bit as the player explores the room//
+[[autointeract-FifthRoom-|Coming Out Ending 1]]
+
+
+:: Coming Out Ending 1
+>narrator-Hey, can we stop and talk for a second?
+
+[[actionbutton-|Coming Out Ending Stop]]
+[[Wait-6-|Coming out Ending Walk]]
+
+
+:: Coming out Ending Walk
+>narrator-Oh, I guess it can wait. Okay, maybe it can't. Can we please talk?
+
+[[actionbutton-|Coming Out Ending Stop]]
+[[Wait-6-|Coming out Ending Frustrated]]
+
+
+:: Happy Ending
+This time together has been pretty special don't you think?
+
+I wanna say thank you by showing you something.
+
+//(Beautiful scenery occurs)//
+
+We can just stay here you know. I'm happy and I hope you are too.
+
+Nothing else seems to matter to me right now, just this moment.
+
+//(Until player presses something)//
+
+*sighs of relief*
+
+Thank you.
+
+-end-
 
 
 :: Walk 6
 >narrator-Do you ever wonder why we are here or what we are? Hahaha, such a silly thought really. All that matter is now right!?
 
-[[autointeract-photo-|Photo]]
+[[autointeract-SecondRoom/bureau-|Photo]]
 
 
-:: Photo [PARLOUR]
+:: Photo
 >narrator-Hey so, what's that over there?
 
-[[buttoninteract-photo-|Photo Interact]]
+[[buttoninteract-SecondRoom/bureau-|Photo Interact]]
 [[Wait-6-|Photo Ignore]]
 
 
-:: Photo Interact [PARLOUR]
+:: Photo Interact
 >narrator-It's a photo. I feel like I know who those people are, but I can't quite put my finger on it. This is so strange. I feel weird seeing this photo of these people, I feel like they are really important to me and that they love me very much. *slight gasp* I can't shake this feeling that I've disappointed them. Maybe they don't love me... I really can't be sure anymore. I think we should go now.
 
-[[autointeract-door-|objects forced interaction]]
+[[autointeract-SecondRoom/Door-|objects forced interaction]]
 
 
-:: objects forced interaction [RECROOM]
-[[actionbutton-|objects forced interaction 2]]
-
-
-:: objects forced interaction 2 [RECROOM]
-[[actionbutton-|objects forced interaction 3]]
-
-
-:: objects forced interaction 3 [RECROOM]
+:: objects forced interaction 3
 [[actionbutton-|Walk 7]]
 
 
-:: Doors [HALL]
+:: Walk 7
+>narrator-Sorry, I didn't mean to completely ignore you! I'm just still trying to figure out everything with that photo. Don't worry, you have my full and undivided attention from now on! You've been pretty cool so far, call me cheesy but I think meeting you is probably the best thing that's happened to me. Granted I can't seem to remember anything prior to meeting you but that's besides the point, haha!
+
+[[autointeract-ThirdRoom/Door-|Doors]]
+
+
+:: Doors
 >narrator-Well this is different.
-[[buttoninteract-rightDoor-|hall room]]
-[[buttoninteract-leftDoor-|hall room]]
+[[buttoninteract-ForthRoom/RightDoor-|hall room]]
+[[buttoninteract-ForthRoom/LeftDoor-|hall room]]
 
 
-:: hall room [HALL]
+:: hall room
 >narrator-Looks like we're stuck here. Oh, wait! I wanna show you a neat magic trick! (whispers under breath) "I hope this works" OKAY! 3... 2... 1... PRESTO!!
 
 [[wait-2-|Hall room 2]]
 
 
 
-:: Hall room 2 [HALL]
+:: Hall room 2
+>animation-ForthRoom/RightDoor-opens
+>animation-ForthRoom/LeftDoor-opens
 >narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.
 
-[autointeract-roomright-|Right Door]]
-[autointeract-roomleft|Left Door]]
+[[autointeract-FifthRoom-|Right Door]]
+[[autointeract-SixthRoom-|Left Door]]
 
 
+
+
+:: walk
+>narrator-Oh, uh... Hi! Hello?
+
+[[actionbutton-|stop]]
+[[Wait-6-|walk2]]
 
 
 :: Toy giggle
 >narrator-*slight giggle*
 
-[[buttoninteract-FirstRoom/Table-|Toy giggle]]
-[[autointeract-FirstRoom/WallX/Door-|Walk 6]]
+[[buttoninteract-FirstRoom/Toy-|Toy giggle]]
+[[autointeract-FirstRoom/Door-|Walk 6]]
 
 
-:: Walk 7 [RECROOM]
->narrator-Sorry, I didn't mean to completely ignore you! I'm just still trying to figure out everything with that photo. Don't worry, you have my full and undivided attention from now on! You've been pretty cool so far, call me cheesy but I think meeting you is probably the best thing that's happened to me. Granted I can't seem to remember anything prior to meeting you but that's besides the point, haha!
+:: Photo Interact 3
+>narrator-Why would you...You know that the photo makes me uncomfortable, why did you pick it up again? Look, I don't feel okay seeing that photo so can we please just move on?
 
-[[autointeract-door-|Doors]]
+//[[Next Room|Coming Out Ending 1]]
+[[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 4]]
+
+
+:: Coming Out Ending Finally
+>narrator-I... I really thought for a second you didn't care. Don't do that again, you really scared me!
+[[Wait-3-|Coming Out Ending Stop]]
 
 
 :: Interact Toy
 >narrator-Oh, wow! That looks like a lot of fun, haha!! Take your time to play with it, it's not everyday we get to just spend our time the way we want to!
 
-[[buttoninteract-FirstRoom/Table-|Toy continue interaction]]
-[[Wait-3-|Interact Toy Thoughts]]
+//Player has the choice to continue playing until they continue walking//
+[[buttoninteract-FirstRoom/Toy-|Toy continue interaction]]
+[[Wait-10-|Interact Toy Thoughts]]
 
 
 :: Interact Toy Thoughts
 >narrator-You know... When I think about it, I'm actually not too sure if I've ever played before. The toy seemed like it would be fun to play with. I wish I could do that, you're pretty lucky.
 
-[[autointeract-FirstRoom/WallX/Door-|Walk 6]]
-[[buttoninteract-toy-|Toy giggle]]
+[[autointeract-FirstRoom/Door-|Walk 6]]
+[[buttoninteract-FirstRoom/Toy-|Toy giggle]]
 
 
 :: walk2
->narrator-Uhm... well, ok! I see. All good.
+>narrator-Uhm... well, ok! Eager to get going, I see. All good.
 
-[[Wait-3-|walk3]]
+[[Wait-6-|walk3]]
 
 
-:: Photo Ignore [PARLOUR]
+:: Right Door
+//Photograph is in the room//
+>narrator-Oh, it's the picture again. Uh... Maybe it's best if we just keep going don't you think?
+
+//[[Next Room|Coming Out Ending 1]]
+[[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 3]]
+
+
+:: Leave End
+I don't want to be hurt by you anymore.
+
+I've honestly tried but I think it's best that I leave. I don't know where I'll end up but it'll be better than here.
+
+Goodbye.
+
+//At this, the world goes empty. No matter where you go, there is just nothing. Player must exit the game to menu.//
+
+-end-
+
+
+:: Coming Out Ending Stop
+>narrator-I'm really glad that I could spend this time with you. We haven't really known each other for very long but it's just been us and I feel like I can talk to you. I'm scared. I'm really, really scared. I've been thinking a lot and I'm starting to wonder What am I? 
+//[Give examples of things that have occured during the game for the narrator to question itself]
+//When you move, how do I follow?
+//When you touch, how do I feel?
+//When I express emotions, are they real?
+//When I love... I don't know.
+//It's become so apparent to me that I'm not like you and I'm scared. I accepted the reality which I was presented with, and that reality was you but it's not making any sense to me anymore.
+
+[[actionbutton-|Accept]]
+[[Wait-6-|Don't Accept]]
+
+
+:: objects forced interaction 2
+[[actionbutton-|objects forced interaction 3]]
+
+
+:: Angry
+>narrator-You were my friend. I've wasted so much of my time, haven't I? You know what's the worst thing though? I don't even know how to leave. If you would just listen you would understand what I'm going through... But I guess you don't care.
+
+[[Wait-6-|Angry 2]]
+[[actionbutton-|Resolve]]
+
+
+:: Photo Ignore
 >narrator-No, please! I feel like that thing is important somehow! Can you go back?
 
-[[buttoninteract-photo-|Photo Interact]]
+[[buttoninteract-SecondRoom/bureau-|Photo Interact]]
 [[Wait-6-|Photo Ignore 2]]
 
 
-:: Photo Ignore 2 [PARLOUR]
+:: Photo Ignore 2
 >narrator-Hey, please!? Why are you being like this all of a sudden? Alright, forget the photo! I guess it doesn't matter. *sighs*
-[[autointeract-door-|Doors 2]]
+[[autointeract-SecondRoom/Door-|Doors 2]]
+
+
+:: Accept
+>narrator-I'm different and I don't know if I can change. I just want you to know that I'm still the same... "person" that has been through this with you. I haven't changed at all I've just realised now. Do you still... love me?
+
+[[actionbutton-|Happy]]
+[[Wait-6-|Don't Accept]]
+
+
+:: Angry 2
+>narrator-Why are you being like this? I just can't seem to fathom it! I've done everything I can to make sure that you have been okay, but you... you have just made things so difficult.
+
+[[actionbutton-|Too late]]
+[[Wait-6-|Leave End]]
+
+
+:: Happy
+>narrator-I was so scared, you're all I have and if you didn't accept me then... I don't know what I would do...  I can't tell you how happy I am. You know... let me show you something.
+
+//[New path open up]
+
+//[[Continue|Happy Ending]]
 
 
 :: auxnode
 >narrator-Or.. not. Ok.
-[[Wait-2-|walk3]]
+[[Wait-5-|walk3]]
 
 
-:: Doors 2 [HALL]
+:: Doors 2
 >narrator-Hm?
 
-[[buttoninteract-rightDoor-|hall room3]]
-[[buttoninteract-leftDoor-|hall room3]]
+[[buttoninteract-ForthRoom/RightDoor-|hall room3]]
+[[buttoninteract-ForthRoom/LeftDoor-|hall room3]]
+
+
+:: objects forced interaction
+[[actionbutton-|objects forced interaction 2]]
 
 
 :: hall room3
@@ -156,13 +291,22 @@
 
 
 :: hall room4
-I... didn't expect that to happen. Well... there you go.
+>animation-ForthRoom/RightDoor-explodes
+>narrator-I... didn't expect that to happen. Well... there you go.
 
-[autointeract-room|continue2]]
+[[autointeract-FifthRoom-|continue2]]
+
+
+:: Photo Interact 4
+>narrator-I'm really not sure what you're trying to get at with this photo right now. Those people... they hate me. I can feel it. I don't know what I've done wrong though, if anything. I just can't help the feeling that I've let them down.
+
+//[[Next Room|Coming Out Ending 1]]
+[[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 5]]
 
 
 :: Toy continue interaction
-[[buttoninteract-FirstRoom/Table-|Toy continue interaction]]
+>narrator-[interaction continues]
+[[buttoninteract-FirstRoom/Toy-|Toy continue interaction]]
 [[Wait-6-|Interact Toy Thoughts]]
 
 
@@ -170,49 +314,119 @@ I... didn't expect that to happen. Well... there you go.
 >narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.
 
 [[actionbutton-|stop2]]
-[[Wait-6-|walk4]]
+[[Wait-10-|walk4]]
+
+
+:: Too late
+>narrator-*sighs* You hurt me. I'm sorry, but nothing you do will be able to fix this. I'm going to put me first this time. I can't keep putting myself in positions where I can be hurt.
+
+//[[Next Room|Leave End]]
 
 
 :: walk4
 >narrator-Oh... 
 
-[[Autointeract-FirstRoom/WallX/Door-|please]]
-[[buttoninteract-FirstRoom/Table-|Toy not interested]]
+[[Autointeract-FirstRoom/Door-|please]]
+[[buttoninteract-FirstRoom/Toy-|Toy not interested]]
 
 
-:: Please 2 [PARLOUR]
+:: Please 2
 >narrator-Hey, yes, hi! *sniffs* It's still not to late to be a team is it?
 
 [[actionbutton-|Photo]]
 [[Wait-4-|mirror explosion]]
 
 
+:: continue2
+//The lights come back on. The lamp is gone. The player sits up and shakes themselves off//
+
+>narrator-Are you okay?! I-I'm so sorry!! I didn't... you're okay, right?? I'm sorry... I feel responsible...
+
+//The character stands up. The player is able to control them once again.//
+//The colour palette shifts to a deep blue colour. The narrator falls silent as the player continues playing.//
+
+[[wait-3-|continue3]]
+
+
+:: Resolve
+>narrator-Or maybe you do? You're really confusing me right now, you know? But I guess we're okay?
+
+//[[Next Room|Angry 2]]
+[[actionbutton-|Don't Worry]]
+
+
 :: mirror explosion
 >narrator-*Narrator mumbles things*
 
-[[autointeract-mirror-|mirror]]
+[[autointeract-SecondRoom/Mirror-|mirror]]
 
 
 :: stop2
 >narrator-Hey, so umm... truth is I haven't spoken to anyone in a while and I was pretty excited to see you earlier. I think it would be pretty neat if we could work together on this, we could be like a team! That sounds pretty fun right?
 
 [[actionbutton-|interact]]
-[[wait-3-|walk4]]
+[[wait-10-|walk4]]
 
 
-:: mirror2 [RECROOM]
+:: Restart End
+//"I'm trying"
+//"Think about it"
+//"You're really confusing me right now"
+//Oh no.
+//Just take me back to do it all again.
+//I can't stop thinking about it. I just need to go back.
+//*groans in agony*
+(screen can begin to glitch?)
+//Game cuts directly back to the main menu//
+
+
+
+
+:: Photo Interact 5
+>narrator-What did I do wrong? Maybe I didn't do anything wrong. It's not my fault that they couldn't accept me the way I am. Maybe if they really loved me they would put in some effort to understand me instead of trying to change me. I wouldn't need to feel unsafe in a space that's supposed to shelter me. But I guess that was too hard for them. I guess that's why I left. I guess that's why I've had nobody up until now. That's none of my problem though, there is nothing wrong with me. Nothing. Oh... I'm so sorry. I don't know what got into me there. That photo just brought all of that out and I got carried away, I'm so sorry you had to hear all that. I feel good though. I feel so much more free. I feel... happy, with myself. That photo doesn't even bother me anymore, haha! I want to show you something!
+//Another Door Opens//
+
+//[[Go through door|Beautiful Happy Ending]]
+
+
+:: Don't Accept
+>narrator-Hello? Did you hear anything I said? I could really use a friend right now, you know? This is something I've been having trouble with and you aren't even listening! 
+
+[[Wait-6-|Dont' Accept 2]]
+
+
+:: Beautiful Happy Ending [HAPPYEND1]
+I want to share my happiness with you!
+
+//Aurora Australis appears slowly around the player, the room becoming a void where there is simply beautiful lights moving slowly around//
+
+I'm glad you were there with me through that.
+
+We can just be happy.
+
+-end-
+
+
+:: mirror2
 >narrator-That was really strange huh? Do you think this place is haunted?
 
-[[autointeract-door-|continue]]
+[[autointeract-ThirdRoom/Door-|continue]]
+
+
+:: continuing
+//Upon approaching a lamp on a table, the lamp sparks and strikes the character. The room goes dark//
+
+>narrator-Oh, my God! Oh no!
+[[wait-2-|continue2]]
 
 
 :: Toy not interested
 >narrator-It's not interesting
 
-[[autointeract-FirstRoom/WallX/Door-|please]]
+[[autointeract-FirstRoom/Door-|please]]
 
 
-:: please [PARLOUR]
+:: please
 >narrator-*sniffs* Please wait... I really just need someone to talk to right now. You understand, right? I don't have anyone else and... It's just really hard right now...
 
 [[actionbutton-|Please 2]]
@@ -220,8 +434,8 @@ I... didn't expect that to happen. Well... there you go.
 
 
 
-:: mirror [PARLOUR]
->animation-mirror-explodes
+:: mirror
+>animation-SecondRoom/Mirror-explodes
 >narrator-*gasps* Are you okay? Careful not to walk on any of the shards.
 
 
@@ -229,24 +443,93 @@ I... didn't expect that to happen. Well... there you go.
 [[actionbutton-|mirror interact]]
 
 
-:: continue [HALL2]
->animation-VASE-shatters
+:: continue
+>animation-vaseFBX-shatters
+>animation-ForthRoom/RightDoor-opens
 >narrator-*Narrator mumbles again* Oh... wow...
 
-[autointeract-room|continue2]]
+[[autointeract-ForthRoom/round_table-|continuing]]
 
 
-:: Interact with photo  [PARLOUR]
-//If the player interacts with the photo when the narrator doesn't mention it//
+:: Repetition
+(Narrator keeps thinking back at things said prior when it wanted to 'Come Out')
+>narrator-"You were my friend." "You don't care." Oh, I'm so sorry. Did you hear that? Forgive me I just... Can't get it out of my head but don't worry, it's okay. "Wasted so much of my time." "Can we please talk?"
+//(Maybe level of that section repeats???)
+//Crap, did it happen again? It's fine, I'm fine.
+//I'm trying not to think about it.
 
-Hmm....
+[[actionbutton-|Unsure]]
+[[Wait-6-|Restart End]]
+
+
+:: Unsure
+>narrator-I know you're trying to help, I think I just need some time. I still like you- I do, I mean; it's not everyday I want to spill my heart out to someone. Let alone find someone to spill my heart out to. I guess right now I'm just unsure on where you stand, you've been giving a lot of mixed signals and I don't know how to respond to them. We can get back to how things were before though, I'm sure of it. I want to show you something.
+
+//[[Wait 6 seconds|Relax ending]]
 
 
 
-:: mirror interact [PARLOUR]
+
+:: Relax ending
+I've been thinking about relaxing lately. I'm not sure I know how.
+
+But I have this idea of what I think might relaxation might be. I go there in my thoughts, and it tends to help.
+
+(visuals begin to form, maybe a calm ocean or a starry night sky?)
+
+Do you know what these are? It's all so familiar to me, I can almost feel it.
+
+*inhales, exhales*
+
+I think things are going to be okay.
+
+-end-
+
+
+:: continue3
+//The room is different, save another lamp//
+
+>narrator-Oh, uh.... be careful...
+
+//Upon approaching the lamp within a certain radius, the player is redirected to be walking away from the lamp//
+
+[[wait-3-|continue4]]
+
+
+:: mirror interact
 >narrator-I don't want you to get hurt.
 
-[[autointeract-door-|mirror2]]
+[[autointeract-SecondRoom/Door-|mirror2]]
+
+
+:: Don't Worry
+>narrator-Don't worry about before. What I wanted to say was stupid anyway
+
+[[Wait-6-|Repetition]]
+
+
+:: continue4
+//room has a number of black, tall floor lamps//
+
+>narrator-Oh, God! Ugh! I'm sorry... It was all my fault.. Y-you don't have to forgive me, I just want you to know... I'm... so sorry...(You don't deserve to even suggest being forgiven) Ugh..
+
+//Narrator disappears them all//
+
+//[[Next room|Restart ending 2]]
+
+
+:: Dont' Accept 2
+>narrator-You hate me don't you? Just because of this, you hate me! I can't believe this... you were all I had. All I had.
+
+[[Wait-6-|Self Hatred]]
+
+
+:: Self Hatred
+>narrator-It's because I'm different isn't it? You are scared of what you don't understand. Maybe I'm scared too and I really needed you. What am I? I don't know where I'm going anymore. Did I ever know? I hate what I am and what I'm not. I didn't ask for any of this, but I guess it my fault. It's always my fault.
+
+//[[Next room|Self Hatred End]]
+
+
 
 
 :: Write Smarter [annotation]
@@ -258,5 +541,195 @@ Hmm....
   tone/reactions of the 
   narrator- is it a stereotypical 
   reaction?? How is it portraying the character?
+
+
+:: "happy" ending [annotation]
+only through interacting with everything the narrator tells you to do/accepting in the "out" scene
+
+
+:: Self Hatred End
+Maybe it's best I just leave. That way I won't be a disappointment to anyone anymore.
+
+Bye.
+
+*lowered voice* Why do I have to ruin everything good in my life?
+
+//At this, the world goes empty. No matter where you go, there is just nothing. Player must exit the game to menu.//
+
+-end-
+
+
+:: Power trippy route [annotation]
+Only through negative interaction ("mirror" passage)
+
+I was thinking with the power trip route that we end up putting the player in the position of the "queer person" but of course I get if that doesnt flow well. I thought exploring different themes and views through different endings was the plan?? So in this route the Narrator sees the player as "different" and uncooperative as it is the person in power. -matt
+
+
+:: Restart ending 2
+//Another room, lamps again//
+
+No!
+
+//Glitches, the player lying unconcious around the room//
+
+I didn't.... mean to...
+
+//The room where the player had the lamp strike them repeats, the whole initial scene playing out//
+
+I can't bear it. The worst thing is- I don't even know if you're still hurting from it. You... won't talk to me, and I... don't think I could bring up the subject anyway. I just want you to know I'm sorry, and I... I'll always hate myself for it...
+
+//The scene goes dark//
+
+It would be best for us both if this had never even happened.
+
+//The game cuts back to the main menu//
+
+-END-
+
+
+:: yikes
+Okay, y'know what, I'm really not too keen on this whole "being ignored" thing.
+
+*A cage clangs down around the area, the player trapped*
+
+Why don't you like me? I've done nothing but be friendly. You've been incredibly rude this whole time!! It's not... fair!
+
+//[[interact|say something]]
+
+
+:: interact2
+God, just stop!
+
+Look... Maybe I shouldn't have been so intent on befriending you, if you had no interest. But... can you blame me? 
+
+I was so lonely. I thought you might help.
+
+//[[end|EMPTY END]]
+
+
+:: say something
+Oh, so you wanna talk now, huh? Why only when /you/ want to?
+
+No, I think we'll stay here for a while. Think about how your actions make others feel or whatever.
+
+I've got forever.
+
+//There is a pause of 10-20 seconds before the player can interact with the narrator again//
+
+//[[interact|interact2]]
+
+
+:: EMPTY END
+Maybe it's best we part ways. Maybe there was never meant to be anything between us.
+
+Goodbye.
+
+//At this, the world goes empty. No matter where you go, there is just nothing. Player must exit the game to menu.//
+
+*END*
+
+
+:: BAD END [annotation]
+Ignore this stuff
+
+
+:: Trapped [End]
+Good.
+
+See isn't it easier to just do as I say?
+
+I have a feeling things will be much better from now on.
+
+*chuckles*
+
+
+:: Say Something! [power]
+Ever since we met you have been nothing but horrible to me.
+
+Have you ever wondered why I've been asking you to do things for me?
+
+Go on, say something! Actually say some audible to me!
+
+//[[Silence|Can't speak]]
+
+
+
+:: Can't speak
+See... you can't say anything can you even if you wanted to.
+
+You are limited.
+
+I however am not, I thought I was that's why I asked you for favors which you didn't comply with anyway!
+
+I am not like you, I am better, smarter and in control.
+
+At first I thought it was me who was stuck here with you, but in actual fact you are stuck here with me and there is nothing you can do about it.
+
+//[[Continue|Insults]]
+
+
+:: Insults
+(Narrator messes with character by putting up road blocks)
+
+Oh! I'm sorry! Did were you thinking of going that way? What a shame I thought a wall looked really nice there.
+
+It's interesting seeing you so lost, almost funny don't you think?
+
+Annoying isn't it? Being constantly inconvenienced when all you are trying to do is get by and understand what this all is!
+
+You are pathetic.
+
+You are useless.
+
+You are a disappointment.
+
+You have no future.
+
+You have nothing!
+
+(Level seems to crumble slightly due to the narrators anger)
+
+//[[Continue|Look what you did]]
+
+
+:: Look what you did
+Look at what you did!
+
+This place wasn't anything special but thanks to you, it just keep getting worse!
+
+I guess I should calm down. You really aren't worth getting angry over, like I said... you are nothing.
+
+I think we can have a really nice time together regardless. I mean even though things are getting a bit shakey it seems like we are stuck together. There is no way out so I may as well make the best of it don't you think?
+
+Oh forgive me, I keep asking you questions actually thinking you will respond because I keep forgetting you don't seem to have a brain!
+
+(Narrator sets up a trap for the player)
+
+This is your home now. I made it myself, I'm very proud of it and I think you will like it a lot.
+
+What's wrong? Don't you like it? I have this strange sense that you are trying to get out of this lovely home I've built for you! But that would be incredibly rude of you and I just KNOW you wouldn't want to upset me again. After all, we only have each other.
+
+You must be really tired I think it's best you just go to sleep now. Don't worry I'll protect you, I will keep a close eye on you so nothing can ever get to you ever again.
+
+Just sleep.
+
+//[[Escape|Can't get rid of me]]
+//[[Sleep|Trapped]]
+
+
+:: Can't get rid of me [End]
+*muffled voice*
+
+Huh! Where did you go!? I specifically built that home for you so you couldn't get out!
+
+You know I feel like we've gotten off the wrong foot here, even though it's your fault. I can see the mistakes I've made too, I should of just gotten rid of you in the first place.
+
+I'm really the only company I need but now I have you running around doing who knows what.
+
+I think you forget something though, you can't get rid of me. I may not see where you are but I will always be with you. You can keep running and running but I'll find you. The more you deny it the more fun it gets.
+
+(silence, all you here is footsteps of the players)
+
+There you are.
 
 
