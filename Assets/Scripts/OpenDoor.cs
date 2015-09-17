@@ -20,6 +20,8 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 	public void DeactivateTrigger() {
 		triggerId = -1;
 		lockedDoor = true;
+		rotating = false;
+		open = true;
 	}
 
 	void Start()

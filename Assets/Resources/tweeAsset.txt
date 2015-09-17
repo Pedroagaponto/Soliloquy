@@ -121,25 +121,24 @@ Thank you.
 
 :: Doors
 >narrator-Well this is different.
-[[buttoninteract-ForthRoom/RightDoor-|hall room]]
-[[buttoninteract-ForthRoom/LeftDoor-|hall room]]
+[[actionbutton-|hall room]]
+
+
+:: Hall room 2
+>animation-ForthRoom/RightDoor-Open
+>animation-ForthRoom/LeftDoor-Open
+>narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.
+
+[[autointeract-FifthRoom-|Right Door]]
+//[[autointeract-SixthRoom-|Left Door]]
+
+
 
 
 :: hall room
 >narrator-Looks like we're stuck here. Oh, wait! I wanna show you a neat magic trick! (whispers under breath) "I hope this works" OKAY! 3... 2... 1... PRESTO!!
 
 [[wait-2-|Hall room 2]]
-
-
-
-:: Hall room 2
->animation-ForthRoom/RightDoor-opens
->animation-ForthRoom/LeftDoor-opens
->narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.
-
-[[autointeract-FifthRoom-|Right Door]]
-[[autointeract-SixthRoom-|Left Door]]
-
 
 
 

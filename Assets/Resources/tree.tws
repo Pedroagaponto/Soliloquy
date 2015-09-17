@@ -2598,7 +2598,7 @@ tp794
 Rp795
 sbsa(dp796
 g14
-I01
+I00
 sg15
 (lp797
 F516.3333333333348
@@ -3001,7 +3001,7 @@ g14
 I00
 sg15
 (lp917
-F2306.3333333333303
+F2302.5833333333303
 aF657.9166666666662
 asg17
 (itiddlywiki
@@ -3252,7 +3252,7 @@ I00
 sg15
 (lp992
 F1600.3333333333335
-aF155.0
+aF153.75
 asg17
 (itiddlywiki
 Tiddler
@@ -3451,15 +3451,15 @@ g14
 I00
 sg15
 (lp1052
-F2384.666666666666
-aF210.83333333333312
+F2370.916666666666
+aF203.33333333333312
 asg17
 (itiddlywiki
 Tiddler
 p1053
 (dp1054
 g21
-V>narrator-Well this is different.\u000a[[buttoninteract-ForthRoom/RightDoor-|hall room]]\u000a[[buttoninteract-ForthRoom/LeftDoor-|hall room]]
+V>narrator-Well this is different.\u000a[[actionbutton-|hall room]]
 p1055
 sg23
 VDoors
@@ -3469,9 +3469,9 @@ g26
 ((I2015
 I9
 I17
-I10
-I50
-I9
+I13
+I37
+I35
 I3
 I260
 I0
@@ -3702,7 +3702,7 @@ I00
 sg15
 (lp1127
 F735.3333333333333
-aF600.0000000000001
+aF602.5000000000001
 asg17
 (itiddlywiki
 Tiddler
@@ -3998,7 +3998,7 @@ tp1214
 Rp1215
 sbsa(dp1216
 g14
-I00
+I01
 sg15
 (lp1217
 F2056.666666666665
@@ -4101,8 +4101,8 @@ g14
 I00
 sg15
 (lp1247
-F2550.333333333326
-aF208.7500000000001
+F2547.833333333326
+aF207.5000000000001
 asg17
 (itiddlywiki
 Tiddler
@@ -4151,15 +4151,15 @@ g14
 I00
 sg15
 (lp1262
-F2714.749999999997
-aF208.33333333333331
+F2680.999999999997
+aF199.58333333333331
 asg17
 (itiddlywiki
 Tiddler
 p1263
 (dp1264
 g21
-V>animation-ForthRoom/RightDoor-opens\u000a>animation-ForthRoom/LeftDoor-opens\u000a>narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.\u000a\u000a[[autointeract-FifthRoom-|Right Door]]\u000a[[autointeract-SixthRoom-|Left Door]]\u000a\u000a
+V>animation-ForthRoom/RightDoor-Open\u000a>animation-ForthRoom/LeftDoor-Open\u000a>narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.\u000a\u000a[[autointeract-FifthRoom-|Right Door]]\u000a//[[autointeract-SixthRoom-|Left Door]]\u000a\u000a
 p1265
 sg23
 VHall room 2
@@ -4169,9 +4169,9 @@ g26
 ((I2015
 I9
 I17
-I10
+I13
 I50
-I35
+I39
 I3
 I260
 I0

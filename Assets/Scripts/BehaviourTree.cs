@@ -22,6 +22,10 @@ public class BehaviourTree : MonoBehaviour {
 		SetTriggers();
 		Debug.Log(behaviour.Narrator);
 		narrator.playDialog (behaviour.Id);
+
+		for (int j = 0; j < behaviour.objAnims.Count; j++) {
+			behaviour.objAnims[j].animateObject();
+		}
 	}
 
 	void Start()

@@ -11,6 +11,6 @@ public class ObjectAnimation{
 	}
 
 	public void animateObject() {
-		gameObject.GetComponent<Animation>().Play (animTrigger);
+		gameObject.SendMessage(animTrigger);
 	}
 }
