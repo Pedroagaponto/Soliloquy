@@ -1,7 +1,7 @@
 00.00|Hello?
 01.00|\clear
 01.55|<b><i>Oh, uh...</i></b> Hi! Hello?
-//02.00|\call-1STARTROOM/Door 1-Open
+02.00|\call-1STARTROOM/Door 1-Open
 06.35|Oh, good! You can hear me! That's a relief.
 09.55| 
 10.53|Uhm... well, ok! Eager to get going, I see. All good.

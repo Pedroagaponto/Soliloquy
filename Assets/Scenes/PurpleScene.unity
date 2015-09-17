@@ -2891,7 +2891,7 @@ GameObject:
   - 33: {fileID: 292616935}
   - 65: {fileID: 292616934}
   - 23: {fileID: 292616933}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FarWallTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9227,6 +9227,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!1 &1326681211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1326681213}
+  - 114: {fileID: 1326681212}
+  m_Layer: 0
+  m_Name: HideObjects
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1326681212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1326681211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b5b8407c10164b962afe08aa34f03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1848791805}
+  camera: {fileID: 959698553}
+  hiddenObjects: []
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
+--- !u!4 &1326681213
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1326681211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.35571718, y: 2.15665102, z: 31.419239}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
 --- !u!1 &1332501147 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 3b8edfd5be47145308903e9d084aad03, type: 3}
@@ -9985,7 +10030,7 @@ GameObject:
   - 33: {fileID: 1452900092}
   - 64: {fileID: 1452900091}
   - 23: {fileID: 1452900090}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Picture
   m_TagString: Untagged
   m_Icon: {fileID: 0}
