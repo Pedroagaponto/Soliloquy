@@ -87,6 +87,7 @@ public class NarratorController : MonoBehaviour {
 		callLines = new List<CallLine>();
 		subLines = new List<SubLine>();
 		dialogClip = null;
+		subtitleText.text = "";
 	}
 
 	private void Parser(TextAsset textFile) {
