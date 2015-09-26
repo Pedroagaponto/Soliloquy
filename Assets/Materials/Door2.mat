@@ -2,16 +2,15 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Door2
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _PARALLAXMAP
-  m_LightmapFlags: 2
+  m_ShaderKeywords: _PARALLAXMAP
+  m_LightmapFlags: 6
   m_CustomRenderQueue: -1
-  stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -19,7 +18,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 8ad1bbb86eb02f348ad541dbfc6198ee, type: 3}
+          m_Texture: {fileID: 2800000, guid: 43d4f4cf9a1fb4dfd99767115829ccbf, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -40,7 +39,7 @@ Material:
         first:
           name: _ParallaxMap
         second:
-          m_Texture: {fileID: 2800000, guid: 676ad2da56ffdca46ba7ad87e89d5d22, type: 3}
+          m_Texture: {fileID: 2800000, guid: a3fc86fe913e9440385c2259e975719c, type: 3}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -88,6 +87,10 @@ Material:
     m_Floats:
       data:
         first:
+          name: _Cutoff
+        second: .5
+      data:
+        first:
           name: _SrcBlend
         second: 1
       data:
@@ -96,12 +99,8 @@ Material:
         second: 0
       data:
         first:
-          name: _Cutoff
-        second: .5
-      data:
-        first:
           name: _Parallax
-        second: .0199999996
+        second: .0362000018
       data:
         first:
           name: _ZWrite
@@ -128,29 +127,29 @@ Material:
         second: 0
       data:
         first:
+          name: _EmissionScaleUI
+        second: 0
+      data:
+        first:
           name: _Mode
         second: 0
       data:
         first:
           name: _Metallic
         second: 0
-      data:
-        first:
-          name: _EmissionScaleUI
-        second: 0
     m_Colors:
       data:
         first:
           name: _EmissionColor
-        second: {r: .867647052, g: .344376713, b: .15311417, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
           name: _Color
-        second: {r: .92549026, g: .407843173, b: .247058839, a: 1}
+        second: {r: .941176474, g: .421805173, b: .221453279, a: 1}
       data:
         first:
           name: _SpecColor
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+        second: {r: 0, g: 0, b: 0, a: 1}
       data:
         first:
           name: _EmissionColorUI
