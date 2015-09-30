@@ -12,10 +12,9 @@
 
 
 :: walk5
->animation-FirstRoom/Door-Open
 >narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.
 
-[[autointeract-SecondRoom/Floor-|Walk 6]]
+[[autointeract-FirstRoom/FarWall/Door-|Walk 6]]
 [[buttoninteract-FirstRoom/Toy-|Interact Toy]]
 
 
@@ -38,7 +37,7 @@
 :: thingtouch
 >narrator-Ooh, how interesting! Looks like a cute little toy, eh? Maybe their owner forgot about it. Oh well, not much use to us.
 
-[[Wait-8-|walk5]]
+[[Wait-2-|walk5]]
 [[buttoninteract-FirstRoom/Toy-|Interact Toy]]
 
 
@@ -94,20 +93,20 @@ Thank you.
 :: Walk 6
 >narrator-Do you ever wonder why we are here or what we are? Hahaha, such a silly thought really. All that matter is now right!?
 
-[[autointeract-SecondRoom/bureau-|Photo]]
+[[autointeract-SecondRoom/Bureau-|Photo]]
 
 
 :: Photo
 >narrator-Hey so, what's that over there?
 
-[[buttoninteract-SecondRoom/bureau-|Photo Interact]]
+[[buttoninteract-SecondRoom/Bureau-|Photo Interact]]
 [[Wait-6-|Photo Ignore]]
 
 
 :: Photo Interact
 >narrator-It's a photo. I feel like I know who those people are, but I can't quite put my finger on it. This is so strange. I feel weird seeing this photo of these people, I feel like they are really important to me and that they love me very much. *slight gasp* I can't shake this feeling that I've disappointed them. Maybe they don't love me... I really can't be sure anymore. I think we should go now.
 
-[[autointeract-SecondRoom/Door-|objects forced interaction]]
+[[autointeract-SecondRoom/FarWall/Door-|objects forced interaction]]
 
 
 :: objects forced interaction 3
@@ -117,7 +116,7 @@ Thank you.
 :: Walk 7
 >narrator-Sorry, I didn't mean to completely ignore you! I'm just still trying to figure out everything with that photo. Don't worry, you have my full and undivided attention from now on! You've been pretty cool so far, call me cheesy but I think meeting you is probably the best thing that's happened to me. Granted I can't seem to remember anything prior to meeting you but that's besides the point, haha!
 
-[[autointeract-ThirdRoom/Door-|Doors]]
+[[autointeract-ThirdRoom/FarWall/Door-|Doors]]
 
 
 :: Doors
@@ -126,8 +125,8 @@ Thank you.
 
 
 :: Hall room 2
->animation-ForthRoom/RightDoor-Open
->animation-ForthRoom/LeftDoor-Open
+>animation-ForthRoom/LeftWall/Door-Open
+>animation-ForthRoom/FarWall/Door-Open
 >narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.
 
 [[autointeract-FifthRoom-|Right Door]]
@@ -154,7 +153,7 @@ Thank you.
 >narrator-*slight giggle*
 
 [[buttoninteract-FirstRoom/Toy-|Toy giggle]]
-[[autointeract-SecondRoom/Floor-|Walk 6]]
+[[autointeract-FirstRoom/FarWall/Door-|Walk 6]]
 
 
 :: Photo Interact 3
@@ -178,10 +177,10 @@ Thank you.
 
 
 :: Interact Toy Thoughts
->animation-FirstRoom/Door-Open
 >narrator-You know... When I think about it, I'm actually not too sure if I've ever played before. The toy seemed like it would be fun to play with. I wish I could do that, you're pretty lucky.
 
 [[buttoninteract-FirstRoom/Toy-|Toy giggle]]
+[[autointeract-FirstRoom/FarWall/Door-|Walk 6]]
 
 
 :: walk2
@@ -237,13 +236,13 @@ Goodbye.
 :: Photo Ignore
 >narrator-No, please! I feel like that thing is important somehow! Can you go back?
 
-[[buttoninteract-SecondRoom/bureau-|Photo Interact]]
+[[buttoninteract-SecondRoom/Bureau-|Photo Interact]]
 [[Wait-6-|Photo Ignore 2]]
 
 
 :: Photo Ignore 2
 >narrator-Hey, please!? Why are you being like this all of a sudden? Alright, forget the photo! I guess it doesn't matter. *sighs*
-[[autointeract-SecondRoom/Door-|Doors 2]]
+[[autointeract-SecondRoom/FarWall/Door-|Doors 2]]
 
 
 :: Accept
@@ -276,8 +275,8 @@ Goodbye.
 :: Doors 2
 >narrator-Hm?
 
-[[buttoninteract-ForthRoom/RightDoor-|hall room3]]
-[[buttoninteract-ForthRoom/LeftDoor-|hall room3]]
+[[buttoninteract-ForthRoom/FarWall/RightDoor-|hall room3]]
+[[buttoninteract-ForthRoom/FarWall/LeftDoor-|hall room3]]
 
 
 :: objects forced interaction
@@ -291,7 +290,7 @@ Goodbye.
 
 
 :: hall room4
->animation-ForthRoom/RightDoor-explodes
+>animation-ForthRoom/FarWall/Door-explodes
 >narrator-I... didn't expect that to happen. Well... there you go.
 
 [[autointeract-FifthRoom-|continue2]]
@@ -324,11 +323,10 @@ Goodbye.
 
 
 :: walk4
->animation-FirstRoom/Door-Open
 >narrator-Oh... 
 
 [[buttoninteract-FirstRoom/Toy-|Toy not interested]]
-[[autointeract-SecondRoom/Floor-|please]]
+[[autointeract-FirstRoom/FarWall/Door-|please]]
 
 
 :: Please 2
@@ -359,7 +357,7 @@ Goodbye.
 :: mirror explosion
 >narrator-*Narrator mumbles things*
 
-[[autointeract-SecondRoom/Mirror-|mirror]]
+[[autointeract-SecondRoom/FarWall/Mirror-|mirror]]
 
 
 :: stop2
@@ -411,7 +409,7 @@ We can just be happy.
 :: mirror2
 >narrator-That was really strange huh? Do you think this place is haunted?\n(vase shatters)
 
-[[autointeract-ThirdRoom/Door-|continuing]]
+[[autointeract-ThirdRoom/FarWall/Door-|continuing]]
 
 
 :: continuing
@@ -420,10 +418,9 @@ We can just be happy.
 
 
 :: Toy not interested
->animation-FirstRoom/Door-Open
 >narrator-It's not interesting
 
-[[autointeract-SecondRoom/Floor-|please]]
+[[autointeract-FirstRoom/FarWall/Door-|please]]\
 
 
 :: please
@@ -499,7 +496,7 @@ I think things are going to be okay.
 :: mirror interact
 >narrator-I don't want you to get hurt.
 
-[[autointeract-SecondRoom/Door-|mirror2]]
+[[autointeract-SecondRoom/FarWall/Door-|mirror2]]
 
 
 :: Don't Worry

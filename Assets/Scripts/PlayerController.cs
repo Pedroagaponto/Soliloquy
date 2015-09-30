@@ -2,7 +2,7 @@
 
 public class PlayerController : MonoBehaviour
 {
-	public float speed = 6f;
+	public float speed = 5f;
 	public float smoothing = 8f;
 	
 	private Vector3 movement;

@@ -2701,15 +2701,15 @@ g14
 I00
 sg15
 (lp827
-F675.2500000000002
-aF104.24999999999984
+F676.5000000000002
+aF106.74999999999984
 asg17
 (itiddlywiki
 Tiddler
 p828
 (dp829
 g21
-V>narrator-Ooh, how interesting! Looks like a cute little toy, eh? Maybe their owner forgot about it. Oh well, not much use to us.\u000a\u000a[[Wait-8-|walk5]]\u000a[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
+V>narrator-Ooh, how interesting! Looks like a cute little toy, eh? Maybe their owner forgot about it. Oh well, not much use to us.\u000a\u000a[[Wait-2-|walk5]]\u000a[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
 p830
 sg23
 Vthingtouch
@@ -2718,12 +2718,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I12
-I12
-I53
-I3
-I260
+I30
+I19
+I34
+I55
+I2
+I273
 I0
 tp832
 (dp833
@@ -2751,7 +2751,7 @@ g14
 I00
 sg15
 (lp842
-F733.0833333333328
+F734.3333333333328
 aF431.66666666666765
 asg17
 (itiddlywiki
@@ -2759,7 +2759,7 @@ Tiddler
 p843
 (dp844
 g21
-V>animation-FirstRoom/Door-Open\u000a>narrator-Oh... \u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy not interested]]\u000a[[autointeract-SecondRoom/Floor-|please]]
+V>narrator-Oh... \u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy not interested]]\u000a[[autointeract-FirstRoom/FarWall/Door-|please]]
 p845
 sg23
 Vwalk4
@@ -2769,9 +2769,9 @@ g26
 ((I2015
 I9
 I30
-I13
-I37
-I36
+I18
+I48
+I11
 I2
 I273
 I0
@@ -2901,15 +2901,15 @@ g14
 I01
 sg15
 (lp887
-F822.0000000000011
-aF93.74999999999979
+F818.2500000000011
+aF92.49999999999979
 asg17
 (itiddlywiki
 Tiddler
 p888
 (dp889
 g21
-V>animation-FirstRoom/Door-Open\u000a>narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.\u000a\u000a[[autointeract-SecondRoom/Floor-|Walk 6]]\u000a[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
+V>narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.\u000a\u000a[[autointeract-FirstRoom/FarWall/Door-|Walk 6]]\u000a[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
 p890
 sg23
 Vwalk5
@@ -2919,9 +2919,9 @@ g26
 ((I2015
 I9
 I30
-I13
-I45
-I55
+I18
+I47
+I37
 I2
 I273
 I0
@@ -2959,7 +2959,7 @@ Tiddler
 p903
 (dp904
 g21
-V>narrator-That was really strange huh? Do you think this place is haunted?\u005cn(vase shatters)\u000a\u000a[[autointeract-ThirdRoom/Door-|continuing]]
+V>narrator-That was really strange huh? Do you think this place is haunted?\u005cn(vase shatters)\u000a\u000a[[autointeract-ThirdRoom/FarWall/Door-|continuing]]
 p905
 sg23
 Vmirror2
@@ -2968,12 +2968,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I15
-I9
-I26
-I3
-I260
+I30
+I18
+I52
+I43
+I2
+I273
 I0
 tp907
 (dp908
@@ -3059,7 +3059,7 @@ Tiddler
 p933
 (dp934
 g21
-V>narrator-Do you ever wonder why we are here or what we are? Hahaha, such a silly thought really. All that matter is now right!?\u000a\u000a[[autointeract-SecondRoom/bureau-|Photo]]
+V>narrator-Do you ever wonder why we are here or what we are? Hahaha, such a silly thought really. All that matter is now right!?\u000a\u000a[[autointeract-SecondRoom/Bureau-|Photo]]
 p935
 sg23
 VWalk 6
@@ -3068,12 +3068,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I11
-I17
-I42
-I3
-I260
+I30
+I18
+I49
+I41
+I2
+I273
 I0
 tp937
 (dp938
@@ -3159,7 +3159,7 @@ Tiddler
 p963
 (dp964
 g21
-V>animation-FirstRoom/Door-Open\u000a>narrator-You know... When I think about it, I'm actually not too sure if I've ever played before. The toy seemed like it would be fun to play with. I wish I could do that, you're pretty lucky.\u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy giggle]]
+V>narrator-You know... When I think about it, I'm actually not too sure if I've ever played before. The toy seemed like it would be fun to play with. I wish I could do that, you're pretty lucky.\u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy giggle]]\u000a[[autointeract-FirstRoom/FarWall/Door-|Walk 6]]
 p965
 sg23
 VInteract Toy Thoughts
@@ -3169,9 +3169,9 @@ g26
 ((I2015
 I9
 I30
-I13
-I33
-I49
+I19
+I8
+I52
 I2
 I273
 I0
@@ -3209,7 +3209,7 @@ Tiddler
 p978
 (dp979
 g21
-V>narrator-Hey so, what's that over there?\u000a\u000a[[buttoninteract-SecondRoom/bureau-|Photo Interact]]\u000a[[Wait-6-|Photo Ignore]]
+V>narrator-Hey so, what's that over there?\u000a\u000a[[buttoninteract-SecondRoom/Bureau-|Photo Interact]]\u000a[[Wait-6-|Photo Ignore]]
 p980
 sg23
 VPhoto
@@ -3218,12 +3218,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I11
-I17
-I51
-I3
-I260
+I30
+I18
+I49
+I56
+I2
+I273
 I0
 tp982
 (dp983
@@ -3259,7 +3259,7 @@ Tiddler
 p993
 (dp994
 g21
-V>narrator-It's a photo. I feel like I know who those people are, but I can't quite put my finger on it. This is so strange. I feel weird seeing this photo of these people, I feel like they are really important to me and that they love me very much. *slight gasp* I can't shake this feeling that I've disappointed them. Maybe they don't love me... I really can't be sure anymore. I think we should go now.\u000a\u000a[[autointeract-SecondRoom/Door-|objects forced interaction]]
+V>narrator-It's a photo. I feel like I know who those people are, but I can't quite put my finger on it. This is so strange. I feel weird seeing this photo of these people, I feel like they are really important to me and that they love me very much. *slight gasp* I can't shake this feeling that I've disappointed them. Maybe they don't love me... I really can't be sure anymore. I think we should go now.\u000a\u000a[[autointeract-SecondRoom/FarWall/Door-|objects forced interaction]]
 p995
 sg23
 VPhoto Interact
@@ -3268,12 +3268,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I10
-I49
+I30
+I18
+I50
+I7
 I2
-I3
-I260
+I273
 I0
 tp997
 (dp998
@@ -3309,7 +3309,7 @@ Tiddler
 p1008
 (dp1009
 g21
-V>narrator-No, please! I feel like that thing is important somehow! Can you go back?\u000a\u000a[[buttoninteract-SecondRoom/bureau-|Photo Interact]]\u000a[[Wait-6-|Photo Ignore 2]]
+V>narrator-No, please! I feel like that thing is important somehow! Can you go back?\u000a\u000a[[buttoninteract-SecondRoom/Bureau-|Photo Interact]]\u000a[[Wait-6-|Photo Ignore 2]]
 p1010
 sg23
 VPhoto Ignore
@@ -3318,12 +3318,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I12
-I9
+I30
 I18
-I3
-I260
+I50
+I14
+I2
+I273
 I0
 tp1012
 (dp1013
@@ -3359,7 +3359,7 @@ Tiddler
 p1023
 (dp1024
 g21
-V>narrator-Hey, please!? Why are you being like this all of a sudden? Alright, forget the photo! I guess it doesn't matter. *sighs*\u000a[[autointeract-SecondRoom/Door-|Doors 2]]
+V>narrator-Hey, please!? Why are you being like this all of a sudden? Alright, forget the photo! I guess it doesn't matter. *sighs*\u000a[[autointeract-SecondRoom/FarWall/Door-|Doors 2]]
 p1025
 sg23
 VPhoto Ignore 2
@@ -3368,12 +3368,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I10
-I49
-I15
-I3
-I260
+I30
+I18
+I50
+I23
+I2
+I273
 I0
 tp1027
 (dp1028
@@ -3409,7 +3409,7 @@ Tiddler
 p1038
 (dp1039
 g21
-V>narrator-Sorry, I didn't mean to completely ignore you! I'm just still trying to figure out everything with that photo. Don't worry, you have my full and undivided attention from now on! You've been pretty cool so far, call me cheesy but I think meeting you is probably the best thing that's happened to me. Granted I can't seem to remember anything prior to meeting you but that's besides the point, haha!\u000a\u000a[[autointeract-ThirdRoom/Door-|Doors]]
+V>narrator-Sorry, I didn't mean to completely ignore you! I'm just still trying to figure out everything with that photo. Don't worry, you have my full and undivided attention from now on! You've been pretty cool so far, call me cheesy but I think meeting you is probably the best thing that's happened to me. Granted I can't seem to remember anything prior to meeting you but that's besides the point, haha!\u000a\u000a[[autointeract-ThirdRoom/FarWall/Door-|Doors]]
 p1040
 sg23
 VWalk 7
@@ -3418,12 +3418,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I10
-I49
-I57
-I3
-I260
+I30
+I18
+I51
+I30
+I2
+I273
 I0
 tp1042
 (dp1043
@@ -3451,7 +3451,7 @@ g14
 I00
 sg15
 (lp1052
-F2370.916666666666
+F2369.666666666666
 aF203.33333333333312
 asg17
 (itiddlywiki
@@ -3509,7 +3509,7 @@ Tiddler
 p1068
 (dp1069
 g21
-V>narrator-Hm?\u000a\u000a[[buttoninteract-ForthRoom/RightDoor-|hall room3]]\u000a[[buttoninteract-ForthRoom/LeftDoor-|hall room3]]
+V>narrator-Hm?\u000a\u000a[[buttoninteract-ForthRoom/FarWall/RightDoor-|hall room3]]\u000a[[buttoninteract-ForthRoom/FarWall/LeftDoor-|hall room3]]
 p1070
 sg23
 VDoors 2
@@ -3518,12 +3518,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I10
-I50
-I5
-I3
-I260
+I30
+I18
+I52
+I7
+I2
+I273
 I0
 tp1072
 (dp1073
@@ -3559,7 +3559,7 @@ Tiddler
 p1083
 (dp1084
 g21
-V>narrator-I don't want you to get hurt.\u000a\u000a[[autointeract-SecondRoom/Door-|mirror2]]
+V>narrator-I don't want you to get hurt.\u000a\u000a[[autointeract-SecondRoom/FarWall/Door-|mirror2]]
 p1085
 sg23
 Vmirror interact
@@ -3568,12 +3568,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I10
-I49
-I38
-I3
-I260
+I30
+I18
+I51
+I2
+I2
+I273
 I0
 tp1087
 (dp1088
@@ -3651,8 +3651,8 @@ g14
 I00
 sg15
 (lp1112
-F1345.7500000000005
-aF484.5833333333332
+F1304.5000000000005
+aF478.3333333333332
 asg17
 (itiddlywiki
 Tiddler
@@ -3701,15 +3701,15 @@ g14
 I00
 sg15
 (lp1127
-F735.3333333333333
-aF602.5000000000001
+F737.8333333333333
+aF603.7500000000001
 asg17
 (itiddlywiki
 Tiddler
 p1128
 (dp1129
 g21
-V>animation-FirstRoom/Door-Open\u000a>narrator-It's not interesting\u000a\u000a[[autointeract-SecondRoom/Floor-|please]]
+V>narrator-It's not interesting\u000a\u000a[[autointeract-FirstRoom/FarWall/Door-|please]]\u005c
 p1130
 sg23
 VToy not interested
@@ -3719,9 +3719,9 @@ g26
 ((I2015
 I9
 I30
-I13
-I38
-I10
+I19
+I9
+I11
 I2
 I273
 I0
@@ -3751,7 +3751,7 @@ g14
 I00
 sg15
 (lp1142
-F1000.3333333333325
+F1010.3333333333325
 aF233.33333333333317
 asg17
 (itiddlywiki
@@ -3759,7 +3759,7 @@ Tiddler
 p1143
 (dp1144
 g21
-V>narrator-*slight giggle*\u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy giggle]]\u000a[[autointeract-SecondRoom/Floor-|Walk 6]]
+V>narrator-*slight giggle*\u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy giggle]]\u000a[[autointeract-FirstRoom/FarWall/Door-|Walk 6]]
 p1145
 sg23
 VToy giggle
@@ -3769,9 +3769,9 @@ g26
 ((I2015
 I9
 I30
-I13
-I34
-I48
+I18
+I47
+I53
 I2
 I273
 I0
@@ -3851,7 +3851,7 @@ g14
 I00
 sg15
 (lp1172
-F898.3333333333335
+F893.3333333333335
 aF413.33333333333366
 asg17
 (itiddlywiki
@@ -3909,7 +3909,7 @@ Tiddler
 p1188
 (dp1189
 g21
-V>narrator-*Narrator mumbles things*\u000a\u000a[[autointeract-SecondRoom/Mirror-|mirror]]
+V>narrator-*Narrator mumbles things*\u000a\u000a[[autointeract-SecondRoom/FarWall/Mirror-|mirror]]
 p1190
 sg23
 Vmirror explosion
@@ -3918,12 +3918,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I10
-I49
-I20
-I3
-I260
+I30
+I18
+I50
+I47
+I2
+I273
 I0
 tp1192
 (dp1193
@@ -4102,7 +4102,7 @@ I00
 sg15
 (lp1247
 F2547.833333333326
-aF207.5000000000001
+aF206.2500000000001
 asg17
 (itiddlywiki
 Tiddler
@@ -4159,7 +4159,7 @@ Tiddler
 p1263
 (dp1264
 g21
-V>animation-ForthRoom/RightDoor-Open\u000a>animation-ForthRoom/LeftDoor-Open\u000a>narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.\u000a\u000a[[autointeract-FifthRoom-|Right Door]]\u000a//[[autointeract-SixthRoom-|Left Door]]\u000a\u000a
+V>animation-ForthRoom/LeftWall/Door-Open\u000a>animation-ForthRoom/FarWall/Door-Open\u000a>narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.\u000a\u000a[[autointeract-FifthRoom-|Right Door]]\u000a//[[autointeract-SixthRoom-|Left Door]]\u000a\u000a
 p1265
 sg23
 VHall room 2
@@ -4168,12 +4168,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I13
-I50
-I39
-I3
-I260
+I30
+I18
+I58
+I34
+I2
+I273
 I0
 tp1267
 (dp1268
@@ -4259,7 +4259,7 @@ Tiddler
 p1293
 (dp1294
 g21
-V>animation-ForthRoom/RightDoor-explodes\u000a>narrator-I... didn't expect that to happen. Well... there you go.\u000a\u000a[[autointeract-FifthRoom-|continue2]]
+V>animation-ForthRoom/FarWall/Door-explodes\u000a>narrator-I... didn't expect that to happen. Well... there you go.\u000a\u000a[[autointeract-FifthRoom-|continue2]]
 p1295
 sg23
 Vhall room4
@@ -4268,12 +4268,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I11
-I5
+I30
+I18
+I58
+I54
 I2
-I3
-I260
+I273
 I0
 tp1297
 (dp1298
