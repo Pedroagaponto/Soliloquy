@@ -12,10 +12,11 @@
 
 
 :: walk5
+>animation-FirstRoom/Door-Open
 >narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.
 
+[[autointeract-SecondRoom/Floor-|Walk 6]]
 [[buttoninteract-FirstRoom/Toy-|Interact Toy]]
-[[autointeract-FirstRoom/Door-|Walk 6]]
 
 
 :: Coming Out Ending Frustrated 2
@@ -152,7 +153,8 @@ Thank you.
 :: Toy giggle
 >narrator-*slight giggle*
 
-[[autointeract-FirstRoom/Door-|Walk 6]]
+[[buttoninteract-FirstRoom/Toy-|Toy giggle]]
+[[autointeract-SecondRoom/Floor-|Walk 6]]
 
 
 :: Photo Interact 3
@@ -176,9 +178,9 @@ Thank you.
 
 
 :: Interact Toy Thoughts
+>animation-FirstRoom/Door-Open
 >narrator-You know... When I think about it, I'm actually not too sure if I've ever played before. The toy seemed like it would be fun to play with. I wish I could do that, you're pretty lucky.
 
-[[autointeract-FirstRoom/Door-|Walk 6]]
 [[buttoninteract-FirstRoom/Toy-|Toy giggle]]
 
 
@@ -322,10 +324,11 @@ Goodbye.
 
 
 :: walk4
+>animation-FirstRoom/Door-Open
 >narrator-Oh... 
 
-[[Autointeract-FirstRoom/Door-|please]]
 [[buttoninteract-FirstRoom/Toy-|Toy not interested]]
+[[autointeract-SecondRoom/Floor-|please]]
 
 
 :: Please 2
@@ -417,9 +420,10 @@ We can just be happy.
 
 
 :: Toy not interested
+>animation-FirstRoom/Door-Open
 >narrator-It's not interesting
 
-[[autointeract-FirstRoom/Door-|please]]
+[[autointeract-SecondRoom/Floor-|please]]
 
 
 :: please

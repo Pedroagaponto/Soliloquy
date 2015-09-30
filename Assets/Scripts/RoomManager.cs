@@ -21,9 +21,8 @@ public class RoomManager : MonoBehaviour {
 
 	void ChangingAllRenderers(bool renderState) 
 	{
-		List<Renderer> rendererList;
-		rendererList = new List<Renderer>(transform.parent.gameObject.GetComponentsInChildren<Renderer>());
-		foreach (Renderer render in rendererList)
+		GameObject room = transform.parent.gameObject;
+		foreach (Renderer render in room.GetComponentsInChildren<Renderer>())
 		{
 			render.enabled = renderState;
 		}

@@ -2601,8 +2601,8 @@ g14
 I00
 sg15
 (lp797
-F516.3333333333348
-aF105.16666666666657
+F518.3333333333348
+aF106.16666666666657
 asg17
 (itiddlywiki
 Tiddler
@@ -2751,15 +2751,15 @@ g14
 I00
 sg15
 (lp842
-F734.3333333333328
-aF427.91666666666765
+F733.0833333333328
+aF431.66666666666765
 asg17
 (itiddlywiki
 Tiddler
 p843
 (dp844
 g21
-V>narrator-Oh... \u000a\u000a[[Autointeract-FirstRoom/Door-|please]]\u000a[[buttoninteract-FirstRoom/Toy-|Toy not interested]]
+V>animation-FirstRoom/Door-Open\u000a>narrator-Oh... \u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy not interested]]\u000a[[autointeract-SecondRoom/Floor-|please]]
 p845
 sg23
 Vwalk4
@@ -2768,12 +2768,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I11
-I15
-I29
-I3
-I260
+I30
+I13
+I37
+I36
+I2
+I273
 I0
 tp847
 (dp848
@@ -2898,7 +2898,7 @@ tp884
 Rp885
 sbsa(dp886
 g14
-I00
+I01
 sg15
 (lp887
 F822.0000000000011
@@ -2909,7 +2909,7 @@ Tiddler
 p888
 (dp889
 g21
-V>narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.\u000a\u000a[[buttoninteract-FirstRoom/Toy-|Interact Toy]]\u000a[[autointeract-FirstRoom/Door-|Walk 6]]
+V>animation-FirstRoom/Door-Open\u000a>narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.\u000a\u000a[[autointeract-SecondRoom/Floor-|Walk 6]]\u000a[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
 p890
 sg23
 Vwalk5
@@ -2918,12 +2918,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I10
-I48
-I22
-I3
-I260
+I30
+I13
+I45
+I55
+I2
+I273
 I0
 tp892
 (dp893
@@ -3159,7 +3159,7 @@ Tiddler
 p963
 (dp964
 g21
-V>narrator-You know... When I think about it, I'm actually not too sure if I've ever played before. The toy seemed like it would be fun to play with. I wish I could do that, you're pretty lucky.\u000a\u000a[[autointeract-FirstRoom/Door-|Walk 6]]\u000a[[buttoninteract-FirstRoom/Toy-|Toy giggle]]
+V>animation-FirstRoom/Door-Open\u000a>narrator-You know... When I think about it, I'm actually not too sure if I've ever played before. The toy seemed like it would be fun to play with. I wish I could do that, you're pretty lucky.\u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy giggle]]
 p965
 sg23
 VInteract Toy Thoughts
@@ -3168,12 +3168,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I11
-I15
-I5
-I3
-I260
+I30
+I13
+I33
+I49
+I2
+I273
 I0
 tp967
 (dp968
@@ -3709,7 +3709,7 @@ Tiddler
 p1128
 (dp1129
 g21
-V>narrator-It's not interesting\u000a\u000a[[autointeract-FirstRoom/Door-|please]]
+V>animation-FirstRoom/Door-Open\u000a>narrator-It's not interesting\u000a\u000a[[autointeract-SecondRoom/Floor-|please]]
 p1130
 sg23
 VToy not interested
@@ -3718,12 +3718,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I11
-I15
-I17
-I3
-I260
+I30
+I13
+I38
+I10
+I2
+I273
 I0
 tp1132
 (dp1133
@@ -3759,7 +3759,7 @@ Tiddler
 p1143
 (dp1144
 g21
-V>narrator-*slight giggle*\u000a\u000a[[autointeract-FirstRoom/Door-|Walk 6]]
+V>narrator-*slight giggle*\u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy giggle]]\u000a[[autointeract-SecondRoom/Floor-|Walk 6]]
 p1145
 sg23
 VToy giggle
@@ -3768,12 +3768,12 @@ sg25
 g26
 ((I2015
 I9
-I17
-I15
-I16
-I21
-I3
-I260
+I30
+I13
+I34
+I48
+I2
+I273
 I0
 tp1147
 (dp1148

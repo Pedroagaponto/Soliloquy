@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FifthRoomInteraction : MonoBehaviour, MyObjectTrigger {
+public class RoomInteraction : MonoBehaviour, MyObjectTrigger {
 	private int triggerId = -1;
 	private bool activated = false;
 	
