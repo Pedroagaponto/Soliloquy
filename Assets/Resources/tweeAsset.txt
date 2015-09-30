@@ -31,7 +31,7 @@
 >narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?
 
 [[buttoninteract-FirstRoom/Toy-|thingtouch]]
-[[Wait-20-|auxnode]]
+[[Wait-10-|auxnode]]
 
 
 :: thingtouch
@@ -152,7 +152,6 @@ Thank you.
 :: Toy giggle
 >narrator-*slight giggle*
 
-[[buttoninteract-FirstRoom/Toy-|Toy giggle]]
 [[autointeract-FirstRoom/Door-|Walk 6]]
 
 
@@ -186,7 +185,7 @@ Thank you.
 :: walk2
 >narrator-Uhm... well, ok! Eager to get going, I see. All good.
 
-[[Wait-6-|walk3]]
+[[Wait-4-|walk3]]
 
 
 :: Right Door
@@ -313,7 +312,7 @@ Goodbye.
 >narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.
 
 [[actionbutton-|stop2]]
-[[Wait-10-|walk4]]
+[[Wait-4-|walk4]]
 
 
 :: Too late
@@ -364,7 +363,7 @@ Goodbye.
 >narrator-Hey, so umm... truth is I haven't spoken to anyone in a while and I was pretty excited to see you earlier. I think it would be pretty neat if we could work together on this, we could be like a team! That sounds pretty fun right?
 
 [[actionbutton-|interact]]
-[[wait-10-|walk4]]
+[[wait-5-|walk4]]
 
 
 :: Restart End
@@ -407,15 +406,13 @@ We can just be happy.
 
 
 :: mirror2
->narrator-That was really strange huh? Do you think this place is haunted?
+>narrator-That was really strange huh? Do you think this place is haunted?\n(vase shatters)
 
-[[autointeract-ThirdRoom/Door-|continue]]
+[[autointeract-ThirdRoom/Door-|continuing]]
 
 
 :: continuing
-//Upon approaching a lamp on a table, the lamp sparks and strikes the character. The room goes dark//
-
->narrator-Oh, my God! Oh no!
+>narrator-Oh, my God! Oh no! (The room goes dark)
 [[wait-2-|continue2]]
 
 

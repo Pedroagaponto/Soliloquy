@@ -2559,7 +2559,7 @@ Tiddler
 p783
 (dp784
 g21
-V>narrator-Uhm... well, ok! Eager to get going, I see. All good.\u000a\u000a[[Wait-6-|walk3]]
+V>narrator-Uhm... well, ok! Eager to get going, I see. All good.\u000a\u000a[[Wait-4-|walk3]]
 p785
 sg23
 Vwalk2
@@ -2569,9 +2569,9 @@ g26
 ((I2015
 I9
 I17
-I12
-I11
-I23
+I14
+I57
+I41
 I3
 I260
 I0
@@ -2609,7 +2609,7 @@ Tiddler
 p798
 (dp799
 g21
-V>narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?\u000a\u000a[[buttoninteract-FirstRoom/Toy-|thingtouch]]\u000a[[Wait-20-|auxnode]]
+V>narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?\u000a\u000a[[buttoninteract-FirstRoom/Toy-|thingtouch]]\u000a[[Wait-10-|auxnode]]
 p800
 sg23
 Vinteract
@@ -2619,9 +2619,9 @@ g26
 ((I2015
 I9
 I17
-I12
 I14
-I31
+I57
+I6
 I3
 I260
 I0
@@ -2651,15 +2651,15 @@ g14
 I00
 sg15
 (lp812
-F403.9999999999993
-aF426.33333333333417
+F401.4999999999993
+aF421.33333333333417
 asg17
 (itiddlywiki
 Tiddler
 p813
 (dp814
 g21
-V>narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.\u000a\u000a[[actionbutton-|stop2]]\u000a[[Wait-10-|walk4]]
+V>narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.\u000a\u000a[[actionbutton-|stop2]]\u000a[[Wait-4-|walk4]]
 p815
 sg23
 Vwalk3
@@ -2669,9 +2669,9 @@ g26
 ((I2015
 I9
 I17
-I12
-I13
-I12
+I14
+I57
+I47
 I3
 I260
 I0
@@ -2809,7 +2809,7 @@ Tiddler
 p858
 (dp859
 g21
-V>narrator-Hey, so umm... truth is I haven't spoken to anyone in a while and I was pretty excited to see you earlier. I think it would be pretty neat if we could work together on this, we could be like a team! That sounds pretty fun right?\u000a\u000a[[actionbutton-|interact]]\u000a[[wait-10-|walk4]]
+V>narrator-Hey, so umm... truth is I haven't spoken to anyone in a while and I was pretty excited to see you earlier. I think it would be pretty neat if we could work together on this, we could be like a team! That sounds pretty fun right?\u000a\u000a[[actionbutton-|interact]]\u000a[[wait-5-|walk4]]
 p860
 sg23
 Vstop2
@@ -2819,9 +2819,9 @@ g26
 ((I2015
 I9
 I17
-I12
-I13
-I25
+I14
+I57
+I58
 I3
 I260
 I0
@@ -2959,7 +2959,7 @@ Tiddler
 p903
 (dp904
 g21
-V>narrator-That was really strange huh? Do you think this place is haunted?\u000a\u000a[[autointeract-ThirdRoom/Door-|continue]]
+V>narrator-That was really strange huh? Do you think this place is haunted?\u005cn(vase shatters)\u000a\u000a[[autointeract-ThirdRoom/Door-|continuing]]
 p905
 sg23
 Vmirror2
@@ -2969,9 +2969,9 @@ g26
 ((I2015
 I9
 I17
-I10
-I49
-I49
+I15
+I9
+I26
 I3
 I260
 I0
@@ -3759,7 +3759,7 @@ Tiddler
 p1143
 (dp1144
 g21
-V>narrator-*slight giggle*\u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy giggle]]\u000a[[autointeract-FirstRoom/Door-|Walk 6]]
+V>narrator-*slight giggle*\u000a\u000a[[autointeract-FirstRoom/Door-|Walk 6]]
 p1145
 sg23
 VToy giggle
@@ -3769,9 +3769,9 @@ g26
 ((I2015
 I9
 I17
-I11
 I15
-I35
+I16
+I21
 I3
 I260
 I0
@@ -3998,7 +3998,7 @@ tp1214
 Rp1215
 sbsa(dp1216
 g14
-I01
+I00
 sg15
 (lp1217
 F2056.666666666665
@@ -4309,7 +4309,7 @@ Tiddler
 p1308
 (dp1309
 g21
-V//Upon approaching a lamp on a table, the lamp sparks and strikes the character. The room goes dark//\u000a\u000a>narrator-Oh, my God! Oh no!\u000a[[wait-2-|continue2]]
+V>narrator-Oh, my God! Oh no! (The room goes dark)\u000a[[wait-2-|continue2]]
 p1310
 sg23
 Vcontinuing
@@ -4319,9 +4319,9 @@ g26
 ((I2015
 I9
 I17
-I10
-I50
-I23
+I15
+I9
+I53
 I3
 I260
 I0
