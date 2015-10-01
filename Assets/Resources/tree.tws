@@ -2398,7 +2398,7 @@ tp734
 Rp735
 sbsa(dp736
 g14
-I00
+I01
 sg15
 (lp737
 F160.2500000000002
@@ -2409,7 +2409,7 @@ Tiddler
 p738
 (dp739
 g21
-V>narrator-Hello?\u000a[[actionbutton-|stop]]\u000a[[wait-6-|walk]]
+V>narrator-Hello?\u000a[[actionbutton-|stop]]\u000a[[wait-5-|walk]]
 p740
 sg23
 VStart
@@ -2417,13 +2417,13 @@ p741
 sg25
 g26
 ((I2015
-I9
-I17
 I10
-I46
-I25
+I1
+I11
+I54
+I36
 I3
-I260
+I274
 I0
 tp742
 (dp743
@@ -2609,7 +2609,7 @@ Tiddler
 p798
 (dp799
 g21
-V>narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?\u000a\u000a[[buttoninteract-FirstRoom/Toy-|thingtouch]]\u000a[[Wait-10-|auxnode]]
+V>narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?\u000a\u000a[[buttoninteract-FirstRoom/Toy-|thingtouch]]\u000a[[Wait-15-|auxnode]]
 p800
 sg23
 Vinteract
@@ -2617,13 +2617,13 @@ p801
 sg25
 g26
 ((I2015
+I10
+I1
 I9
-I17
-I14
-I57
 I6
+I57
 I3
-I260
+I274
 I0
 tp802
 (dp803
@@ -2898,10 +2898,10 @@ tp884
 Rp885
 sbsa(dp886
 g14
-I01
+I00
 sg15
 (lp887
-F818.2500000000011
+F814.5000000000011
 aF92.49999999999979
 asg17
 (itiddlywiki
@@ -4159,7 +4159,7 @@ Tiddler
 p1263
 (dp1264
 g21
-V>animation-ForthRoom/LeftWall/Door-Open\u000a>animation-ForthRoom/FarWall/Door-Open\u000a>narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.\u000a\u000a[[autointeract-FifthRoom-|Right Door]]\u000a//[[autointeract-SixthRoom-|Left Door]]\u000a\u000a
+V>animation-ForthRoom/LeftWall/Door-Open\u000a>animation-ForthRoom/FarWall/Door-Open\u000a>narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.\u000a\u000a[[autointeract-FifthRoom/Floor-|Right Door]]\u000a//[[autointeract-SixthRoom-|Left Door]]\u000a\u000a
 p1265
 sg23
 VHall room 2
@@ -4167,13 +4167,13 @@ p1266
 sg25
 g26
 ((I2015
-I9
-I30
-I18
-I58
-I34
-I2
-I273
+I10
+I1
+I11
+I49
+I32
+I3
+I274
 I0
 tp1267
 (dp1268

@@ -73,7 +73,7 @@ public class BehaviourTree : MonoBehaviour {
 		newTime = System.DateTime.Now.Second;
 		for(int i = 0; i < behaviour.Triggers.Count; i++) {
 			if (behaviour.Triggers[i] == (int) Trigger.wait
-			    && newTime - oldTime > behaviour.WaitTime) {
+			    && newTime - oldTime >= behaviour.WaitTime) {
 				TriggerNextChoice(i);
 				break;
 			}

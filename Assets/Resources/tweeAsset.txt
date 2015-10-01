@@ -31,7 +31,7 @@
 >narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?
 
 [[buttoninteract-FirstRoom/Toy-|thingtouch]]
-[[Wait-10-|auxnode]]
+[[Wait-15-|auxnode]]
 
 
 :: thingtouch
@@ -129,7 +129,7 @@ Thank you.
 >animation-ForthRoom/FarWall/Door-Open
 >narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.
 
-[[autointeract-FifthRoom-|Right Door]]
+[[autointeract-FifthRoom/Floor-|Right Door]]
 //[[autointeract-SixthRoom-|Left Door]]
 
 

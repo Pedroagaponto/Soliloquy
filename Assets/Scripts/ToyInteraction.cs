@@ -1,18 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class ToyInteraction : MonoBehaviour, MyObjectTrigger{
 	private int triggerId = -1;
 	private bool activated = false, insideCollider = false;
 
+	void Awake() {
+		GetComponent<EllipsoidParticleEmitter>().enabled = false;
+		GetComponent<ParticleRenderer>().enabled = false;
+	}
+
 	public void ActivateTrigger(int i) {
 		triggerId = i;
 		activated = true;
+		GetComponent<EllipsoidParticleEmitter>().enabled = true;
+		GetComponent<ParticleRenderer>().enabled = true;
 	}
 
 	public void DeactivateTrigger() {
 		triggerId = -1;
 		activated = false;
+		GetComponent<EllipsoidParticleEmitter>().enabled = false;
+		GetComponent<ParticleRenderer>().enabled = false;
 	}
 
 	void OnTriggerEnter(Collider other)	{
@@ -24,10 +34,10 @@ public class ToyInteraction : MonoBehaviour, MyObjectTrigger{
 	}
 
 	void Update() {
-		if (activated && Input.GetButtonDown("Interact") && insideCollider) {
-			GameObject behaviourTree = new GameObject();
-			behaviourTree = GameObject.Find("BehaviourTree");
-			behaviourTree.SendMessage("TriggerNextChoice", triggerId);
+		if (activated && Input.GetButtonDown ("Interact") && insideCollider) {
+			GameObject behaviourTree = new GameObject ();
+			behaviourTree = GameObject.Find ("BehaviourTree");
+			behaviourTree.SendMessage ("TriggerNextChoice", triggerId);
 		}
 	}
 }

@@ -11,12 +11,21 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 	private bool rotating = false, open = false;
 	private float angle = 0;
 
+	void Awake() {
+		GetComponent<EllipsoidParticleEmitter>().enabled = false;
+		GetComponent<ParticleRenderer>().enabled = false;
+	}
+
 	public void ActivateTrigger(int i) {
 		triggerId = i;
 		lockedDoor = false;
+		GetComponent<EllipsoidParticleEmitter>().enabled = true;
+		GetComponent<ParticleRenderer>().enabled = true;
 	}
 
 	public void DeactivateTrigger() {
+		GetComponent<EllipsoidParticleEmitter>().enabled = false;
+		GetComponent<ParticleRenderer>().enabled = false;
 		triggerId = -1;
 		lockedDoor = true;
 		rotating = false;
