@@ -37,7 +37,7 @@
 :: thingtouch
 >narrator-Ooh, how interesting! Looks like a cute little toy, eh? Maybe their owner forgot about it. Oh well, not much use to us.
 
-[[Wait-2-|walk5]]
+[[Wait-10-|walk5]]
 [[buttoninteract-FirstRoom/Toy-|Interact Toy]]
 
 
@@ -146,7 +146,7 @@ Thank you.
 >narrator-Oh, uh... Hi! Hello?
 
 [[actionbutton-|stop]]
-[[Wait-6-|walk2]]
+[[Wait-8-|walk2]]
 
 
 :: Toy giggle
@@ -186,7 +186,7 @@ Thank you.
 :: walk2
 >narrator-Uhm... well, ok! Eager to get going, I see. All good.
 
-[[Wait-4-|walk3]]
+[[Wait-8-|walk3]]
 
 
 :: Right Door
@@ -303,17 +303,17 @@ Goodbye.
 [[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 5]]
 
 
-:: Toy continue interaction
->narrator-[interaction continues]
-[[buttoninteract-FirstRoom/Toy-|Toy continue interaction]]
-[[Wait-6-|Interact Toy Thoughts]]
-
-
 :: walk3
 >narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.
 
 [[actionbutton-|stop2]]
-[[Wait-4-|walk4]]
+[[Wait-10-|walk4]]
+
+
+:: Toy continue interaction
+>narrator-[interaction continues]
+[[buttoninteract-FirstRoom/Toy-|Toy continue interaction]]
+[[Wait-6-|Interact Toy Thoughts]]
 
 
 :: Too late
@@ -364,7 +364,7 @@ Goodbye.
 >narrator-Hey, so umm... truth is I haven't spoken to anyone in a while and I was pretty excited to see you earlier. I think it would be pretty neat if we could work together on this, we could be like a team! That sounds pretty fun right?
 
 [[actionbutton-|interact]]
-[[wait-5-|walk4]]
+[[wait-12-|walk4]]
 
 
 :: Restart End

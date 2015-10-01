@@ -1,2 +1,2 @@
-00.00|Oh, uh... Hi! Hello?
-01.00|\clear
+00.00|Hello?
+02.00|\clear
