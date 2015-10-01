@@ -12,7 +12,7 @@ public class CameraFollow : MonoBehaviour
 	Vector3 offset;                     // The initial offset from the target.
 	Quaternion rotation;
 	
-	float distance = 15f;
+	public float distance = 15f;
 	float theta = 30f;
 	float phi = 140f;
 	float camX, camY, camZ;
