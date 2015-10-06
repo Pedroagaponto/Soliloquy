@@ -8,20 +8,24 @@ public class BehaviourTree : MonoBehaviour {
 	public Node behaviour;
 
 	private NarratorController narrator;
-	private GameObject gameObject = null;
+	private List<GameObject> objList = new List<GameObject>();
 	private int oldTime, newTime;
 	private bool printed, positiveBehaviour;
 
 	public void TriggerNextChoice(int i) {
-		if (gameObject != null) {
-			gameObject.SendMessage("DeactivateTrigger");
-			gameObject = null;
+		foreach (GameObject obj in objList) {
+			obj.SendMessage("DeactivateTrigger");
 		}
+		objList = new List<GameObject>();
+
 		behaviour = behaviour.ChildNode[i];
 		oldTime = newTime = System.DateTime.Now.Second;
 		SetTriggers();
 		Debug.Log(behaviour.Narrator);
 		narrator.playDialog (behaviour.Id);
+		for (int j = 0; j < behaviour.objAnims.Count; j++) {
+			behaviour.objAnims[j].animateObject();
+		}
 	}
 
 	void Start()
@@ -69,7 +73,7 @@ public class BehaviourTree : MonoBehaviour {
 		newTime = System.DateTime.Now.Second;
 		for(int i = 0; i < behaviour.Triggers.Count; i++) {
 			if (behaviour.Triggers[i] == (int) Trigger.wait
-			    && newTime - oldTime > behaviour.WaitTime) {
+			    && newTime - oldTime >= behaviour.WaitTime) {
 				TriggerNextChoice(i);
 				break;
 			}
@@ -85,13 +89,15 @@ public class BehaviourTree : MonoBehaviour {
 	}
 
 	private void SetTriggers() {
+		GameObject obj;
 		if (behaviour == null || behaviour.Triggers == null)
 			return;
 		for (int i = 0; i < behaviour.Triggers.Count; i++) {
 			if (behaviour.TriggersNames[i] != null) {
-				gameObject = GameObject.Find(behaviour.TriggersNames[i]);
+				obj = GameObject.Find(behaviour.TriggersNames[i]);
+				objList.Add(obj);
 				Debug.Log(behaviour.TriggersNames[i]);
-				gameObject.SendMessage ("ActivateTrigger", i);
+				obj.SendMessage ("ActivateTrigger", i);
 			}
 		}
 	}

@@ -3,29 +3,39 @@ using System.Collections;
 
 public class OpenDoor : MonoBehaviour, MyObjectTrigger
 {
-	public float smoothing = 15f;
+	private float smoothing = 120f;
 
-	private Transform door;
 	private Vector3 origin;
 	private int triggerId = -1;
 	private bool lockedDoor = true;
 	private bool rotating = false, open = false;
 	private float angle = 0;
 
+	void Awake() {
+		GetComponent<EllipsoidParticleEmitter>().enabled = false;
+		GetComponent<ParticleRenderer>().enabled = false;
+	}
+
 	public void ActivateTrigger(int i) {
 		triggerId = i;
 		lockedDoor = false;
+		GetComponent<EllipsoidParticleEmitter>().enabled = true;
+		GetComponent<ParticleRenderer>().enabled = true;
 	}
 
 	public void DeactivateTrigger() {
+		GetComponent<EllipsoidParticleEmitter>().enabled = false;
+		GetComponent<ParticleRenderer>().enabled = false;
 		triggerId = -1;
 		lockedDoor = true;
+		rotating = false;
+		open = true;
 	}
 
 	void Start()
 	{
-		door = GetComponent <Transform> ();
-		origin = door.transform.position - (door.transform.localScale.x/2 * Vector3.right);
+		origin = this.transform.position;
+		origin -= Quaternion.Euler( this.transform.parent.rotation.eulerAngles) * (this.transform.localScale.x/2 * Vector3.right);
 	}
 	
 	void OnTriggerStay(Collider other)
@@ -39,7 +49,7 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 	{
 		if (rotating && !open)
 		{
-			door.RotateAround(origin, Vector3.up, -smoothing * Time.deltaTime);
+			this.transform.RotateAround(origin, Vector3.up, -smoothing * Time.deltaTime);
 			angle += -smoothing * Time.deltaTime;
 			if (angle <= -95)
 			{
