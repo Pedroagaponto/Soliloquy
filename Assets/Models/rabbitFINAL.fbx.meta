@@ -1,0 +1,1346 @@
+fileFormatVersion: 2
+guid: d0088b5ff80c44aab99c10b514a264c8
+timeCreated: 1443668424
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: RABBITFINAL:Head
+    100004: RABBITFINAL:joint10
+    100006: RABBITFINAL:joint30
+    100008: RABBITFINAL:joint33
+    100010: RABBITFINAL:joint34
+    100012: RABBITFINAL:joint38
+    100014: RABBITFINAL:joint38 1
+    100016: RABBITFINAL:joint38 2
+    100018: RABBITFINAL:joint39
+    100020: RABBITFINAL:joint39 1
+    100022: RABBITFINAL:joint39 2
+    100024: RABBITFINAL:joint70
+    100026: RABBITFINAL:joint71
+    100028: RABBITFINAL:joint71 1
+    100030: RABBITFINAL:joint71 2
+    100032: RABBITFINAL:joint76
+    100034: RABBITFINAL:joint77
+    100036: RABBITFINAL:joint78
+    100038: RABBITFINAL:joint79
+    100040: RABBITFINAL:joint86
+    100042: RABBITFINAL:joint87
+    100044: RABBITFINAL:joint88
+    100046: RABBITFINAL:joint89
+    100048: RABBITFINAL:joint90
+    100050: RABBITFINAL:joint91
+    100052: RABBITFINAL:joint92
+    100054: RABBITFINAL:L_Cape1
+    100056: RABBITFINAL:L_Cape2
+    100058: RABBITFINAL:L_Cape3
+    100060: RABBITFINAL:L_Ear
+    100062: RABBITFINAL:L_Ear1
+    100064: RABBITFINAL:L_Ear2
+    100066: RABBITFINAL:L_Foot
+    100068: RABBITFINAL:L_Leg
+    100070: RABBITFINAL:L_Thigh
+    100072: RABBITFINAL:M_Cape
+    100074: RABBITFINAL:Neck
+    100076: RABBITFINAL:Pelvis
+    100078: RABBITFINAL:R_Cape1
+    100080: RABBITFINAL:R_Cape2
+    100082: RABBITFINAL:R_Cape3
+    100084: RABBITFINAL:R_Ear
+    100086: RABBITFINAL:R_Ear2
+    100088: RABBITFINAL:R_Ear3
+    100090: RABBITFINAL:R_Ear4
+    100092: RABBITFINAL:R_Ear5
+    100094: RABBITFINAL:R_Ear6
+    100096: RABBITFINAL:R_Ear7
+    100098: RABBITFINAL:R_Ear8
+    100100: RABBITFINAL:R_Foot
+    100102: RABBITFINAL:R_Leg
+    100104: RABBITFINAL:R_Thight
+    100106: RABBITFINAL:Rabbit_Mesh
+    100108: RABBITFINAL:Spine
+    100110: RABBITFINAL:Spine2
+    400000: //RootNode
+    400002: RABBITFINAL:Head
+    400004: RABBITFINAL:joint10
+    400006: RABBITFINAL:joint30
+    400008: RABBITFINAL:joint33
+    400010: RABBITFINAL:joint34
+    400012: RABBITFINAL:joint38
+    400014: RABBITFINAL:joint38 1
+    400016: RABBITFINAL:joint38 2
+    400018: RABBITFINAL:joint39
+    400020: RABBITFINAL:joint39 1
+    400022: RABBITFINAL:joint39 2
+    400024: RABBITFINAL:joint70
+    400026: RABBITFINAL:joint71
+    400028: RABBITFINAL:joint71 1
+    400030: RABBITFINAL:joint71 2
+    400032: RABBITFINAL:joint76
+    400034: RABBITFINAL:joint77
+    400036: RABBITFINAL:joint78
+    400038: RABBITFINAL:joint79
+    400040: RABBITFINAL:joint86
+    400042: RABBITFINAL:joint87
+    400044: RABBITFINAL:joint88
+    400046: RABBITFINAL:joint89
+    400048: RABBITFINAL:joint90
+    400050: RABBITFINAL:joint91
+    400052: RABBITFINAL:joint92
+    400054: RABBITFINAL:L_Cape1
+    400056: RABBITFINAL:L_Cape2
+    400058: RABBITFINAL:L_Cape3
+    400060: RABBITFINAL:L_Ear
+    400062: RABBITFINAL:L_Ear1
+    400064: RABBITFINAL:L_Ear2
+    400066: RABBITFINAL:L_Foot
+    400068: RABBITFINAL:L_Leg
+    400070: RABBITFINAL:L_Thigh
+    400072: RABBITFINAL:M_Cape
+    400074: RABBITFINAL:Neck
+    400076: RABBITFINAL:Pelvis
+    400078: RABBITFINAL:R_Cape1
+    400080: RABBITFINAL:R_Cape2
+    400082: RABBITFINAL:R_Cape3
+    400084: RABBITFINAL:R_Ear
+    400086: RABBITFINAL:R_Ear2
+    400088: RABBITFINAL:R_Ear3
+    400090: RABBITFINAL:R_Ear4
+    400092: RABBITFINAL:R_Ear5
+    400094: RABBITFINAL:R_Ear6
+    400096: RABBITFINAL:R_Ear7
+    400098: RABBITFINAL:R_Ear8
+    400100: RABBITFINAL:R_Foot
+    400102: RABBITFINAL:R_Leg
+    400104: RABBITFINAL:R_Thight
+    400106: RABBITFINAL:Rabbit_Mesh
+    400108: RABBITFINAL:Spine
+    400110: RABBITFINAL:Spine2
+    4300000: RABBITFINAL:Rabbit_Mesh
+    7400000: Walk Cycle
+    7400002: Interact
+    7400004: Walk End
+    7400006: Electrocute
+    7400008: Rest Start
+    7400010: Rest Cycle
+    7400012: Rest End
+    7400014: Idle
+    9500000: //RootNode
+    13700000: RABBITFINAL:Rabbit_Mesh
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Interact
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RABBITFINAL:Pelvis
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot/RABBITFINAL:joint70
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot/RABBITFINAL:joint10
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4/RABBITFINAL:joint30
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8/RABBITFINAL:joint92
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39/RABBITFINAL:joint71
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34/RABBITFINAL:joint76
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1/RABBITFINAL:joint71 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2/RABBITFINAL:joint71 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78/RABBITFINAL:joint79
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87/RABBITFINAL:joint88
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90/RABBITFINAL:joint91
+        weight: 1
+      - path: RABBITFINAL:Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk Cycle
+      takeName: Take 001
+      firstFrame: 62
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RABBITFINAL:Pelvis
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot/RABBITFINAL:joint70
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot/RABBITFINAL:joint10
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4/RABBITFINAL:joint30
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8/RABBITFINAL:joint92
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39/RABBITFINAL:joint71
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34/RABBITFINAL:joint76
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1/RABBITFINAL:joint71 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2/RABBITFINAL:joint71 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78/RABBITFINAL:joint79
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87/RABBITFINAL:joint88
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90/RABBITFINAL:joint91
+        weight: 1
+      - path: RABBITFINAL:Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Walk End
+      takeName: Take 001
+      firstFrame: 24
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RABBITFINAL:Pelvis
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot/RABBITFINAL:joint70
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot/RABBITFINAL:joint10
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4/RABBITFINAL:joint30
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8/RABBITFINAL:joint92
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39/RABBITFINAL:joint71
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34/RABBITFINAL:joint76
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1/RABBITFINAL:joint71 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2/RABBITFINAL:joint71 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78/RABBITFINAL:joint79
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87/RABBITFINAL:joint88
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90/RABBITFINAL:joint91
+        weight: 1
+      - path: RABBITFINAL:Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Electrocute
+      takeName: Take 001
+      firstFrame: 120
+      lastFrame: 140
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RABBITFINAL:Pelvis
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot/RABBITFINAL:joint70
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot/RABBITFINAL:joint10
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4/RABBITFINAL:joint30
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8/RABBITFINAL:joint92
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39/RABBITFINAL:joint71
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34/RABBITFINAL:joint76
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1/RABBITFINAL:joint71 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2/RABBITFINAL:joint71 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78/RABBITFINAL:joint79
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87/RABBITFINAL:joint88
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90/RABBITFINAL:joint91
+        weight: 1
+      - path: RABBITFINAL:Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rest Start
+      takeName: Take 001
+      firstFrame: 140
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RABBITFINAL:Pelvis
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot/RABBITFINAL:joint70
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot/RABBITFINAL:joint10
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4/RABBITFINAL:joint30
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8/RABBITFINAL:joint92
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39/RABBITFINAL:joint71
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34/RABBITFINAL:joint76
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1/RABBITFINAL:joint71 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2/RABBITFINAL:joint71 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78/RABBITFINAL:joint79
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87/RABBITFINAL:joint88
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90/RABBITFINAL:joint91
+        weight: 1
+      - path: RABBITFINAL:Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rest Cycle
+      takeName: Take 001
+      firstFrame: 170
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RABBITFINAL:Pelvis
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot/RABBITFINAL:joint70
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot/RABBITFINAL:joint10
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4/RABBITFINAL:joint30
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8/RABBITFINAL:joint92
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39/RABBITFINAL:joint71
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34/RABBITFINAL:joint76
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1/RABBITFINAL:joint71 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2/RABBITFINAL:joint71 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78/RABBITFINAL:joint79
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87/RABBITFINAL:joint88
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90/RABBITFINAL:joint91
+        weight: 1
+      - path: RABBITFINAL:Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Rest End
+      takeName: Take 001
+      firstFrame: 200
+      lastFrame: 220
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RABBITFINAL:Pelvis
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot/RABBITFINAL:joint70
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot/RABBITFINAL:joint10
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4/RABBITFINAL:joint30
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8/RABBITFINAL:joint92
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39/RABBITFINAL:joint71
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34/RABBITFINAL:joint76
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1/RABBITFINAL:joint71 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2/RABBITFINAL:joint71 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78/RABBITFINAL:joint79
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87/RABBITFINAL:joint88
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90/RABBITFINAL:joint91
+        weight: 1
+      - path: RABBITFINAL:Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 220
+      lastFrame: 300
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RABBITFINAL:Pelvis
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:L_Leg/RABBITFINAL:L_Thigh/RABBITFINAL:L_Foot/RABBITFINAL:joint70
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:R_Leg/RABBITFINAL:R_Thight/RABBITFINAL:R_Foot/RABBITFINAL:joint10
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:L_Ear/RABBITFINAL:L_Ear1/RABBITFINAL:R_Ear2/RABBITFINAL:R_Ear3/RABBITFINAL:R_Ear4/RABBITFINAL:joint30
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Head/RABBITFINAL:R_Ear5/RABBITFINAL:L_Ear2/RABBITFINAL:R_Ear6/RABBITFINAL:R_Ear7/RABBITFINAL:R_Ear8/RABBITFINAL:joint92
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:L_Cape3/RABBITFINAL:joint38/RABBITFINAL:joint39/RABBITFINAL:joint71
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape1/RABBITFINAL:joint33/RABBITFINAL:joint34/RABBITFINAL:joint76
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:L_Cape2/RABBITFINAL:joint38
+          1/RABBITFINAL:joint39 1/RABBITFINAL:joint71 1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:M_Cape/RABBITFINAL:joint38
+          2/RABBITFINAL:joint39 2/RABBITFINAL:joint71 2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape1/RABBITFINAL:joint77/RABBITFINAL:joint78/RABBITFINAL:joint79
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape2/RABBITFINAL:joint86/RABBITFINAL:joint87/RABBITFINAL:joint88
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90
+        weight: 1
+      - path: RABBITFINAL:Pelvis/RABBITFINAL:Spine/RABBITFINAL:Spine2/RABBITFINAL:Neck/RABBITFINAL:R_Cape3/RABBITFINAL:joint89/RABBITFINAL:joint90/RABBITFINAL:joint91
+        weight: 1
+      - path: RABBITFINAL:Rabbit_Mesh
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
