@@ -9,7 +9,7 @@ public class BehaviourTree : MonoBehaviour {
 
 	private NarratorController narrator;
 	private List<GameObject> objList = new List<GameObject>();
-	private int oldTime, newTime;
+	private float oldTime, newTime;
 	private bool printed, positiveBehaviour;
 
 	public void TriggerNextChoice(int i) {
@@ -19,7 +19,7 @@ public class BehaviourTree : MonoBehaviour {
 		objList = new List<GameObject>();
 
 		behaviour = behaviour.ChildNode[i];
-		oldTime = newTime = System.DateTime.Now.Second;
+		oldTime = newTime = Time.realtimeSinceStartup;
 		SetTriggers();
 		Debug.Log(behaviour.Narrator);
 		narrator.playDialog (behaviour.Id);
@@ -39,7 +39,7 @@ public class BehaviourTree : MonoBehaviour {
 			Application.Quit();
 		}
 		initTree(nodeList);
-		oldTime = newTime = System.DateTime.Now.Second;
+		oldTime = newTime = Time.realtimeSinceStartup;
 		SetTriggers();
 		Debug.Log(behaviour.Narrator);
 		narrator.playDialog(behaviour.Id);
@@ -70,7 +70,7 @@ public class BehaviourTree : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		newTime = System.DateTime.Now.Second;
+		newTime = Time.realtimeSinceStartup;
 		for(int i = 0; i < behaviour.Triggers.Count; i++) {
 			if (behaviour.Triggers[i] == (int) Trigger.wait
 			    && newTime - oldTime >= behaviour.WaitTime) {

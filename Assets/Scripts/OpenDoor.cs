@@ -38,7 +38,7 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 		origin -= Quaternion.Euler( this.transform.parent.rotation.eulerAngles) * (this.transform.localScale.x/2 * Vector3.right);
 	}
 	
-	void OnTriggerStay(Collider other)
+	void OnTriggerEnter(Collider other)
 	{
 		if (!lockedDoor){
 			rotating = true;

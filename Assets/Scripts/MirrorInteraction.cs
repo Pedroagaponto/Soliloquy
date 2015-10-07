@@ -15,6 +15,10 @@ public class MirrorInteraction : MonoBehaviour, MyObjectTrigger {
 		activated = false;
 	}
 
+	public void Explode() {
+		//TODO
+	}
+
 	void OnTriggerStay(Collider other)
 	{
 		if (activated){

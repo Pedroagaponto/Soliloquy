@@ -1,0 +1,2 @@
+00.00|Are you okay? Careful not to walk on any of the shards.
+04.00|\clear

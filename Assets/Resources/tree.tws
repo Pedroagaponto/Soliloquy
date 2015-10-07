@@ -2559,7 +2559,7 @@ Tiddler
 p783
 (dp784
 g21
-V>narrator-Uhm... well, ok! Eager to get going, I see. All good.\u000a\u000a[[Wait-8-|walk3]]
+V>narrator-Uhm... well, ok! Eager to get going, I see. All good.\u000a[[Wait-8-|walk3]]
 p785
 sg23
 Vwalk2
@@ -2569,9 +2569,9 @@ g26
 ((I2015
 I10
 I1
-I12
-I43
-I37
+I15
+I5
+I47
 I3
 I274
 I0
@@ -2648,7 +2648,7 @@ tp809
 Rp810
 sbsa(dp811
 g14
-I01
+I00
 sg15
 (lp812
 F342.7499999999993
@@ -2659,7 +2659,7 @@ Tiddler
 p813
 (dp814
 g21
-V>narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.\u000a\u000a[[actionbutton-|stop2]]\u000a[[Wait-10-|walk4]]
+V>narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.\u000a\u000a[[actionbutton-|stop2]]\u000a[[Wait-8-|walk4]]
 p815
 sg23
 Vwalk3
@@ -2669,9 +2669,9 @@ g26
 ((I2015
 I10
 I1
-I13
-I3
-I58
+I15
+I19
+I9
 I3
 I274
 I0
@@ -2751,15 +2751,15 @@ g14
 I00
 sg15
 (lp842
-F736.8333333333328
-aF442.91666666666765
+F730.5833333333328
+aF482.91666666666765
 asg17
 (itiddlywiki
 Tiddler
 p843
 (dp844
 g21
-V>narrator-Oh... \u000a\u000a[[buttoninteract-FirstRoom/Toy-|Toy not interested]]\u000a[[autointeract-FirstRoom/FarWall/Door-|please]]
+V>narrator-Oh... \u000a\u000a//[[buttoninteract-FirstRoom/Toy-|Toy not interested]]\u000a[[autointeract-FirstRoom/FarWall/Door-|please]]
 p845
 sg23
 Vwalk4
@@ -2767,13 +2767,13 @@ p846
 sg25
 g26
 ((I2015
-I9
-I30
-I18
-I48
-I11
-I2
-I273
+I10
+I1
+I15
+I22
+I4
+I3
+I274
 I0
 tp847
 (dp848
@@ -2848,18 +2848,18 @@ tp869
 Rp870
 sbsa(dp871
 g14
-I00
+I01
 sg15
 (lp872
-F1512.8333333333317
-aF663.3333333333319
+F1505.3333333333317
+aF660.8333333333319
 asg17
 (itiddlywiki
 Tiddler
 p873
 (dp874
 g21
-V>animation-SecondRoom/Mirror-explodes\u000a>narrator-*gasps* Are you okay? Careful not to walk on any of the shards.\u000a\u000a\u000a[[Wait-6-|mirror2]]\u000a[[actionbutton-|mirror interact]]
+V>animation-SecondRoom/FarWall/MirrorFrame/Mirror-Explode\u000a>narrator-[MIRROR EXPLODES-THIS PART ISN'T IMPLEMENTED YET]*gasps* Are you okay? Careful not to walk on any of the shards.\u000a\u000a\u000a//[[Wait-6-|mirror2]]\u000a//[[actionbutton-|mirror interact]]
 p875
 sg23
 Vmirror
@@ -2867,13 +2867,13 @@ p876
 sg25
 g26
 ((I2015
-I9
-I17
 I10
-I49
-I31
+I1
+I16
+I24
+I20
 I3
-I260
+I274
 I0
 tp877
 (dp878
@@ -3601,8 +3601,8 @@ g14
 I00
 sg15
 (lp1097
-F1346.9999999999995
-aF664.9999999999997
+F1343.2499999999995
+aF662.4999999999997
 asg17
 (itiddlywiki
 Tiddler
@@ -3709,7 +3709,7 @@ Tiddler
 p1128
 (dp1129
 g21
-V>narrator-It's not interesting\u000a\u000a[[autointeract-FirstRoom/FarWall/Door-|please]]\u005c
+V>narrator-It's not interesting\u000a\u000a[[autointeract-FirstRoom/FarWall/Door-|please]]
 p1130
 sg23
 VToy not interested
@@ -3717,13 +3717,13 @@ p1131
 sg25
 g26
 ((I2015
-I9
-I30
-I19
-I9
-I11
-I2
-I273
+I10
+I1
+I15
+I17
+I24
+I3
+I274
 I0
 tp1132
 (dp1133

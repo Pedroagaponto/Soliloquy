@@ -185,7 +185,6 @@ Thank you.
 
 :: walk2
 >narrator-Uhm... well, ok! Eager to get going, I see. All good.
-
 [[Wait-8-|walk3]]
 
 
@@ -307,7 +306,7 @@ Goodbye.
 >narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.
 
 [[actionbutton-|stop2]]
-[[Wait-10-|walk4]]
+[[Wait-8-|walk4]]
 
 
 :: Toy continue interaction
@@ -325,7 +324,7 @@ Goodbye.
 :: walk4
 >narrator-Oh... 
 
-[[buttoninteract-FirstRoom/Toy-|Toy not interested]]
+//[[buttoninteract-FirstRoom/Toy-|Toy not interested]]
 [[autointeract-FirstRoom/FarWall/Door-|please]]
 
 
@@ -420,7 +419,7 @@ We can just be happy.
 :: Toy not interested
 >narrator-It's not interesting
 
-[[autointeract-FirstRoom/FarWall/Door-|please]]\
+[[autointeract-FirstRoom/FarWall/Door-|please]]
 
 
 :: please
@@ -432,12 +431,12 @@ We can just be happy.
 
 
 :: mirror
->animation-SecondRoom/Mirror-explodes
->narrator-*gasps* Are you okay? Careful not to walk on any of the shards.
+>animation-SecondRoom/FarWall/MirrorFrame/Mirror-Explode
+>narrator-[MIRROR EXPLODES-THIS PART ISN'T IMPLEMENTED YET]*gasps* Are you okay? Careful not to walk on any of the shards.
 
 
-[[Wait-6-|mirror2]]
-[[actionbutton-|mirror interact]]
+//[[Wait-6-|mirror2]]
+//[[actionbutton-|mirror interact]]
 
 
 :: continue
