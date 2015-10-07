@@ -3,17 +3,19 @@ using System.Collections;
 
 public class OpenDoor : MonoBehaviour, MyObjectTrigger
 {
-	private float smoothing = 120f;
+	public AudioSource openDoorAudio;
 
 	private Vector3 origin;
 	private int triggerId = -1;
 	private bool lockedDoor = true;
 	private bool rotating = false, open = false;
 	private float angle = 0;
+	private float smoothing = 120f;
 
 	void Awake() {
 		GetComponent<EllipsoidParticleEmitter>().enabled = false;
 		GetComponent<ParticleRenderer>().enabled = false;
+		openDoorAudio = GetComponent<AudioSource> ();
 	}
 
 	public void ActivateTrigger(int i) {
@@ -41,7 +43,7 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 	void OnTriggerEnter(Collider other)
 	{
 		if (!lockedDoor){
-			rotating = true;
+			TriggerOpen();
 		}
 	}
 
@@ -66,6 +68,11 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 
 	void Open()
 	{
+		TriggerOpen();
+	}
+
+	void TriggerOpen() {
 		rotating = true;
+		openDoorAudio.Play();
 	}
 }
