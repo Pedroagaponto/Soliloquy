@@ -1,4 +1,6 @@
-00.00|Hey, so umm... truth is I haven't spoken to anyone in a while and I was pretty excited to see you earlier.
-02.50|I think it would be pretty neat if we could work together on this,
-04.00|we could be like a team! That sounds pretty fun right?
-05.50|\clear
+00.00|I am sorry to be a bother but, 
+01.82|well, the truth is I was really excited when I saw you just then.
+05.12|I really hoped that we could get along.
+06.86|Do you want to start it fresh?
+08.22|I am sure we can be great friend.
+10.00|\clear

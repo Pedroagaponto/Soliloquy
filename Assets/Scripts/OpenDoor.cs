@@ -18,8 +18,8 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 		openDoorAudio = GetComponent<AudioSource> ();
 	}
 
-	public void ActivateTrigger(int i) {
-		triggerId = i;
+	public void ActivateTrigger(int[] args) {
+		triggerId = args[0];
 		lockedDoor = false;
 		GetComponent<EllipsoidParticleEmitter>().enabled = true;
 		GetComponent<ParticleRenderer>().enabled = true;

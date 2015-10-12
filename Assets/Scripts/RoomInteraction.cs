@@ -5,8 +5,8 @@ public class RoomInteraction : MonoBehaviour, MyObjectTrigger {
 	private int triggerId = -1;
 	private bool activated = false;
 	
-	public void ActivateTrigger(int i) {
-		triggerId = i;
+	public void ActivateTrigger(int[] args) {
+		triggerId = args[0];
 		activated = true;
 	}
 	

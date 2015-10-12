@@ -4,18 +4,9 @@
 [[wait-6-|walk]]
 
 
-:: stop
->narrator-Oh, good! You can hear me! That's a relief.
-
-[[actionbutton-|interact]]
-[[Wait-6-|walk2]]
-
-
-:: walk5
->narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.
-
-[[autointeract-FirstRoom/FarWall/Door-|Walk 6]]
-[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
+:: Left Door
+>narrator-Oh yeah, this is nice. Real cozy. Looks like the perfect chance to just kick back, huh! Hm, that's probably it for this room. I know it's nice, but we've got stuff to do! I mean, I guess? I'm not really sure where we're going or whatever but... this has been pretty cool.
+[[autointeract-FifthRoom-|Coming Out Ending 1]]
 
 
 :: Coming Out Ending Frustrated 2
@@ -27,33 +18,11 @@
 
 
 
-:: interact
->narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?
-
-[[buttoninteract-FirstRoom/Toy-|thingtouch]]
-[[Wait-15-|auxnode]]
-
-
-:: thingtouch
->narrator-Ooh, how interesting! Looks like a cute little toy, eh? Maybe their owner forgot about it. Oh well, not much use to us.
-
-[[Wait-10-|walk5]]
-[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
-
-
 :: Coming out Ending Frustrated
 >narrator-Look, I'm being serious. I really need you to listen to what I have to say. You're important to me so you need to hear this.
 
 [[actionbutton-|Coming Out Ending Stop]]
 [[Wait-6-|Coming Out Ending Frustrated 2]]
-
-
-:: Left Door
-//A LIVING ROOM is through the door//
->narrator-Oh yeah, this is nice. Real cozy. Looks like the perfect chance to just kick back, huh! Hm, that's probably it for this room. I know it's nice, but we've got stuff to do! I mean, I guess? I'm not really sure where we're going or whatever but... this has been pretty cool.
-
-//The narrator hums happily for a bit as the player explores the room//
-[[autointeract-FifthRoom-|Coming Out Ending 1]]
 
 
 :: Coming Out Ending 1
@@ -63,11 +32,53 @@
 [[Wait-6-|Coming out Ending Walk]]
 
 
+:: Interact Toy
+>narrator-Oh, wow! That looks like a lot of fun, haha!! Take your time to play with it, it's not everyday we get to just spend our time the way we want to!
+[[buttoninteract-FirstRoom/Toy-|Interact Toy Thoughts]]
+[[autointeract-FirstRoom/FarWall/Door-|walk6]]
+
+
+:: walk6
+>narrator-Do you ever wonder why we are here or what we are? Hahaha, such a silly thought really. All that matter is now right!?
+[[autointeract-SecondRoom/Bureau-|Photo]]
+
+
+:: Photo
+>narrator-Hey so, what's that over there?
+[[buttoninteract-SecondRoom/Bureau-|Photo Interact]]
+[[Wait-8-|Photo Ignore]]
+
+
 :: Coming out Ending Walk
 >narrator-Oh, I guess it can wait. Okay, maybe it can't. Can we please talk?
 
 [[actionbutton-|Coming Out Ending Stop]]
 [[Wait-6-|Coming out Ending Frustrated]]
+
+
+:: Photo Interact
+>narrator-It's a photo. I feel like I know who those people are, but I can't quite put my finger on it. This is so strange. I feel weird seeing this photo of these people, I feel like they are really important to me and that they love me very much. *slight gasp* I can't shake this feeling that I've disappointed them. Maybe they don't love me... I really can't be sure anymore. I think we should go now.
+
+[[autointeract-SecondRoom/FarWall/Door-|objects forced interaction]]
+
+
+:: objects forced interaction
+[[actionbutton-|objects forced interaction 2]]
+
+
+:: Walk 7
+>narrator-Sorry, I didn't mean to completely ignore you! I'm just still trying to figure out everything with that photo. Don't worry, you have my full and undivided attention from now on! You've been pretty cool so far, call me cheesy but I think meeting you is probably the best thing that's happened to me. Granted I can't seem to remember anything prior to meeting you but that's besides the point, haha!
+[[autointeract-ThirdRoom/FarWall/Door-|Doors]]
+
+
+:: Doors
+>narrator-Well this is different.
+[[buttoninteract-ForthRoom/LeftWall/Door-|left]]
+[[buttoninteract-ForthRoom/FarWall/Door-|right]]
+
+
+:: left
+[[buttoninteract-ForthRoom/FarWall/Door-|hall room]]
 
 
 :: Happy Ending
@@ -90,76 +101,25 @@ Thank you.
 -end-
 
 
-:: Walk 6
->narrator-Do you ever wonder why we are here or what we are? Hahaha, such a silly thought really. All that matter is now right!?
-
-[[autointeract-SecondRoom/Bureau-|Photo]]
-
-
-:: Photo
->narrator-Hey so, what's that over there?
-
-[[buttoninteract-SecondRoom/Bureau-|Photo Interact]]
-[[Wait-6-|Photo Ignore]]
-
-
-:: Photo Interact
->narrator-It's a photo. I feel like I know who those people are, but I can't quite put my finger on it. This is so strange. I feel weird seeing this photo of these people, I feel like they are really important to me and that they love me very much. *slight gasp* I can't shake this feeling that I've disappointed them. Maybe they don't love me... I really can't be sure anymore. I think we should go now.
-
-[[autointeract-SecondRoom/FarWall/Door-|objects forced interaction]]
-
-
-:: objects forced interaction 3
-[[actionbutton-|Walk 7]]
-
-
-:: Walk 7
->narrator-Sorry, I didn't mean to completely ignore you! I'm just still trying to figure out everything with that photo. Don't worry, you have my full and undivided attention from now on! You've been pretty cool so far, call me cheesy but I think meeting you is probably the best thing that's happened to me. Granted I can't seem to remember anything prior to meeting you but that's besides the point, haha!
-
-[[autointeract-ThirdRoom/FarWall/Door-|Doors]]
-
-
-:: Doors
->narrator-Well this is different.
-[[actionbutton-|hall room]]
-
-
 :: Hall room 2
 >animation-ForthRoom/LeftWall/Door-Open
 >animation-ForthRoom/FarWall/Door-Open
 >narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.
-
 [[autointeract-FifthRoom/Floor-|Right Door]]
 //[[autointeract-SixthRoom-|Left Door]]
 
 
 
 
-:: hall room
->narrator-Looks like we're stuck here. Oh, wait! I wanna show you a neat magic trick! (whispers under breath) "I hope this works" OKAY! 3... 2... 1... PRESTO!!
-
-[[wait-2-|Hall room 2]]
-
-
-
-:: walk
->narrator-Oh, uh... Hi! Hello?
-
-[[actionbutton-|stop]]
-[[Wait-8-|walk2]]
-
-
-:: Toy giggle
->narrator-*slight giggle*
-
-[[buttoninteract-FirstRoom/Toy-|Toy giggle]]
-[[autointeract-FirstRoom/FarWall/Door-|Walk 6]]
+:: Right Door
+>narrator-Oh, it's the picture again. Uh... Maybe it's best if we just keep going don't you think?
+[[autointeract-SixthRoom/FarWall/Door-|Coming Out Ending 1]]
+[[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 3]]
 
 
 :: Photo Interact 3
 >narrator-Why would you...You know that the photo makes me uncomfortable, why did you pick it up again? Look, I don't feel okay seeing that photo so can we please just move on?
-
-//[[Next Room|Coming Out Ending 1]]
+[[autointeract-SixthRoom/FarWall/Door-|Coming Out Ending 1]]
 [[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 4]]
 
 
@@ -168,32 +128,52 @@ Thank you.
 [[Wait-3-|Coming Out Ending Stop]]
 
 
-:: Interact Toy
->narrator-Oh, wow! That looks like a lot of fun, haha!! Take your time to play with it, it's not everyday we get to just spend our time the way we want to!
+:: stop
+>narrator-Oh, good! You can hear me! That's a relief.
+[[actionbutton-|interact]]
+[[Wait-6-|walk2]]
 
-//Player has the choice to continue playing until they continue walking//
-[[buttoninteract-FirstRoom/Toy-|Toy continue interaction]]
-[[Wait-10-|Interact Toy Thoughts]]
+
+:: interact
+>narrator-Heh, you're funny. I think this is the first time I've talked to anyone. I kinda like it. Hey, why don't we check out that thing?
+[[buttoninteract-FirstRoom/Toy-|thingtouch]]
+[[Wait-15-|walk3]]
+
+
+:: thingtouch
+>narrator-Ooh, how interesting! Looks like a cute little toy, eh? Maybe their owner forgot about it. Oh well, not much use to us.
+[[Wait-10-|walk5]]
+[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
+
+
+:: walk5
+>narrator-I wouldn't leave a toy just lying there if I had one. Seems like such a waste.
+[[autointeract-FirstRoom/FarWall/Door-|walk6]]
+[[buttoninteract-FirstRoom/Toy-|Interact Toy]]
 
 
 :: Interact Toy Thoughts
 >narrator-You know... When I think about it, I'm actually not too sure if I've ever played before. The toy seemed like it would be fun to play with. I wish I could do that, you're pretty lucky.
-
-[[buttoninteract-FirstRoom/Toy-|Toy giggle]]
-[[autointeract-FirstRoom/FarWall/Door-|Walk 6]]
+[[autointeract-FirstRoom/FarWall/Door-|walk6]]
 
 
-:: walk2
->narrator-Uhm... well, ok! Eager to get going, I see. All good.
-[[Wait-8-|walk3]]
+:: objects forced interaction 2
+[[actionbutton-|objects forced interaction 3]]
 
 
-:: Right Door
-//Photograph is in the room//
->narrator-Oh, it's the picture again. Uh... Maybe it's best if we just keep going don't you think?
+:: right
+[[buttoninteract-ForthRoom/LeftWall/Door-|hall room]]
 
-//[[Next Room|Coming Out Ending 1]]
-[[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 3]]
+
+:: objects forced interaction 3
+[[actionbutton-|Walk 7]]
+
+
+:: hall room
+>narrator-Looks like we're stuck here. Oh, wait! I wanna show you a neat magic trick! (whispers under breath) "I hope this works" OKAY! 3... 2... 1... PRESTO!!
+
+[[wait-2-|Hall room 2]]
+
 
 
 :: Leave End
@@ -221,8 +201,11 @@ Goodbye.
 [[Wait-6-|Don't Accept]]
 
 
-:: objects forced interaction 2
-[[actionbutton-|objects forced interaction 3]]
+:: Photo Interact 4
+>narrator-I'm really not sure what you're trying to get at with this photo right now. Those people... they hate me. I can feel it. I don't know what I've done wrong though, if anything. I just can't help the feeling that I've let them down.
+
+[[autointeract-SixthRoom/FarWall/Door-|Coming Out Ending 1]]
+[[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 5]]
 
 
 :: Angry
@@ -230,18 +213,6 @@ Goodbye.
 
 [[Wait-6-|Angry 2]]
 [[actionbutton-|Resolve]]
-
-
-:: Photo Ignore
->narrator-No, please! I feel like that thing is important somehow! Can you go back?
-
-[[buttoninteract-SecondRoom/Bureau-|Photo Interact]]
-[[Wait-6-|Photo Ignore 2]]
-
-
-:: Photo Ignore 2
->narrator-Hey, please!? Why are you being like this all of a sudden? Alright, forget the photo! I guess it doesn't matter. *sighs*
-[[autointeract-SecondRoom/FarWall/Door-|Doors 2]]
 
 
 :: Accept
@@ -266,53 +237,15 @@ Goodbye.
 //[[Continue|Happy Ending]]
 
 
-:: auxnode
->narrator-Or.. not. Ok.
-[[Wait-5-|walk3]]
+:: Photo Ignore
+>narrator-No, please! I feel like that thing is important somehow! Can you go back?
+[[buttoninteract-SecondRoom/Bureau-|Photo Interact]]
+[[Wait-9-|Photo Ignore 2]]
 
 
-:: Doors 2
->narrator-Hm?
-
-[[buttoninteract-ForthRoom/FarWall/RightDoor-|hall room3]]
-[[buttoninteract-ForthRoom/FarWall/LeftDoor-|hall room3]]
-
-
-:: objects forced interaction
-[[actionbutton-|objects forced interaction 2]]
-
-
-:: hall room3
->narrator-Oh you're stuck. Uh, let me try something.
-
-[[wait-2-|hall room4]]
-
-
-:: hall room4
->animation-ForthRoom/FarWall/Door-explodes
->narrator-I... didn't expect that to happen. Well... there you go.
-
-[[autointeract-FifthRoom-|continue2]]
-
-
-:: Photo Interact 4
->narrator-I'm really not sure what you're trying to get at with this photo right now. Those people... they hate me. I can feel it. I don't know what I've done wrong though, if anything. I just can't help the feeling that I've let them down.
-
-//[[Next Room|Coming Out Ending 1]]
-[[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 5]]
-
-
-:: walk3
->narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.
-
-[[actionbutton-|stop2]]
-[[Wait-8-|walk4]]
-
-
-:: Toy continue interaction
->narrator-[interaction continues]
-[[buttoninteract-FirstRoom/Toy-|Toy continue interaction]]
-[[Wait-6-|Interact Toy Thoughts]]
+:: Photo Ignore 2
+>narrator-Hey, please!? Why are you being like this all of a sudden? Alright, forget the photo! I guess it doesn't matter.
+[[autointeract-SecondRoom/FarWall/Door-|thirdroom]]
 
 
 :: Too late
@@ -321,29 +254,14 @@ Goodbye.
 //[[Next Room|Leave End]]
 
 
-:: walk4
->narrator-Oh... 
+:: Photo Interact 5
+>narrator-What did I do wrong? Maybe I didn't do anything wrong. It's not my fault that they couldn't accept me the way I am. Maybe if they really loved me they would put in some effort to understand me instead of trying to change me. I wouldn't need to feel unsafe in a space that's supposed to shelter me. But I guess that was too hard for them. I guess that's why I left. I guess that's why I've had nobody up until now. That's none of my problem though, there is nothing wrong with me. Nothing. Oh... I'm so sorry. I don't know what got into me there. That photo just brought all of that out and I got carried away, I'm so sorry you had to hear all that. I feel good though. I feel so much more free. I feel... happy, with myself. That photo doesn't even bother me anymore, haha! I want to show you something!
 
-//[[buttoninteract-FirstRoom/Toy-|Toy not interested]]
-[[autointeract-FirstRoom/FarWall/Door-|please]]
-
-
-:: Please 2
->narrator-Hey, yes, hi! *sniffs* It's still not to late to be a team is it?
-
-[[actionbutton-|Photo]]
-[[Wait-4-|mirror explosion]]
+[[autointeract-SeventhRoom/Floor-|Beautiful Happy Ending]]
 
 
-:: continue2
-//The lights come back on. The lamp is gone. The player sits up and shakes themselves off//
-
->narrator-Are you okay?! I-I'm so sorry!! I didn't... you're okay, right?? I'm sorry... I feel responsible...
-
-//The character stands up. The player is able to control them once again.//
-//The colour palette shifts to a deep blue colour. The narrator falls silent as the player continues playing.//
-
-[[wait-3-|continue3]]
+:: Beautiful Happy Ending
+>narrator-I want to share my happiness with you! I'm glad you were there with me through that. We can just be happy.
 
 
 :: Resolve
@@ -353,17 +271,15 @@ Goodbye.
 [[actionbutton-|Don't Worry]]
 
 
-:: mirror explosion
->narrator-*Narrator mumbles things*
+:: Doors 2
+>narrator-Hm?
 
-[[autointeract-SecondRoom/FarWall/Mirror-|mirror]]
+[[buttoninteract-ForthRoom/FarWall/Door-|left2]]
+[[buttoninteract-ForthRoom/LeftWall/Door-|right2]]
 
 
-:: stop2
->narrator-Hey, so umm... truth is I haven't spoken to anyone in a while and I was pretty excited to see you earlier. I think it would be pretty neat if we could work together on this, we could be like a team! That sounds pretty fun right?
-
-[[actionbutton-|interact]]
-[[wait-12-|walk4]]
+:: left2
+[[buttoninteract-ForthRoom/FarWall/Door-|hall room3]]
 
 
 :: Restart End
@@ -380,11 +296,8 @@ Goodbye.
 
 
 
-:: Photo Interact 5
->narrator-What did I do wrong? Maybe I didn't do anything wrong. It's not my fault that they couldn't accept me the way I am. Maybe if they really loved me they would put in some effort to understand me instead of trying to change me. I wouldn't need to feel unsafe in a space that's supposed to shelter me. But I guess that was too hard for them. I guess that's why I left. I guess that's why I've had nobody up until now. That's none of my problem though, there is nothing wrong with me. Nothing. Oh... I'm so sorry. I don't know what got into me there. That photo just brought all of that out and I got carried away, I'm so sorry you had to hear all that. I feel good though. I feel so much more free. I feel... happy, with myself. That photo doesn't even bother me anymore, haha! I want to show you something!
-//Another Door Opens//
-
-//[[Go through door|Beautiful Happy Ending]]
+:: thirdroom
+[[autointeract-SecondRoom/FarWall/Door-|Doors 2]]
 
 
 :: Don't Accept
@@ -393,58 +306,27 @@ Goodbye.
 [[Wait-6-|Dont' Accept 2]]
 
 
-:: Beautiful Happy Ending [HAPPYEND1]
-I want to share my happiness with you!
+:: hall room4
+>animation-ForthRoom/FarWall-explodes
+>narrator-I... didn't expect that to happen. Well... there you go.
 
-//Aurora Australis appears slowly around the player, the room becoming a void where there is simply beautiful lights moving slowly around//
-
-I'm glad you were there with me through that.
-
-We can just be happy.
-
--end-
+[[autointeract-FifthRoom/Lamp-|continue2]]
 
 
-:: mirror2
->narrator-That was really strange huh? Do you think this place is haunted?\n(vase shatters)
-
-[[autointeract-ThirdRoom/FarWall/Door-|continuing]]
-
-
-:: continuing
->narrator-Oh, my God! Oh no! (The room goes dark)
-[[wait-2-|continue2]]
+:: stop2
+>narrator-I am sorry to be a bother but, well, the truth is I was really excited when I saw you just then. I really hoped that we could get along. Do you want to start it fresh? I am sure we can be great friend.
+[[actionbutton-|interact]]
+[[wait-13-|walk4]]
 
 
-:: Toy not interested
->narrator-It's not interesting
-
-[[autointeract-FirstRoom/FarWall/Door-|please]]
+:: right2
+[[buttoninteract-ForthRoom/LeftWall/Door-|hall room3]]
 
 
-:: please
->narrator-*sniffs* Please wait... I really just need someone to talk to right now. You understand, right? I don't have anyone else and... It's just really hard right now...
+:: hall room3
+>narrator-Oh you're stuck. Uh, let me try something.
 
-[[actionbutton-|Please 2]]
-[[Wait-6-|mirror]]
-
-
-
-:: mirror
->animation-SecondRoom/FarWall/MirrorFrame/Mirror-Explode
->narrator-[MIRROR EXPLODES-THIS PART ISN'T IMPLEMENTED YET]*gasps* Are you okay? Careful not to walk on any of the shards.
-
-
-//[[Wait-6-|mirror2]]
-//[[actionbutton-|mirror interact]]
-
-
-:: continue
->animation-vaseFBX-shatters
->animation-ForthRoom/RightDoor-opens
->narrator-*Narrator mumbles again* Oh... wow...
-
-[[autointeract-ForthRoom/round_table-|continuing]]
+[[wait-2-|hall room4]]
 
 
 :: Repetition
@@ -482,19 +364,60 @@ I think things are going to be okay.
 -end-
 
 
-:: continue3
-//The room is different, save another lamp//
+:: Please 2
+>narrator-Hey, yes, hi! *sniffs* It's still not to late to be a team is it?
+[[actionbutton-|Photo]]
+[[Wait-10-|silence]]
 
->narrator-Oh, uh.... be careful...
 
-//Upon approaching the lamp within a certain radius, the player is redirected to be walking away from the lamp//
+:: mirror
+>animation-SecondRoom/FarWall/MirrorFrame/Mirror-Explode
+>narrator-[MIRROR EXPLODES-THIS PART ISN'T IMPLEMENTED YET]*gasps* Are you okay? Careful not to walk on any of the shards.
 
-[[wait-3-|continue4]]
+[[autointeract-SecondRoom/FarWall/Door-|mirror2]]
+[[autointeract-SecondRoom/FarWall/MirrorFrame/Mirror-|mirror interact]]
+
+
+:: walk
+>narrator-Oh, uh... Hi! Hello?
+[[actionbutton-|stop]]
+[[Wait-8-|walk2]]
+
+
+:: walk2
+>narrator-Uhm... well, ok! Eager to get going, I see. All good.
+[[Wait-8-|walk3]]
+
+
+:: walk3
+>narrator-So.... I take it you're not really one for socialising, huh. Shame, really! I tend to get kinda lonely, ha ha... I don't get many opportunities to speak to someone.
+[[actionbutton-|stop2]]
+[[Wait-12-|walk4]]
+
+
+:: walk4
+>narrator-Oh... 
+[[autointeract-FirstRoom/FarWall/Door-|please]]
+
+
+:: continue2
+>narrator-Oh, my God! Oh no! (The room goes dark)
+[[wait-2-|continue3]]
+
+
+:: please
+>narrator-*sniffs* Please wait... I really just need someone to talk to right now. You understand, right? I don't have anyone else and... It's just really hard right now...
+[[actionbutton-|Please 2]]
+[[Wait-19-|silence]]
+
+
+
+:: silence
+[[autointeract-SecondRoom/FarWall/MirrorFrame/Mirror-|mirror]]
 
 
 :: mirror interact
 >narrator-I don't want you to get hurt.
-
 [[autointeract-SecondRoom/FarWall/Door-|mirror2]]
 
 
@@ -504,14 +427,26 @@ I think things are going to be okay.
 [[Wait-6-|Repetition]]
 
 
-:: continue4
-//room has a number of black, tall floor lamps//
+:: continue
+>animation-ForthRoom/FarWall/Door-Open
+>narrator-Oh... wow...
+[[autointeract-FifthRoom/Lamp-|continue2]]
 
->narrator-Oh, God! Ugh! I'm sorry... It was all my fault.. Y-you don't have to forgive me, I just want you to know... I'm... so sorry...(You don't deserve to even suggest being forgiven) Ugh..
 
-//Narrator disappears them all//
+:: mirror2
+>narrator-That was really strange huh? Do you think this place is haunted?
+[[autointeract-ThirdRoom/FarWall/Door-|continue]]
 
-//[[Next room|Restart ending 2]]
+
+:: continue3
+//The room is different, save another lamp//
+
+>narrator-Oh, uh.... be careful...
+
+//Upon approaching the lamp within a certain radius, the player is redirected to be walking away from the lamp//
+
+[[wait-3-|continue4]]
+[[autointeract-FifthRoom/Lamp-|continuelamp]]
 
 
 :: Dont' Accept 2
@@ -553,6 +488,21 @@ Bye.
 //At this, the world goes empty. No matter where you go, there is just nothing. Player must exit the game to menu.//
 
 -end-
+
+
+:: continuelamp
+[[autointeract-FifthRoom/Lamp-|continuelamp]]
+[[autointeract-FifthRoom/FarWall/Door-|continue4]]
+
+
+:: continue4
+//room has a number of black, tall floor lamps//
+
+>narrator-Oh, God! Ugh! I'm sorry... It was all my fault.. Y-you don't have to forgive me, I just want you to know... I'm... so sorry...(You don't deserve to even suggest being forgiven) Ugh..
+
+//Narrator disappears them all//
+
+[[autointeract-SixthRoom/FarWall/Door-|Restart ending 2]]
 
 
 :: Power trippy route [annotation]

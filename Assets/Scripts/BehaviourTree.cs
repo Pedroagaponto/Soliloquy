@@ -6,7 +6,9 @@ using System.IO;
 
 public class BehaviourTree : MonoBehaviour {
 	public Node behaviour;
-
+	public AudioSource soundSource;
+	
+	private AudioClip soundClip;
 	private NarratorController narrator;
 	private List<GameObject> objList = new List<GameObject>();
 	private float oldTime, newTime;
@@ -30,6 +32,7 @@ public class BehaviourTree : MonoBehaviour {
 
 	void Start()
 	{
+		soundSource = GetComponent<AudioSource> ();
 		narrator = NarratorController.Instance;
 		behaviour = null;
 		TweeParser parser = TweeParser.getInstance();
@@ -96,8 +99,8 @@ public class BehaviourTree : MonoBehaviour {
 			if (behaviour.TriggersNames[i] != null) {
 				obj = GameObject.Find(behaviour.TriggersNames[i]);
 				objList.Add(obj);
-				Debug.Log(behaviour.TriggersNames[i]);
-				obj.SendMessage ("ActivateTrigger", i);
+				int[] args = {i, behaviour.Triggers[i]};
+				obj.SendMessage("ActivateTrigger", args);
 			}
 		}
 	}

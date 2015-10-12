@@ -2,18 +2,19 @@
 using System.Collections;
 
 public class PictureInFrameInteraction : MonoBehaviour, MyObjectTrigger {
-	private int triggerId = -1;
+	private int triggerId = -1, triggerType = -1;
 	private bool activated = false, insideCollider = false;
 
-	void Awake() {
+	void Start() {
 		GetComponent<EllipsoidParticleEmitter>().enabled = false;
 		GetComponent<ParticleRenderer>().enabled = false;
 	}
 
-	public void ActivateTrigger(int i) {
+	public void ActivateTrigger(int[] args) {
 		GetComponent<EllipsoidParticleEmitter>().enabled = true;
 		GetComponent<ParticleRenderer>().enabled = true;
-		triggerId = i;
+		triggerId = args[0];
+		triggerType = args[1];
 		activated = true;
 	}
 	
@@ -21,11 +22,12 @@ public class PictureInFrameInteraction : MonoBehaviour, MyObjectTrigger {
 		GetComponent<EllipsoidParticleEmitter>().enabled = false;
 		GetComponent<ParticleRenderer>().enabled = false;
 		triggerId = -1;
+		triggerType = -1;
 		activated = false;
 	}
 
 	void OnTriggerEnter(Collider other)	{
-		if (triggerId == (int)Trigger.autointeract) {
+		if (triggerType == (int)Trigger.autointeract) {
 			GameObject behaviourTree = new GameObject ();
 			behaviourTree = GameObject.Find ("BehaviourTree");
 			behaviourTree.SendMessage ("TriggerNextChoice", triggerId);
@@ -37,8 +39,9 @@ public class PictureInFrameInteraction : MonoBehaviour, MyObjectTrigger {
 		insideCollider = false;
 	}
 
-	void Update() {
-		if (activated && Input.GetButtonDown("Interact") && insideCollider) {
+	void OnTriggerStay(Collider other) {
+		if (activated && Input.GetButtonDown("Interact") &&
+		    insideCollider && triggerType == (int)Trigger.buttoninteract) {
 			GameObject behaviourTree = new GameObject();
 			behaviourTree = GameObject.Find("BehaviourTree");
 			behaviourTree.SendMessage("TriggerNextChoice", triggerId);
