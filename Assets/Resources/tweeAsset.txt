@@ -104,13 +104,13 @@ Thank you.
 :: Right Door
 >narrator-Oh, it's the picture again. Uh... Maybe it's best if we just keep going don't you think?
 [[autointeract-SixthRoom/FarWall/Door-|Coming Out Ending 1]]
-[[buttoninteract-SixthRoom/PictureInFrame-|Photo Interact 3]]
+[[buttoninteract-SixthRoom/Bureau-|Photo Interact 3]]
 
 
 :: Photo Interact 3
 >narrator-Why would you...You know that the photo makes me uncomfortable, why did you pick it up again? Look, I don't feel okay seeing that photo so can we please just move on?
 [[autointeract-SixthRoom/FarWall/Door-|Coming Out Ending 1]]
-[[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 4]]
+[[buttoninteract-SixthRoom/Bureau-|Photo Interact 4]]
 
 
 :: Coming Out Ending Finally
@@ -195,7 +195,7 @@ Goodbye.
 >narrator-I'm really not sure what you're trying to get at with this photo right now. Those people... they hate me. I can feel it. I don't know what I've done wrong though, if anything. I just can't help the feeling that I've let them down.
 
 [[autointeract-SixthRoom/FarWall/Door-|Coming Out Ending 1]]
-[[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 5]]
+[[buttoninteract-SixthRoom/Bureau-|Photo Interact 5]]
 
 
 :: Angry
@@ -297,6 +297,7 @@ Goodbye.
 
 
 :: hall room4
+>loadroom-FifthRoom
 >animation-ForthRoom/FarWall-explodes
 >narrator-I... didn't expect that to happen. Well... there you go.
 
@@ -420,6 +421,7 @@ I think things are going to be okay.
 
 
 :: mirror2
+>loadroom-FifthRoom
 >narrator-That was really strange huh? Do you think this place is haunted?
 [[autointeract-ThirdRoom/FarWall/Door-|continue]]
 

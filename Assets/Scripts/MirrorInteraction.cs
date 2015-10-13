@@ -2,6 +2,12 @@
 using System.Collections;
 
 public class MirrorInteraction : MonoBehaviour, MyObjectTrigger {
+	public AudioSource mirrorShattersSound;
+	
+	void Awake() {
+		mirrorShattersSound = GetComponent<AudioSource> ();
+	}
+
 	private int triggerId = -1, triggerType = -1;
 	private bool activated = false;
 	
@@ -19,11 +25,13 @@ public class MirrorInteraction : MonoBehaviour, MyObjectTrigger {
 	void OnTriggerStay(Collider other)
 	{
 		if (activated) {
-			if (triggerType == (int)Trigger.autointeract ||
-			    (Input.GetButtonDown ("Interact") &&
-			 	triggerType == (int)Trigger.buttoninteract)) {
+			if (triggerType == (int)Trigger.autointeract) {
 				GetComponent<Animator>().enabled = true;
-				NextChoice ();
+				mirrorShattersSound.Play();
+				NextChoice();
+			} else if (Input.GetButtonDown ("Interact") &&
+			    triggerType == (int)Trigger.buttoninteract) {
+				NextChoice();
 			}
 		}
 	}

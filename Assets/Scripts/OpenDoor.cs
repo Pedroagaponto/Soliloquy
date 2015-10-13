@@ -1,9 +1,9 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class OpenDoor : MonoBehaviour, MyObjectTrigger
 {
-	public AudioSource openDoorAudio;
+	public AudioSource openDoorSound;
 
 	private Vector3 origin;
 	private int triggerId = -1, triggerType = -1;
@@ -13,11 +13,7 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 	private float smoothing = 120f;
 
 	void Awake() {
-		openDoorAudio = GetComponent<AudioSource> ();
-		
-		origin = this.transform.position;
-		origin -= Quaternion.Euler(this.transform.parent.rotation.eulerAngles) *
-			(this.transform.localScale.x/2 * Vector3.right);
+		openDoorSound = GetComponent<AudioSource> ();
 	}
 
 	public void ActivateTrigger(int[] args) {
@@ -64,8 +60,14 @@ public class OpenDoor : MonoBehaviour, MyObjectTrigger
 
 	void Open()
 	{
+		if (rotating)
+			return;
+
+		origin = this.transform.position;
+		origin -= Quaternion.Euler(this.transform.parent.rotation.eulerAngles) *
+			(this.transform.localScale.x/2 * Vector3.right);
 		rotating = true;
-		openDoorAudio.Play();
+		openDoorSound.Play();
 	}
 
 	private void NextChoice() {

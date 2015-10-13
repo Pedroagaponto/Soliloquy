@@ -2096,7 +2096,7 @@ tp643
 Rp644
 sbsa(dp645
 g14
-I01
+I00
 sg15
 (lp646
 F3392.083333333335
@@ -2896,10 +2896,10 @@ tp883
 Rp884
 sbsa(dp885
 g14
-I00
+I01
 sg15
 (lp886
-F2034.083333333333
+F2029.083333333333
 aF875.4166666666662
 asg17
 (itiddlywiki
@@ -2907,7 +2907,7 @@ Tiddler
 p887
 (dp888
 g21
-V>narrator-That was really strange huh? Do you think this place is haunted?\u000a[[autointeract-ThirdRoom/FarWall/Door-|continue]]
+V>loadroom-FifthRoom\u000a>narrator-That was really strange huh? Do you think this place is haunted?\u000a[[autointeract-ThirdRoom/FarWall/Door-|continue]]
 p889
 sg23
 Vmirror2
@@ -2916,12 +2916,12 @@ sg25
 g26
 ((I2015
 I10
-I12
-I18
+I13
 I21
-I7
-I0
-I285
+I11
+I10
+I1
+I286
 I1
 tp891
 (dp892
@@ -2967,9 +2967,9 @@ g26
 ((I2015
 I10
 I13
-I2
-I26
-I44
+I21
+I11
+I3
 I1
 I286
 I1
@@ -3907,7 +3907,7 @@ Tiddler
 p1187
 (dp1188
 g21
-V>animation-ForthRoom/FarWall-explodes\u000a>narrator-I... didn't expect that to happen. Well... there you go.\u000a\u000a[[autointeract-FifthRoom/Lamp-|continue2]]
+V>loadroom-FifthRoom\u000a>animation-ForthRoom/FarWall-explodes\u000a>narrator-I... didn't expect that to happen. Well... there you go.\u000a\u000a[[autointeract-FifthRoom/Lamp-|continue2]]
 p1189
 sg23
 Vhall room4
@@ -3916,12 +3916,12 @@ sg25
 g26
 ((I2015
 I10
-I12
-I18
-I28
-I48
-I0
-I285
+I13
+I19
+I23
+I21
+I1
+I286
 I1
 tp1191
 (dp1192

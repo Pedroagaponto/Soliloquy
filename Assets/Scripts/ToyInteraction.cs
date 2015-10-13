@@ -3,8 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class ToyInteraction : MonoBehaviour, MyObjectTrigger{
+	public AudioSource toySqueakSound;
+
 	private int triggerId = -1;
 	private bool activated = false;
+
+	void Awake() {
+		toySqueakSound = GetComponent<AudioSource> ();
+	}
 
 	public void ActivateTrigger(int[] args) {
 		triggerId = args[0];
@@ -22,6 +28,8 @@ public class ToyInteraction : MonoBehaviour, MyObjectTrigger{
 
 	void OnTriggerStay() {
 		if (activated && Input.GetButtonDown ("Interact")) {
+			GetComponent<Rigidbody>().velocity = new Vector3(0.0f, 5.0f, 0.0f);
+			toySqueakSound.Play();
 			GameObject behaviourTree = GameObject.Find ("BehaviourTree");
 			behaviourTree.SendMessage ("TriggerNextChoice", triggerId);
 		}
