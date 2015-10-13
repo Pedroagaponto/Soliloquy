@@ -13,6 +13,7 @@ public class BehaviourTree : MonoBehaviour {
 	private List<GameObject> objList = new List<GameObject>();
 	private float oldTime, newTime;
 	private bool printed, positiveBehaviour;
+	private GameObject roomsManager;
 
 	public void TriggerNextChoice(int i) {
 		foreach (GameObject obj in objList) {
@@ -21,6 +22,10 @@ public class BehaviourTree : MonoBehaviour {
 		objList = new List<GameObject>();
 
 		behaviour = behaviour.ChildNode[i];
+		if (behaviour.Room != null) {
+			roomsManager.SendMessage("spawnRoom", behaviour.Room);
+		}
+
 		oldTime = newTime = Time.realtimeSinceStartup;
 		SetTriggers();
 		Debug.Log(behaviour.Narrator);
@@ -35,6 +40,7 @@ public class BehaviourTree : MonoBehaviour {
 		soundSource = GetComponent<AudioSource> ();
 		narrator = NarratorController.Instance;
 		behaviour = null;
+		roomsManager = GameObject.Find("Abstract/RoomsManager");
 		TweeParser parser = TweeParser.getInstance();
 		List<Node> nodeList = parser.getNodeList();
 		if (nodeList == null) {
@@ -98,9 +104,13 @@ public class BehaviourTree : MonoBehaviour {
 		for (int i = 0; i < behaviour.Triggers.Count; i++) {
 			if (behaviour.TriggersNames[i] != null) {
 				obj = GameObject.Find(behaviour.TriggersNames[i]);
-				objList.Add(obj);
-				int[] args = {i, behaviour.Triggers[i]};
-				obj.SendMessage("ActivateTrigger", args);
+				if (obj != null) {
+					objList.Add(obj);
+					int[] args = {i, behaviour.Triggers[i]};
+					obj.SendMessage("ActivateTrigger", args);
+				} else {
+					Debug.Log(behaviour.TriggersNames[i] + " object not found");
+				}
 			}
 		}
 	}

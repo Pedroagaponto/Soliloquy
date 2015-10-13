@@ -18,8 +18,7 @@ public class RoomInteraction : MonoBehaviour, MyObjectTrigger {
 	void OnTriggerStay(Collider other)
 	{
 		if (activated){
-			GameObject behaviourTree = new GameObject();
-			behaviourTree = GameObject.Find("BehaviourTree");
+			GameObject behaviourTree = GameObject.Find("BehaviourTree");
 			behaviourTree.SendMessage("TriggerNextChoice", triggerId);
 		}
 	}

@@ -101,20 +101,10 @@ Thank you.
 -end-
 
 
-:: Hall room 2
->animation-ForthRoom/LeftWall/Door-Open
->animation-ForthRoom/FarWall/Door-Open
->narrator-HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.
-[[autointeract-FifthRoom/Floor-|Right Door]]
-//[[autointeract-SixthRoom-|Left Door]]
-
-
-
-
 :: Right Door
 >narrator-Oh, it's the picture again. Uh... Maybe it's best if we just keep going don't you think?
 [[autointeract-SixthRoom/FarWall/Door-|Coming Out Ending 1]]
-[[buttoninteract-FifthRoom/PictureInFrame-|Photo Interact 3]]
+[[buttoninteract-SixthRoom/PictureInFrame-|Photo Interact 3]]
 
 
 :: Photo Interact 3
@@ -170,10 +160,10 @@ Thank you.
 
 
 :: hall room
+>loadroom-SixthRoom
 >narrator-Looks like we're stuck here. Oh, wait! I wanna show you a neat magic trick! (whispers under breath) "I hope this works" OKAY! 3... 2... 1... PRESTO!!
 
-[[wait-2-|Hall room 2]]
-
+[[autointeract-SixthRoom/Floor-|Right Door]]
 
 
 :: Leave End
@@ -313,12 +303,6 @@ Goodbye.
 [[autointeract-FifthRoom/Lamp-|continue2]]
 
 
-:: stop2
->narrator-I am sorry to be a bother but, well, the truth is I was really excited when I saw you just then. I really hoped that we could get along. Do you want to start it fresh? I am sure we can be great friend.
-[[actionbutton-|interact]]
-[[wait-13-|walk4]]
-
-
 :: right2
 [[buttoninteract-ForthRoom/LeftWall/Door-|hall room3]]
 
@@ -367,15 +351,14 @@ I think things are going to be okay.
 :: Please 2
 >narrator-Hey, yes, hi! *sniffs* It's still not to late to be a team is it?
 [[actionbutton-|Photo]]
-[[Wait-10-|silence]]
+[[autointeract-SecondRoom/FarWall/Mirror-|mirror]]
 
 
 :: mirror
->animation-SecondRoom/FarWall/MirrorFrame/Mirror-Explode
->narrator-[MIRROR EXPLODES-THIS PART ISN'T IMPLEMENTED YET]*gasps* Are you okay? Careful not to walk on any of the shards.
+>narrator-*gasps* Are you okay? Careful not to walk on any of the shards.
 
 [[autointeract-SecondRoom/FarWall/Door-|mirror2]]
-[[autointeract-SecondRoom/FarWall/MirrorFrame/Mirror-|mirror interact]]
+[[buttoninteract-SecondRoom/FarWall/Mirror-|mirror interact]]
 
 
 :: walk
@@ -395,30 +378,15 @@ I think things are going to be okay.
 [[Wait-12-|walk4]]
 
 
-:: walk4
->narrator-Oh... 
-[[autointeract-FirstRoom/FarWall/Door-|please]]
+:: stop2
+>narrator-I am sorry to be a bother but, well, the truth is I was really excited when I saw you just then. I really hoped that we could get along. Do you want to start it fresh? I am sure we can be great friend.
+[[actionbutton-|interact]]
+[[wait-13-|walk4]]
 
 
 :: continue2
 >narrator-Oh, my God! Oh no! (The room goes dark)
 [[wait-2-|continue3]]
-
-
-:: please
->narrator-*sniffs* Please wait... I really just need someone to talk to right now. You understand, right? I don't have anyone else and... It's just really hard right now...
-[[actionbutton-|Please 2]]
-[[Wait-19-|silence]]
-
-
-
-:: silence
-[[autointeract-SecondRoom/FarWall/MirrorFrame/Mirror-|mirror]]
-
-
-:: mirror interact
->narrator-I don't want you to get hurt.
-[[autointeract-SecondRoom/FarWall/Door-|mirror2]]
 
 
 :: Don't Worry
@@ -427,8 +395,26 @@ I think things are going to be okay.
 [[Wait-6-|Repetition]]
 
 
+:: walk4
+>narrator-Oh... 
+[[autointeract-FirstRoom/FarWall/Door-|please]]
+
+
+:: please
+>narrator-*sniffs* Please wait... I really just need someone to talk to right now. You understand, right? I don't have anyone else and... It's just really hard right now...
+[[actionbutton-|Please 2]]
+[[autointeract-SecondRoom/FarWall/Mirror-|mirror]]
+
+
+
+:: mirror interact
+>narrator-I don't want you to get hurt.
+[[autointeract-SecondRoom/FarWall/Door-|mirror2]]
+
+
 :: continue
 >animation-ForthRoom/FarWall/Door-Open
+>animation-ForthRoom/Vase-VaseBreak
 >narrator-Oh... wow...
 [[autointeract-FifthRoom/Lamp-|continue2]]
 

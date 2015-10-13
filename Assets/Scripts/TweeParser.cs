@@ -78,7 +78,7 @@ public class TweeParser {
 					}
 					node.objAnims.Add(new ObjectAnimation(elements[1], elements[2]));
 				} else if (line.ToLower().ToLower().StartsWith(">loadroom")) {
-					if (elements.Length < 3) {
+					if (elements.Length < 2) {
 						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \">loadroom\" command. Try to use \"-\" after \">loadroom\".");
 						error = true;
 						continue;
