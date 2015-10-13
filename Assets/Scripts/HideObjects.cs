@@ -41,7 +41,9 @@ public class HideObjects : MonoBehaviour
 			{
 				//Add to list and disable renderer
 				hiddenObjects.Add(currentHit);
-				currentHit.GetComponent<Renderer>().enabled = false;
+				foreach (Renderer render in currentHit.GetComponentsInChildren<Renderer>()) {
+					render.enabled = false;
+				}
 			}
 		}
 		
@@ -64,7 +66,9 @@ public class HideObjects : MonoBehaviour
 			{
 				//Enable renderer, remove from list, and decrement the counter because the list is one smaller now
 				Transform wasHidden = hiddenObjects[i];
-				wasHidden.GetComponent<Renderer>().enabled = true;
+				foreach (Renderer render in hiddenObjects[i].GetComponentsInChildren<Renderer>()) {
+					render.enabled = true;
+				}
 				hiddenObjects.RemoveAt(i);
 				i--;
 			}
