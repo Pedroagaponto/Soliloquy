@@ -10,9 +10,11 @@ public class NarratorController : MonoBehaviour {
 	public static NarratorController Instance {get; private set;}
 	
 	public GameObject subtitleGameObject;
+	public GameObject subtitleShadowGameObject;
 	public AudioSource narratorAudio;
 	
 	private Text subtitleText;
+	private Text subtitleTextShadow;
 	private AudioClip dialogClip;
 	private IEnumerator subCoroutine;
 	private IEnumerator callCoroutine;
@@ -60,15 +62,21 @@ public class NarratorController : MonoBehaviour {
 			subtitleText = subtitleGameObject.GetComponent<Text> ();
 			subtitleText.supportRichText = true;
 		}
-		Reset ();
+		if (subtitleTextShadow == null) {
+			subtitleTextShadow = subtitleShadowGameObject.GetComponent<Text> ();
+			subtitleTextShadow.supportRichText = true;
+		}
 		
-		dialogClip = Resources.Load ("Narrator/" + clipName) as AudioClip;
 		TextAsset textFile = Resources.Load ("Subtitles/" + clipName) as TextAsset;
 		
-		if (textFile != null)
-			Parser (textFile);
-		
-		
+		if (textFile == null) {
+			return;
+		}
+
+		Reset ();
+		Parser (textFile);
+
+		dialogClip = Resources.Load ("Narrator/" + clipName) as AudioClip;
 		if (dialogClip != null) {
 			narratorAudio.clip = dialogClip;
 			narratorAudio.Play ();
@@ -96,6 +104,7 @@ public class NarratorController : MonoBehaviour {
 		
 		dialogClip = null;
 		if(subtitleText != null) subtitleText.text = "";
+		if(subtitleTextShadow != null) subtitleTextShadow.text = "";
 	}
 	
 	private void Parser(TextAsset textFile) {
@@ -132,6 +141,7 @@ public class NarratorController : MonoBehaviour {
 			
 			prevTime = s.timing;
 			subtitleText.text = s.text;
+			subtitleTextShadow.text = s.text;
 		}
 	}
 	
@@ -145,6 +155,7 @@ public class NarratorController : MonoBehaviour {
 			}
 			
 			subtitleText.text = s.text;
+			subtitleTextShadow.text = s.text;
 		}
 	}
 	
@@ -162,14 +173,5 @@ public class NarratorController : MonoBehaviour {
 			else
 				GameObject.Find(s.obj).SendMessage(s.method, s.arg);
 		}
-	}
-	
-	void Start () {
-
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }
