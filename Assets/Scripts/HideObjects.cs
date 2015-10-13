@@ -6,7 +6,7 @@ public class HideObjects : MonoBehaviour
 	//The player to shoot the ray at
 	public Transform player;
 	//The camera to shoot the ray from
-	public Transform camera;
+	public new Transform camera;
 	
 	//List of all objects that we have hidden.
 	public List<Transform> hiddenObjects;
@@ -65,7 +65,6 @@ public class HideObjects : MonoBehaviour
 			if (!isHit)
 			{
 				//Enable renderer, remove from list, and decrement the counter because the list is one smaller now
-				Transform wasHidden = hiddenObjects[i];
 				foreach (Renderer render in hiddenObjects[i].GetComponentsInChildren<Renderer>()) {
 					render.enabled = true;
 				}

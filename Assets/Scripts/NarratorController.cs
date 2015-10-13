@@ -100,7 +100,7 @@ public class NarratorController : MonoBehaviour {
 		
 		if (callCoroutine != null) StopCoroutine (callCoroutine);
 		if (subCoroutine != null) StopCoroutine (subCoroutine);
-		callCoroutine = callCoroutine = null;
+		callCoroutine = subCoroutine = null;
 		
 		dialogClip = null;
 		if(subtitleText != null) subtitleText.text = "";

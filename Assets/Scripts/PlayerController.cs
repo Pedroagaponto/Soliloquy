@@ -6,11 +6,10 @@ public class PlayerController : MonoBehaviour
 	public float smoothing = 8f;
 	
 	private Vector3 movement;
-	private Rigidbody playerRigidbody;
-	
+
 	void Awake()
 	{
-		playerRigidbody = GetComponent <Rigidbody> ();
+
 	}
 
 	void FixedUpdate()

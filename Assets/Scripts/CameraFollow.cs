@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CameraFollow : MonoBehaviour
 {
-	Camera camera;
+//	Camera camera;
 	float cameraScale = 3;
 	
 	public Transform target;            // The position that that camera will be following.
@@ -19,7 +19,6 @@ public class CameraFollow : MonoBehaviour
 
 	void Awake ()
 	{
-		camera = GetComponent<Camera> ();
 	}
 
 	void Start ()
@@ -59,7 +58,7 @@ public class CameraFollow : MonoBehaviour
 		
 		transform.rotation = Quaternion.Lerp (transform.rotation, rotation, smoothing * Time.deltaTime);
 
-		camera.orthographicSize = Mathf.Lerp (camera.orthographicSize, cameraScale, smoothing * Time.deltaTime);;
+		GetComponent<Camera>().orthographicSize = Mathf.Lerp (GetComponent<Camera>().orthographicSize, cameraScale, smoothing * Time.deltaTime);;
 	}
 	
 	public void updateCameraRotation (float theta, float phi, float cameraScale)

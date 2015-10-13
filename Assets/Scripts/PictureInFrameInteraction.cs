@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PictureInFrameInteraction : MonoBehaviour, MyObjectTrigger {
 	private int triggerId = -1, triggerType = -1;
-	private bool activated = false, insideCollider = false;
+	private bool activated = false;
 
 	public void ActivateTrigger(int[] args) {
 		GetComponent<EllipsoidParticleEmitter>().enabled = true;
@@ -25,11 +25,9 @@ public class PictureInFrameInteraction : MonoBehaviour, MyObjectTrigger {
 		if (triggerType == (int)Trigger.autointeract) {
 			NextChoice ();
 		}
-		insideCollider = true;
 	}
 	
 	void OnTriggerExit(Collider other) {
-		insideCollider = false;
 	}
 
 	void OnTriggerStay() {
@@ -45,6 +43,5 @@ public class PictureInFrameInteraction : MonoBehaviour, MyObjectTrigger {
 	private void NextChoice() {
 		GameObject behaviourTree = GameObject.Find("BehaviourTree");
 		behaviourTree.SendMessage("TriggerNextChoice", triggerId);
-		insideCollider = false;
 	}
 }

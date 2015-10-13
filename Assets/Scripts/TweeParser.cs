@@ -31,7 +31,6 @@ public class TweeParser {
 		int aux = 0;
 		bool error = false;
 		Node node = null;
-		StringBuilder buffer = new StringBuilder();
 		string[] lines;
 		string[] elements;
 		string line;
