@@ -3,4 +3,8 @@
 06.70|"I hope it works" OKAY! 3... 2... 1... PRESTO!!
 12.35|\call-ForthRoom/FarWall/Door-Open
 12.35|\call-ForthRoom/LeftWall/Door-Open
-13.00|\clear
+13.21|HAHAAA! It worked! Alright, I guess we can keep moving!
+16.78|You take the right one and I'll search the left!
+18.66|I'm only kidding, can you imagine being apart!?
+20.76|The choice is yours really but I don't know I have a good feeling about the right door.
+27.00|\clear

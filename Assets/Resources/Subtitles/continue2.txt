@@ -1,0 +1,6 @@
+00.00|Oh, my God! Oh no!
+02.50|\call-Player-Freeze
+05.95|Are you okay?! I-I'm so sorry!! I didn't... you're okay, right??
+10.34|\call-Player-Unfreeze
+12.08|I'm sorry... I feel responsible...
+15.00|\clear

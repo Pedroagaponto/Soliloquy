@@ -1,2 +1,7 @@
 00.00|Oh... wow...
+00.10|\call-ForthRoom/FarWall/Door-Open
+00.10|\call-ForthRoom/Vase-VaseBreak
 03.00|\clear
+
+
+>narrator-Oh... wow...

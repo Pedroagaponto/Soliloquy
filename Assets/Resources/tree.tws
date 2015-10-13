@@ -27,8 +27,8 @@ I00
 sS'pos'
 p15
 (lp16
-F3989.9166666666683
-aF117.7500000000006
+F3984.9166666666683
+aF87.7500000000006
 asS'passage'
 p17
 (itiddlywiki
@@ -993,15 +993,15 @@ g14
 I00
 sg15
 (lp313
-F4050.3333333333303
-aF879.583333333333
+F4052.8333333333303
+aF872.083333333333
 asg17
 (itiddlywiki
 Tiddler
 p314
 (dp315
 g21
-V//The room is different, save another lamp//\u000a\u000a>narrator-Oh, uh.... be careful...\u000a\u000a//Upon approaching the lamp within a certain radius, the player is redirected to be walking away from the lamp//\u000a\u000a[[wait-3-|continue4]]\u000a[[autointeract-FifthRoom/Lamp-|continuelamp]]
+V//The room is different, save another lamp//\u000a\u000a>narrator-Oh, uh.... be careful...\u000a\u000a//Upon approaching the lamp within a certain radius, the player is redirected to be walking away from the lamp//\u000a\u000a[[autointeract-FifthRoom/FarWall/Door-|continue4]]
 p316
 sg23
 Vcontinue3
@@ -1010,12 +1010,12 @@ sg25
 g26
 ((I2015
 I10
-I12
-I18
-I30
-I34
+I14
 I0
-I285
+I23
+I14
+I2
+I287
 I1
 tp318
 (dp319
@@ -1949,15 +1949,15 @@ g14
 I00
 sg15
 (lp601
-F3262.4166666666633
-aF78.74999999999861
+F3153.6666666666633
+aF82.49999999999861
 asg17
 (itiddlywiki
 Tiddler
 p602
 (dp603
 g21
-V>narrator-Oh yeah, this is nice. Real cozy. Looks like the perfect chance to just kick back, huh! Hm, that's probably it for this room. I know it's nice, but we've got stuff to do! I mean, I guess? I'm not really sure where we're going or whatever but... this has been pretty cool.\u000a[[autointeract-FifthRoom-|Coming Out Ending 1]]
+V>narrator-Oh yeah, this is nice. Real cozy. Looks like the perfect chance to just kick back, huh!\u000a[[actionbutton-|Side force interact]]
 p604
 sg23
 VLeft Door
@@ -1966,12 +1966,12 @@ sg25
 g26
 ((I2015
 I10
-I12
-I18
-I22
-I47
-I0
-I285
+I13
+I23
+I50
+I53
+I1
+I286
 I1
 tp606
 (dp607
@@ -1999,8 +1999,8 @@ g14
 I00
 sg15
 (lp616
-F3259.5000000000064
-aF205.0
+F3164.5000000000064
+aF341.25
 asg17
 (itiddlywiki
 Tiddler
@@ -2049,8 +2049,8 @@ g14
 I00
 sg15
 (lp631
-F3393.249999999999
-aF209.16666666666583
+F3194.499999999999
+aF466.66666666666583
 asg17
 (itiddlywiki
 Tiddler
@@ -2099,8 +2099,8 @@ g14
 I00
 sg15
 (lp646
-F3392.083333333335
-aF342.0833333333333
+F3334.583333333335
+aF522.0833333333333
 asg17
 (itiddlywiki
 Tiddler
@@ -2149,8 +2149,8 @@ g14
 I00
 sg15
 (lp661
-F3393.250000000003
-aF479.16666666666686
+F3508.250000000003
+aF524.1666666666669
 asg17
 (itiddlywiki
 Tiddler
@@ -2199,8 +2199,8 @@ g14
 I00
 sg15
 (lp676
-F3794.5000000000023
-aF481.6666666666673
+F3780.7500000000023
+aF526.6666666666673
 asg17
 (itiddlywiki
 Tiddler
@@ -2896,10 +2896,10 @@ tp883
 Rp884
 sbsa(dp885
 g14
-I01
+I00
 sg15
 (lp886
-F2029.083333333333
+F2022.833333333333
 aF875.4166666666662
 asg17
 (itiddlywiki
@@ -2949,15 +2949,15 @@ g14
 I00
 sg15
 (lp901
-F2701.3333333333303
-aF845.4166666666662
+F2702.5833333333303
+aF849.1666666666662
 asg17
 (itiddlywiki
 Tiddler
 p902
 (dp903
 g21
-V>animation-ForthRoom/FarWall/Door-Open\u000a>animation-ForthRoom/Vase-VaseBreak\u000a>narrator-Oh... wow...\u000a[[autointeract-FifthRoom/Lamp-|continue2]]
+V>narrator-Oh... wow...\u000a[[autointeract-FifthRoom/Lamp-|continue2]]
 p904
 sg23
 Vcontinue
@@ -2967,9 +2967,9 @@ g26
 ((I2015
 I10
 I13
-I21
-I11
-I3
+I22
+I40
+I0
 I1
 I286
 I1
@@ -3457,7 +3457,7 @@ Tiddler
 p1052
 (dp1053
 g21
-V>narrator-Hm?\u000a\u000a[[buttoninteract-ForthRoom/FarWall/Door-|left2]]\u000a[[buttoninteract-ForthRoom/LeftWall/Door-|right2]]
+V>loadroom-FifthRoom\u000a>narrator-Hm?\u000a\u000a[[buttoninteract-ForthRoom/FarWall/Door-|left2]]\u000a[[buttoninteract-ForthRoom/LeftWall/Door-|right2]]
 p1054
 sg23
 VDoors 2
@@ -3466,12 +3466,12 @@ sg25
 g26
 ((I2015
 I10
-I11
-I23
 I13
-I32
-I6
-I284
+I21
+I53
+I51
+I1
+I286
 I1
 tp1056
 (dp1057
@@ -3807,7 +3807,7 @@ Tiddler
 p1157
 (dp1158
 g21
-V>loadroom-SixthRoom\u000a>narrator-Looks like we're stuck here. Oh, wait! I wanna show you a neat magic trick! (whispers under breath) "I hope this works" OKAY! 3... 2... 1... PRESTO!!\u000a\u000a[[autointeract-SixthRoom/Floor-|Right Door]]
+V>loadroom-SixthRoom\u000a>narrator-Looks like we're stuck here. Oh, wait! I wanna show you a neat magic trick! (whispers under breath) "I hope this works" OKAY! 3... 2... 1... PRESTO!! HAHAAA! It worked! Alright, I guess we can keep moving! You take the right one and I'll search the left! I'm only kidding, can you imagine being apart!? The choice is yours really but I don't know I have a good feeling about the right door.\u000a\u000a[[autointeract-SideRoom/Floor-|Left Door]]\u000a[[autointeract-SixthRoom/Floor-|Right Door]]
 p1159
 sg23
 Vhall room
@@ -3817,9 +3817,9 @@ g26
 ((I2015
 I10
 I13
-I18
-I14
-I38
+I23
+I16
+I50
 I1
 I286
 I1
@@ -3857,7 +3857,7 @@ Tiddler
 p1172
 (dp1173
 g21
-V>narrator-Oh you're stuck. Uh, let me try something.\u000a\u000a[[wait-2-|hall room4]]
+V>narrator-Oh you're stuck. Uh, let me try something. I... didn't expect that to happen. Well... there you go.\u000a\u000a[[autointeract-FifthRoom/Lamp-|continue2]]
 p1174
 sg23
 Vhall room3
@@ -3865,14 +3865,14 @@ p1175
 sg25
 g26
 ((I2015
-I9
-I17
 I10
-I50
-I17
-I3
-I260
-I0
+I13
+I21
+I53
+I45
+I1
+I286
+I1
 tp1176
 (dp1177
 tp1178
@@ -3899,29 +3899,29 @@ g14
 I00
 sg15
 (lp1186
-F2881.5833333333303
-aF560.833333333333
+F3368.25
+aF721.25
 asg17
 (itiddlywiki
 Tiddler
 p1187
 (dp1188
 g21
-V>loadroom-FifthRoom\u000a>animation-ForthRoom/FarWall-explodes\u000a>narrator-I... didn't expect that to happen. Well... there you go.\u000a\u000a[[autointeract-FifthRoom/Lamp-|continue2]]
+V<<Upon approaching a lamp on a table, the lamp sparks and strikes the character. Play ELECTROCUTION animation. The room goes dark>>\u000a\u000a>narrator-Oh, my God! Oh no! //Are you okay?! I-I'm so sorry!! I didn't... you're okay, right?? //I'm sorry... I feel responsible...\u000a\u000a<<The lights come back on after 4 seconds. The lamp is gone. Player control is disabled for the time being. The player sits up and shakes themselves off>>\u000a\u000a<<The end of this spoken dialogue triggers the character to do the stand up animation. The player is able to control them once again.>>\u000a\u000a<<The colour palette shifts to a deep blue colour. The narrator falls silent as the player continues playing. The player is now able to go through the next door>>\u000a\u000a<<unconsciouseffect>>\u000a\u000a[[autointeract-FifthRoom/Lamp-|continue3]]
 p1189
 sg23
-Vhall room4
+Vcontinue2
 p1190
 sg25
 g26
 ((I2015
 I10
-I13
-I19
-I23
+I14
+I0
 I21
-I1
-I286
+I46
+I2
+I287
 I1
 tp1191
 (dp1192
@@ -3933,12 +3933,12 @@ sg33
 g26
 ((I2015
 I9
-I16
-I19
-I45
-I14
-I2
-I259
+I17
+I10
+I40
+I15
+I3
+I260
 I0
 tp1196
 (dp1197
@@ -3949,29 +3949,29 @@ g14
 I00
 sg15
 (lp1201
-F3387.0
-aF740.0
+F2610.75
+aF267.5
 asg17
 (itiddlywiki
 Tiddler
 p1202
 (dp1203
 g21
-V>narrator-Oh, my God! Oh no! (The room goes dark)\u000a[[wait-2-|continue3]]
+V[[buttoninteract-ForthRoom/LeftWall/Door-|hall room]]
 p1204
 sg23
-Vcontinue2
+Vright
 p1205
 sg25
 g26
 ((I2015
 I10
-I12
-I18
-I29
-I22
-I0
-I285
+I11
+I23
+I5
+I14
+I6
+I284
 I1
 tp1206
 (dp1207
@@ -3982,14 +3982,14 @@ sg31
 sg33
 g26
 ((I2015
-I9
-I17
 I10
-I40
-I15
-I3
-I260
-I0
+I11
+I23
+I1
+I19
+I6
+I284
+I1
 tp1211
 (dp1212
 tp1213
@@ -3999,18 +3999,18 @@ g14
 I00
 sg15
 (lp1216
-F2610.75
-aF267.5
+F2739.5
+aF145.0
 asg17
 (itiddlywiki
 Tiddler
 p1217
 (dp1218
 g21
-V[[buttoninteract-ForthRoom/LeftWall/Door-|hall room]]
+V[[buttoninteract-ForthRoom/FarWall/Door-|hall room]]
 p1219
 sg23
-Vright
+Vleft
 p1220
 sg25
 g26
@@ -4019,7 +4019,7 @@ I10
 I11
 I23
 I5
-I14
+I32
 I6
 I284
 I1
@@ -4049,29 +4049,29 @@ g14
 I00
 sg15
 (lp1231
-F2739.5
-aF145.0
+F2043.25
+aF547.0
 asg17
 (itiddlywiki
 Tiddler
 p1232
 (dp1233
 g21
-V[[buttoninteract-ForthRoom/FarWall/Door-|hall room]]
+V[[autointeract-ThirdRoom/FarWall/Door-|Doors 2]]
 p1234
 sg23
-Vleft
+Vthirdroom
 p1235
 sg25
 g26
 ((I2015
 I10
-I11
-I23
-I5
-I32
-I6
-I284
+I14
+I1
+I57
+I58
+I2
+I287
 I1
 tp1236
 (dp1237
@@ -4085,8 +4085,8 @@ g26
 I10
 I11
 I23
-I1
-I19
+I2
+I52
 I6
 I284
 I1
@@ -4099,29 +4099,29 @@ g14
 I00
 sg15
 (lp1246
-F2043.25
-aF544.5
+F2617.5
+aF635.0
 asg17
 (itiddlywiki
 Tiddler
 p1247
 (dp1248
 g21
-V[[autointeract-SecondRoom/FarWall/Door-|Doors 2]]
+V[[buttoninteract-ForthRoom/FarWall/Door-|hall room3]]
 p1249
 sg23
-Vthirdroom
+Vright2
 p1250
 sg25
 g26
 ((I2015
 I10
-I11
-I23
-I3
-I24
+I14
+I2
 I6
-I284
+I42
+I2
+I287
 I1
 tp1251
 (dp1252
@@ -4135,8 +4135,8 @@ g26
 I10
 I11
 I23
-I2
-I52
+I13
+I35
 I6
 I284
 I1
@@ -4146,11 +4146,11 @@ tp1258
 Rp1259
 sbsa(dp1260
 g14
-I00
+I01
 sg15
 (lp1261
-F2617.5
-aF635.0
+F2749.5
+aF505.0
 asg17
 (itiddlywiki
 Tiddler
@@ -4160,18 +4160,18 @@ g21
 V[[buttoninteract-ForthRoom/LeftWall/Door-|hall room3]]
 p1264
 sg23
-Vright2
+Vleft2
 p1265
 sg25
 g26
 ((I2015
 I10
-I11
-I23
 I14
-I42
+I2
 I6
-I284
+I48
+I2
+I287
 I1
 tp1266
 (dp1267
@@ -4199,29 +4199,29 @@ g14
 I00
 sg15
 (lp1276
-F2749.5
-aF505.0
+F3652.5
+aF81.25
 asg17
 (itiddlywiki
 Tiddler
 p1277
 (dp1278
 g21
-V[[buttoninteract-ForthRoom/FarWall/Door-|hall room3]]
+V>narrator-Hm, that's probably it for this room. I know it's nice, but we've got stuff to do! I mean, I guess? I'm not really sure where we're going or whatever but... this has been pretty cool.\u000a[[autointeract-SixthRoom-|Coming Out Ending 1]]
 p1279
 sg23
-Vleft2
+VSide interact
 p1280
 sg25
 g26
 ((I2015
 I10
-I11
-I23
 I14
-I54
-I6
-I284
+I0
+I2
+I23
+I2
+I287
 I1
 tp1281
 (dp1282
@@ -4233,12 +4233,12 @@ sg33
 g26
 ((I2015
 I10
-I11
-I23
 I13
-I35
-I6
-I284
+I23
+I21
+I29
+I1
+I286
 I1
 tp1286
 (dp1287
@@ -4249,29 +4249,29 @@ g14
 I00
 sg15
 (lp1291
-F4050.75
-aF1038.75
+F3281.25
+aF83.75
 asg17
 (itiddlywiki
 Tiddler
 p1292
 (dp1293
 g21
-V[[autointeract-FifthRoom/Lamp-|continuelamp]]\u000a[[autointeract-FifthRoom/FarWall/Door-|continue4]]
+V[[actionbutton-|Side force interact 2]]
 p1294
 sg23
-Vcontinuelamp
+VSide force interact
 p1295
 sg25
 g26
 ((I2015
 I10
-I12
-I18
+I13
+I23
+I51
 I31
-I32
-I0
-I285
+I1
+I286
 I1
 tp1296
 (dp1297
@@ -4283,21 +4283,121 @@ sg33
 g26
 ((I2015
 I10
-I12
-I18
-I30
-I37
-I0
-I285
+I13
+I23
+I50
+I57
+I1
+I286
 I1
 tp1301
 (dp1302
 tp1303
 Rp1304
+sbsa(dp1305
+g14
+I00
+sg15
+(lp1306
+F3404.5
+aF83.75
+asg17
+(itiddlywiki
+Tiddler
+p1307
+(dp1308
+g21
+V[[actionbutton-|Side force interact 3]]
+p1309
+sg23
+VSide force interact 2
+p1310
+sg25
+g26
+((I2015
+I10
+I13
+I23
+I51
+I47
+I1
+I286
+I1
+tp1311
+(dp1312
+tp1313
+Rp1314
+sg31
+(lp1315
+sg33
+g26
+((I2015
+I10
+I13
+I23
+I51
+I34
+I1
+I286
+I1
+tp1316
+(dp1317
+tp1318
+Rp1319
+sbsa(dp1320
+g14
+I00
+sg15
+(lp1321
+F3529.5
+aF83.75
+asg17
+(itiddlywiki
+Tiddler
+p1322
+(dp1323
+g21
+V[[actionbutton-|Side interact]]
+p1324
+sg23
+VSide force interact 3
+p1325
+sg25
+g26
+((I2015
+I10
+I13
+I23
+I51
+I58
+I1
+I286
+I1
+tp1326
+(dp1327
+tp1328
+Rp1329
+sg31
+(lp1330
+sg33
+g26
+((I2015
+I10
+I13
+I23
+I51
+I51
+I1
+I286
+I1
+tp1331
+(dp1332
+tp1333
+Rp1334
 sbsasS'scale'
-p1305
+p1335
 F0.8
 sS'snapping'
-p1306
+p1336
 I00
 ss.

@@ -19,6 +19,7 @@ public class MirrorInteraction : MonoBehaviour, MyObjectTrigger {
 	
 	public void DeactivateTrigger() {
 		triggerId = -1;
+		triggerType = -1;
 		activated = false;
 	}
 

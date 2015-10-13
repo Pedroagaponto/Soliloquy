@@ -33,4 +33,14 @@ public class PlayerController : MonoBehaviour
 			transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(movement), smoothing * Time.deltaTime);
 		}
 	}
+
+	void Freeze() {
+		speed = 0f;
+		Debug.Log("Player freezed");
+	}
+
+	void Unfreeze() {
+		speed = 5f;
+		Debug.Log("Player unfreezed");
+	}
 }

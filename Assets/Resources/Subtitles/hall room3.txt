@@ -1,2 +1,5 @@
-00.00|Oh you're stuck. Uh, let me try something.
-04.00|\clear
+00.00|Oh you're stuck. 
+01.33|Uh, let me try something.
+03.37|\call-ForthRoom/FarWall/Door-Open
+04.67|I... didn't expect that to happen. Well... there you go.
+09.20|\clear
