@@ -1,2 +1,3 @@
+00.00|\call-Abstract/MusicController-PlayAudio-happy
 00.00|Oh, good! You can hear me! That's a relief.
-02.00|\clear
+03.30|\clear

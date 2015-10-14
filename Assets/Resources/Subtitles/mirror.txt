@@ -1,2 +1,3 @@
+00.00|\call-Abstract/MusicController-PlayAudio-sad
 00.00|Are you okay? Careful not to walk on any of the shards.
 04.40|\clear

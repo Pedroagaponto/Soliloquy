@@ -1,3 +1,4 @@
+00.00|\call-Abstract/MusicController-PlayAudio-happy
 00.00|Ooh, how interesting! Looks like a cute little toy, eh?
 02.94|Maybe their owner forgot about it. Oh well, not much use to us.
 05.79|\clear

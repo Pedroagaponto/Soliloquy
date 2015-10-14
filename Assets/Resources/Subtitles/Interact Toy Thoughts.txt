@@ -1,4 +1,5 @@
 00.00|You know... When I think about it, I'm actually not too sure if I've ever played before.
+04.37|\call-Abstract/MusicController-PlayAudio-happy
 04.37|The toy seemed like it would be fun and...
 07.11|I wish I could do that, you're pretty lucky.
 08.79|\clear

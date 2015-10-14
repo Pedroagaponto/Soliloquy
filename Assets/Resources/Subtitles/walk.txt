@@ -1,2 +1,3 @@
+00.00|\call-Abstract/MusicController-PlayAudio-curiosity
 00.00|<b><i>Oh, uh...</i></b> Hi! Hello?
 04.80|\clear

@@ -1,3 +1,4 @@
+00.00|\call-Abstract/MusicController-PlayAudio-happy
 00.00|Hm, that's probably it for this room. 
 02.23|I know it's nice, but we've got stuff to do! I mean, I guess? 
 06.53|I'm not really sure where we're going or whatever but... 

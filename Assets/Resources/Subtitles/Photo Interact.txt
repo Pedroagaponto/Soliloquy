@@ -1,3 +1,4 @@
+00.00|\call-Abstract/MusicController-PlayAudio-happy
 00.00|It's a photo. I feel like I know who those people are, but I can't quite put my finger on it.
 05.50|This is so strange. I feel weird seeing this photo of these people,
 10.28|I feel like they are really important to me and that they love me very much.

@@ -1,3 +1,4 @@
+00.00|\call-Abstract/MusicController-PlayAudio-eerie1-2
 00.00|That was really strange huh?
 01.90|Do you think this place is haunted?
 03.90|\clear

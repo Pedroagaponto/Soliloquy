@@ -126,7 +126,7 @@ Thank you.
 :: stop
 >narrator-Oh, good! You can hear me! That's a relief.
 [[actionbutton-|interact]]
-[[Wait-6-|walk2]]
+[[Wait-7-|walk2]]
 
 
 :: interact

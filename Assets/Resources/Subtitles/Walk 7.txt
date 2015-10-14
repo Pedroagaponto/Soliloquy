@@ -1,3 +1,4 @@
+00.00|\call-Abstract/MusicController-PlayAudio-happy
 00.00|Sorry, I didn't mean to completely ignore you!
 02.64|I'm just still trying to figure out everything with that photo. 
 05.02|Look, don't worry, you have my full and undivided attention from now on!

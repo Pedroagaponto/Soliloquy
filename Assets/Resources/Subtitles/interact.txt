@@ -1,5 +1,7 @@
+00.00|\call-Abstract/MusicController-PlayAudio-happy
 00.00|Heh, you're funny.
 01.83|I think this is the first time I've talked to anyone.
 04.44|I kinda like it.
+05.61|\call-Abstract/MusicController-PlayAudio-curiosity
 05.61|Hey, why don't we check out that thing?
 08.63|\clear

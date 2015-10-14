@@ -1,6 +1,7 @@
 00.00|Hm...Looks like we're stuck here.
 02.30|Oh, wait a second! Hey, I wanna show you a neat magic trick!
 06.70|"I hope it works" OKAY! 3... 2... 1... PRESTO!!
+12.35|\call-Abstract/MusicController-PlayAudio-magicpresto
 12.35|\call-ForthRoom/FarWall/Door-Open
 12.35|\call-ForthRoom/LeftWall/Door-Open
 13.21|HAHAAA! It worked! Alright, I guess we can keep moving!

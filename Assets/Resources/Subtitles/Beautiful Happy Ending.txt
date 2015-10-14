@@ -1,3 +1,4 @@
+00.00|\call-Abstract/MusicController-PlayAudio-happyreliefEnding(celloNviolin)
 00.00|I want to share my happiness with you! 
 05.13|I'm glad you were there with me through that. 
 07.94|We can just be happy.

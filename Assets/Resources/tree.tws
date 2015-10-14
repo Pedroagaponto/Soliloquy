@@ -2399,7 +2399,7 @@ g14
 I00
 sg15
 (lp736
-F156.99999999999943
+F153.24999999999943
 aF251.74999999999983
 asg17
 (itiddlywiki
@@ -2407,7 +2407,7 @@ Tiddler
 p737
 (dp738
 g21
-V>narrator-Oh, good! You can hear me! That's a relief.\u000a[[actionbutton-|interact]]\u000a[[Wait-6-|walk2]]
+V>narrator-Oh, good! You can hear me! That's a relief.\u000a[[actionbutton-|interact]]\u000a[[Wait-7-|walk2]]
 p739
 sg23
 Vstop
@@ -2416,12 +2416,12 @@ sg25
 g26
 ((I2015
 I10
-I12
-I18
-I17
-I24
-I0
-I285
+I14
+I11
+I53
+I36
+I2
+I287
 I1
 tp741
 (dp742
@@ -2896,7 +2896,7 @@ tp883
 Rp884
 sbsa(dp885
 g14
-I00
+I01
 sg15
 (lp886
 F2022.833333333333
@@ -4146,7 +4146,7 @@ tp1258
 Rp1259
 sbsa(dp1260
 g14
-I01
+I00
 sg15
 (lp1261
 F2749.5

@@ -1,3 +1,4 @@
+00.00|\call-Abstract/MusicController-PlayAudio-happy
 00.00|Oh yeah, this is nice. Real cozy. 
 02.25|Looks like the perfect chance to just kick back, huh!
 05.10|\clear
