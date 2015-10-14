@@ -87,6 +87,17 @@ public class TweeParser {
 						continue;
 					}
 					node.Room = elements[1];				
+				} else if (line.ToLower().ToLower().StartsWith(">unloadroom")) {
+					if (elements.Length < 2) {
+						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \">unloadroom\" command. Try to use \"-\" after \">unloadroom\".");
+						error = true;
+						continue;
+					} else if (elements[1].Length == 0) {
+						Debug.Log("Error in node \"" + node.Id + "\": Missing unloadroom content.");
+						error = true;
+						continue;
+					}
+					node.RemoveRoom = elements[1];
 				} else if (line.ToLower().ToLower().StartsWith(">playerspeed")) {
 					if (elements.Length < 2) {
 						Debug.Log("Error in node \"" + node.Id + "\": Invalid separator on \">playerspeed\" command. Try to use \"-\" after \">playerspeed\".");

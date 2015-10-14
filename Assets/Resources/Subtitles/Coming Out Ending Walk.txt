@@ -1,0 +1,4 @@
+00.00|Oh, I guess it can wait.
+03.17|\call-Abstract/MusicController-PlayAudio-curiosity
+03.17|Okay, maybe it can't. Can we please talk?
+06.70|\clear

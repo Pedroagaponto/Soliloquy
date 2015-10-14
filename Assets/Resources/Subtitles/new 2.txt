@@ -1,0 +1,5 @@
+00.00|\call-Abstract/MusicController-PlayAudio-Heartbroken
+00.00|Hello? Did you hear anything I said?
+02.65|This is something I've been having trouble with
+05.11|And you aren't even listening! 
+07.15|\clear

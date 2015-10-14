@@ -9,15 +9,26 @@ public class RoomsManager : MonoBehaviour {
 
 	void Start () {
 		roomsSize.Add("FifthRoom", 15f);
-        roomsSize.Add("SeventhRoom", 15f);
-     	roomsSize.Add("SixthRoom", 25f);
+     	roomsSize.Add("SixthRoom", 15f);
+        roomsSize.Add("SeventhRoom", 25f);
+		roomsSize.Add("InvisibleRoom", 25f);  
 	}
 
-	void spawnRoom(string name) {
+	void SpawnRoom(string name) {
 		if (roomsSize.ContainsKey(name)) {
 			GameObject room = GameObject.Find(name);
 			room.transform.position = new Vector3 (0.0f, 5.0f, offSet);
 			offSet += fixedOffSet + roomsSize[name];
+		} else {
+			Debug.Log(name + " not found");
+		}
+	}
+
+	void RemoveRoom(string name) {
+		if (roomsSize.ContainsKey(name)) {
+			GameObject room = GameObject.Find(name);
+			room.transform.position = new Vector3 (0.0f, 5.0f, -60);
+			offSet -= fixedOffSet + roomsSize[name];
 		} else {
 			Debug.Log(name + " not found");
 		}

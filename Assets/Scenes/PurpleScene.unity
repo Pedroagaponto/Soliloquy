@@ -37,6 +37,9 @@ RenderSettings:
   m_ReflectionIntensity: .142000005
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -65,7 +68,6 @@ LightmapSettings:
     m_TextureCompression: 1
     m_FinalGather: 0
     m_FinalGatherRayCount: 1024
-    m_ReflectionCompression: 2
   m_LightmapSnapshot: {fileID: 112000000, guid: 744d8d3229fc5604382cc869e6c356a2,
     type: 2}
   m_RuntimeCPUUsage: 25
@@ -254,6 +256,22 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 12571634}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &14348500 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 213ea13bc449648caa7e82fe5b226f66, type: 3}
+  m_PrefabInternal: {fileID: 1049955683}
+--- !u!64 &14348504
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 14348500}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 4300000, guid: 213ea13bc449648caa7e82fe5b226f66, type: 3}
 --- !u!1 &18156004
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +638,7 @@ GameObject:
   - 26: {fileID: 36504934}
   - 15: {fileID: 36504930}
   - 82: {fileID: 36504936}
+  - 65: {fileID: 36504937}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -713,8 +732,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2.10746312}
-  m_Center: {x: 0, y: 0, z: -.553716123}
+  m_Size: {x: 1, y: 1, z: 1.01286304}
+  m_Center: {x: 0, y: 0, z: -.00641835993}
 --- !u!33 &36504933
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -801,7 +820,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -856,6 +874,18 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!65 &36504937
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 36504927}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 4.29163742}
+  m_Center: {x: 0, y: 0, z: -.175874993}
 --- !u!1 &36816226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1328,6 +1358,7 @@ GameObject:
   - 26: {fileID: 88024973}
   - 15: {fileID: 88024969}
   - 82: {fileID: 88024975}
+  - 65: {fileID: 88024976}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1509,7 +1540,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -1564,6 +1594,18 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!65 &88024976
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88024966}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2.46994185}
+  m_Center: {x: -4.75124793e-08, y: 0, z: .734971941}
 --- !u!1 &88197243
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,8 +1817,9 @@ GameObject:
   - 4: {fileID: 95085820}
   - 198: {fileID: 95085819}
   - 199: {fileID: 95085818}
+  - 114: {fileID: 95085821}
   m_Layer: 0
-  m_Name: Particle System test
+  m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2877,12 +2920,23 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 95085817}
-  m_LocalRotation: {x: .313533068, y: -.23260434, z: -.685331941, w: .614745796}
-  m_LocalPosition: {x: 43.9859047, y: 7.39378452, z: 29.2979317}
-  m_LocalScale: {x: -.182355434, y: -.35045886, z: -.182355344}
+  m_LocalRotation: {x: .752688468, y: -.657186151, z: .037985824, w: .011118033}
+  m_LocalPosition: {x: 3.29999924, y: 1.20000005, z: 8.01000023}
+  m_LocalScale: {x: -.182355449, y: -.35045886, z: -.182355344}
   m_Children: []
-  m_Father: {fileID: 1041705341}
-  m_RootOrder: 2
+  m_Father: {fileID: 1602559558}
+  m_RootOrder: 3
+--- !u!114 &95085821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 95085817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37640bddb1e9c844cbac89d9b7423427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &97200490
 GameObject:
   m_ObjectHideFlags: 0
@@ -3298,6 +3352,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 177540560}
   - 95: {fileID: 177540561}
+  - 65: {fileID: 177540562}
   m_Layer: 0
   m_Name: dining_chairFBX 5
   m_TagString: Untagged
@@ -3336,6 +3391,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &177540562
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 177540559}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .0299999993, y: .0500000007, z: .0299999993}
+  m_Center: {x: 0, y: .0500000007, z: 0}
 --- !u!1 &182177717
 GameObject:
   m_ObjectHideFlags: 0
@@ -4566,7 +4633,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1041705341}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &335901844
 GameObject:
   m_ObjectHideFlags: 0
@@ -6804,6 +6871,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 524611766}
   - 95: {fileID: 524611767}
+  - 65: {fileID: 524611768}
   m_Layer: 0
   m_Name: dining_chairFBX 6
   m_TagString: Untagged
@@ -6842,6 +6910,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &524611768
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 524611765}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .0299999993, y: .0500000007, z: .0299999993}
+  m_Center: {x: 0, y: .0500000007, z: 0}
 --- !u!1 &526850082
 GameObject:
   m_ObjectHideFlags: 0
@@ -7577,6 +7657,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 627880837}
   - 95: {fileID: 627880838}
+  - 65: {fileID: 627880839}
   m_Layer: 0
   m_Name: dining_chairFBX 1
   m_TagString: Untagged
@@ -7615,6 +7696,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &627880839
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 627880836}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .0299999993, y: .0500000007, z: .0299999993}
+  m_Center: {x: 0, y: .0500000007, z: 0}
 --- !u!1 &634335902
 GameObject:
   m_ObjectHideFlags: 0
@@ -7886,6 +7979,46 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: .0399999991, y: .200000003, z: .0350000001}
   m_Center: {x: 0, y: 0, z: -.00200000009}
+--- !u!1 &652246984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 652246985}
+  - 65: {fileID: 652246986}
+  m_Layer: 0
+  m_Name: RightWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &652246985
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 652246984}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.8699989, y: .529999971, z: -12}
+  m_LocalScale: {x: 1, y: 6.40034676, z: 24.4491959}
+  m_Children: []
+  m_Father: {fileID: 1602559558}
+  m_RootOrder: 0
+--- !u!65 &652246986
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 652246984}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &652364245
 GameObject:
   m_ObjectHideFlags: 0
@@ -8622,8 +8755,20 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .135545254, y: .0810635462, z: .0836334899}
-  m_Center: {x: -1.12271359e-09, y: .0024122661, z: .013269173}
+  m_Size: {x: .178399384, y: .0810635462, z: .0910459459}
+  m_Center: {x: -9.98450632e-05, y: .00241226703, z: .0169753991}
+--- !u!65 &705368854
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 705368845}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .178399384, y: .0810635462, z: .0910459459}
+  m_Center: {x: -9.98450632e-05, y: .00241226703, z: .0169753991}
 --- !u!1 &707270326
 GameObject:
   m_ObjectHideFlags: 0
@@ -8832,6 +8977,46 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
+--- !u!1 &754763203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 754763204}
+  - 65: {fileID: 754763205}
+  m_Layer: 0
+  m_Name: FarWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &754763204
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754763203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4, y: .600000024, z: 0}
+  m_LocalScale: {x: 12.9217958, y: 6.39704275, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1602559558}
+  m_RootOrder: 2
+--- !u!65 &754763205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 754763203}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &757250878
 Transform:
   m_ObjectHideFlags: 0
@@ -8890,7 +9075,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 21.7700005, y: 9.11999989, z: 1.16699219}
-  m_Center: {x: .180000007, y: 1.38999999, z: 5.69000006}
+  m_Center: {x: .180000007, y: 1.38999999, z: 6.75}
 --- !u!1 &763017577
 GameObject:
   m_ObjectHideFlags: 0
@@ -9084,15 +9269,15 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 788383858}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 16.5799999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1825999459}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 5}
-  m_SizeDelta: {x: 0, y: 60}
+  m_AnchoredPosition: {x: -.5, y: 4.19999981}
+  m_SizeDelta: {x: -1, y: 60}
   m_Pivot: {x: .5, y: 0}
 --- !u!114 &788383860
 MonoBehaviour:
@@ -9107,15 +9292,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -9125,7 +9304,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New TextNew TextNew TextNew TextNew Text
+  m_Text: Testing subtitles
 --- !u!222 &788383861
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9298,6 +9477,7 @@ GameObject:
   - 26: {fileID: 809737828}
   - 12: {fileID: 809737823}
   - 82: {fileID: 809737830}
+  - 65: {fileID: 809737831}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -9479,7 +9659,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 150
   DopplerLevel: 1
   MinDistance: 1
@@ -9534,6 +9713,18 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
+--- !u!65 &809737831
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 809737821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2.46994185}
+  m_Center: {x: -4.75124793e-08, y: 0, z: .734971941}
 --- !u!1 &813101642
 GameObject:
   m_ObjectHideFlags: 0
@@ -11100,7 +11291,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1041705341}
-  m_RootOrder: 6
+  m_RootOrder: 5
 --- !u!114 &860492106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11123,11 +11314,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .140000001
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -11485,6 +11675,7 @@ GameObject:
   - 26: {fileID: 894496920}
   - 15: {fileID: 894496919}
   - 82: {fileID: 894496918}
+  - 65: {fileID: 894496926}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -11520,7 +11711,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -11712,8 +11902,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 2.22183657}
-  m_Center: {x: 1.23324867e-07, y: -5.54044242e-08, z: -.611003935}
+  m_Size: {x: 1, y: 1, z: .945715368}
+  m_Center: {x: 1.43879021e-07, y: -5.54044242e-08, z: .0269954}
 --- !u!33 &894496925
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11721,6 +11911,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 894496916}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &894496926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894496916}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 4.79245186}
+  m_Center: {x: 1.43879021e-07, y: -5.54044242e-08, z: -.00515772868}
 --- !u!1 &896602975
 GameObject:
   m_ObjectHideFlags: 0
@@ -11753,7 +11955,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: .629999995
   MinDistance: 1
@@ -11833,7 +12034,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1041705341}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1001 &901485525
 Prefab:
   m_ObjectHideFlags: 0
@@ -11947,7 +12148,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -12319,8 +12519,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .135545254, y: .0810635462, z: .0836334899}
-  m_Center: {x: -1.12271359e-09, y: .0024122661, z: .013269173}
+  m_Size: {x: .135545254, y: .0810635462, z: .0570476018}
+  m_Center: {x: 9.14025406e-07, y: .00241226703, z: -2.33741812e-05}
 --- !u!15 &935312602
 EllipsoidParticleEmitter:
   m_ObjectHideFlags: 0
@@ -12412,6 +12612,18 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 0
+--- !u!65 &935312605
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 935312596}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .178399384, y: .0810635462, z: .0910459459}
+  m_Center: {x: -9.98450632e-05, y: .00241226703, z: .0169753991}
 --- !u!1 &949217112
 GameObject:
   m_ObjectHideFlags: 0
@@ -12555,7 +12767,6 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_TargetEye: 3
   m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -12593,7 +12804,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 959698548}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3c7f7feeee80842878a8ea8f955a6f4d, type: 3}
@@ -12602,7 +12813,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 1
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -14513,13 +14723,12 @@ Transform:
   m_Children:
   - {fileID: 1825999459}
   - {fileID: 1326681213}
-  - {fileID: 95085820}
   - {fileID: 896602978}
   - {fileID: 333067144}
   - {fileID: 1238054378}
   - {fileID: 860492105}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &1043041606
 GameObject:
   m_ObjectHideFlags: 0
@@ -14556,6 +14765,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1043479691}
   - 95: {fileID: 1043479692}
+  - 65: {fileID: 1043479693}
   m_Layer: 0
   m_Name: dining_chairFBX
   m_TagString: Untagged
@@ -14594,6 +14804,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1043479693
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1043479690}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .0299999993, y: .0500000007, z: .0299999993}
+  m_Center: {x: 0, y: .0500000007, z: 0}
 --- !u!1001 &1049955683
 Prefab:
   m_ObjectHideFlags: 0
@@ -14906,6 +15128,46 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1076934681}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1078031503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1078031505}
+  - 65: {fileID: 1078031504}
+  m_Layer: 0
+  m_Name: LeftWall
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1078031504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1078031503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1078031505
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1078031503}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3, y: .529999971, z: -12}
+  m_LocalScale: {x: 1, y: 6.40034676, z: 24.4491959}
+  m_Children: []
+  m_Father: {fileID: 1602559558}
+  m_RootOrder: 1
 --- !u!1 &1088936080
 GameObject:
   m_ObjectHideFlags: 0
@@ -15510,15 +15772,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 16
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -15528,7 +15784,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New TextNew TextNew TextNew TextNew Text
+  m_Text: Testing subtitles
 --- !u!222 &1149557808
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16365,6 +16621,7 @@ GameObject:
   - 12: {fileID: 1215907074}
   - 26: {fileID: 1215907073}
   - 15: {fileID: 1215907072}
+  - 65: {fileID: 1215907075}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -16455,7 +16712,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -16601,6 +16857,18 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 0
+--- !u!65 &1215907075
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1215907065}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2.46994185}
+  m_Center: {x: -4.75124793e-08, y: 0, z: .734971941}
 --- !u!1 &1225230149
 GameObject:
   m_ObjectHideFlags: 0
@@ -16785,7 +17053,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1041705341}
-  m_RootOrder: 5
+  m_RootOrder: 4
 --- !u!114 &1238054379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17060,7 +17328,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: .119999997
+  m_Radius: .0599999987
   m_Center: {x: 0, y: .0299999993, z: 0}
 --- !u!114 &1256981414
 MonoBehaviour:
@@ -19340,7 +19608,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 492024, guid: 65453d834bcb7423585ce75bf9b7bfc7, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 154446, guid: 65453d834bcb7423585ce75bf9b7bfc7, type: 2}
       propertyPath: m_Name
@@ -20037,7 +20305,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -20107,6 +20374,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 10
   m_CollisionDetection: 0
+--- !u!65 &1524910501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1524910492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: -.074947454, y: -.0928983465, z: .0759253874}
+  m_Center: {x: .00314279203, y: .0257311445, z: .0350589715}
 --- !u!1 &1530451604
 GameObject:
   m_ObjectHideFlags: 0
@@ -20604,6 +20883,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1584593949}
   - 95: {fileID: 1584593950}
+  - 65: {fileID: 1584593951}
   m_Layer: 0
   m_Name: dining_chairFBX 4
   m_TagString: Untagged
@@ -20642,6 +20922,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1584593951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1584593948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .0299999993, y: .0500000007, z: .0299999993}
+  m_Center: {x: 0, y: .0500000007, z: 0}
 --- !u!4 &1585330502
 Transform:
   m_ObjectHideFlags: 0
@@ -20868,6 +21160,37 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 905e462aedb67457b834086b4cf5fa45, type: 3}
+--- !u!1 &1602559557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1602559558}
+  m_Layer: 0
+  m_Name: InvisibleRoom
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1602559558
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1602559557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -59.9000015, y: 5, z: 49.7999992}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 652246985}
+  - {fileID: 1078031505}
+  - {fileID: 754763204}
+  - {fileID: 95085820}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
 --- !u!1 &1603269721
 GameObject:
   m_ObjectHideFlags: 0
@@ -21014,7 +21337,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1615108451}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.5999985, y: 5, z: 96.5}
+  m_LocalPosition: {x: -60, y: 5, z: 96.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1971809209}
@@ -21758,7 +22081,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1709515569}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 3.9000001, y: -2.70000005, z: -7.63999987}
+  m_LocalPosition: {x: 3.9000001, y: -2.70000005, z: -7.5999999}
   m_LocalScale: {x: 15, y: 15.25, z: .100000001}
   m_Children:
   - {fileID: 326914012}
@@ -21816,6 +22139,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1713640364}
   - 95: {fileID: 1713640365}
+  - 65: {fileID: 1713640366}
   m_Layer: 0
   m_Name: dining_chairFBX 3
   m_TagString: Untagged
@@ -21854,6 +22178,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &1713640366
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1713640363}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .0299999993, y: .0500000007, z: .0299999993}
+  m_Center: {x: 0, y: .0500000007, z: 0}
 --- !u!1001 &1715981958
 Prefab:
   m_ObjectHideFlags: 0
@@ -23445,6 +23781,7 @@ GameObject:
   - 12: {fileID: 1843873071}
   - 26: {fileID: 1843873070}
   - 15: {fileID: 1843873069}
+  - 65: {fileID: 1843873072}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -23479,7 +23816,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -23681,6 +24017,18 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 0
+--- !u!65 &1843873072
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1843873062}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2.46994185}
+  m_Center: {x: -4.75124793e-08, y: 0, z: .734971941}
 --- !u!1 &1846720062 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 366349dae7c144cea912be2fdf99ea0b, type: 3}
@@ -23700,7 +24048,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -23777,6 +24124,18 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
+  m_Size: {x: .0545063317, y: .0892487243, z: .0110863382}
+  m_Center: {x: .0010267616, y: .0441243984, z: -.00331963901}
+--- !u!65 &1846720066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1846720062}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
   m_Size: {x: .0580369942, y: .0892487243, z: .0410180874}
   m_Center: {x: .00279209949, y: .0441243909, z: .0116458442}
 --- !u!1 &1846830380
@@ -23801,7 +24160,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1846830380}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.5999985, y: 5, z: 66}
+  m_LocalPosition: {x: -60, y: 5, z: 66}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 676552197}
@@ -23951,6 +24310,7 @@ GameObject:
   - 26: {fileID: 1874050657}
   - 15: {fileID: 1874050656}
   - 82: {fileID: 1874050655}
+  - 65: {fileID: 1874050664}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -23973,7 +24333,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -24187,6 +24546,18 @@ Transform:
   - {fileID: 2076917659}
   m_Father: {fileID: 634335903}
   m_RootOrder: 3
+--- !u!65 &1874050664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1874050654}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2.46994185}
+  m_Center: {x: -4.75124793e-08, y: 0, z: .734971941}
 --- !u!1 &1884571568
 GameObject:
   m_ObjectHideFlags: 0
@@ -24265,6 +24636,7 @@ GameObject:
   - 26: {fileID: 1886381033}
   - 15: {fileID: 1886381032}
   - 82: {fileID: 1886381027}
+  - 65: {fileID: 1886381035}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -24300,7 +24672,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -24501,6 +24872,18 @@ ParticleAnimator:
   damping: 1
   stopSimulation: 0
   autodestruct: 0
+--- !u!65 &1886381035
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1886381025}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 2.46994185}
+  m_Center: {x: -4.75124793e-08, y: 0, z: .734971941}
 --- !u!1 &1886732725
 GameObject:
   m_ObjectHideFlags: 0
@@ -24546,6 +24929,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1891481213}
   - 95: {fileID: 1891481212}
+  - 65: {fileID: 1891481214}
   m_Layer: 0
   m_Name: dining_chairFBX 2
   m_TagString: Untagged
@@ -24584,6 +24968,18 @@ Transform:
   - {fileID: 550553990}
   m_Father: {fileID: 871748731}
   m_RootOrder: 1
+--- !u!65 &1891481214
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1891481211}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .0299999993, y: .0500000007, z: .0299999993}
+  m_Center: {x: 0, y: .0500000007, z: 0}
 --- !u!1 &1895254753
 GameObject:
   m_ObjectHideFlags: 0
@@ -24998,7 +25394,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: b28fee30977ef489baaa0b89b29d1248, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400130, guid: b28fee30977ef489baaa0b89b29d1248, type: 3}
       propertyPath: m_LocalScale.x
@@ -25115,7 +25511,6 @@ AudioSource:
   m_Pitch: 1
   Loop: 0
   Mute: 0
-  Spatialize: 0
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -25364,7 +25759,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1938331359}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.5999985, y: 5, z: 81.1999969}
+  m_LocalPosition: {x: -60, y: 5, z: 81.1999969}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 335901845}
@@ -27643,6 +28038,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2133396861}
   - 95: {fileID: 2133396862}
+  - 65: {fileID: 2133396863}
   m_Layer: 0
   m_Name: dining_tableFBX
   m_TagString: Untagged
@@ -27681,6 +28077,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!65 &2133396863
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2133396860}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: .170000002, y: .100000001, z: .0700000003}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2134571476
 GameObject:
   m_ObjectHideFlags: 0

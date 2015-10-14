@@ -19,5 +19,5 @@ public class ElectricScript : MonoBehaviour {
 
 	void electricSound(){
 		GetComponent<AudioSource>().PlayOneShot(myClip);
-}
+	}
 }

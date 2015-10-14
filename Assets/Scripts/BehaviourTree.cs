@@ -22,8 +22,11 @@ public class BehaviourTree : MonoBehaviour {
 		objList = new List<GameObject>();
 
 		behaviour = behaviour.ChildNode[i];
+		if (behaviour.RemoveRoom != null) {
+			roomsManager.SendMessage("RemoveRoom", behaviour.RemoveRoom);
+		}
 		if (behaviour.Room != null) {
-			roomsManager.SendMessage("spawnRoom", behaviour.Room);
+			roomsManager.SendMessage("SpawnRoom", behaviour.Room);
 		}
 
 		oldTime = newTime = Time.realtimeSinceStartup;

@@ -1,0 +1,4 @@
+00.00|\call-Abstract/MusicController-PlayAudio-scoldingSLAM
+00.00|I... I really thought for a second you didn't care.
+04.20|Don't do that again, you really scared me!
+07.40|\clear
