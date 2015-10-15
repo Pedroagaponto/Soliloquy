@@ -51,6 +51,12 @@
 [[Wait-9-|Coming Out Ending Frustrated 2]]
 
 
+:: Happy Ending end
+-narrator-*sighs of relief* Thank you.
+
+-end-
+
+
 :: Interact Toy
 >narrator-Oh, wow! That looks like a lot of fun, haha!! Take your time to play with it, it's not everyday we get to just spend our time the way we want to!
 [[buttoninteract-FirstRoom/Toy-|Interact Toy Thoughts]]
@@ -101,23 +107,9 @@
 
 
 :: Happy Ending
-This time together has been pretty special don't you think?
-
-I wanna say thank you by showing you something.
-
-//(Beautiful scenery occurs)//
-
-We can just stay here you know. I'm happy and I hope you are too.
-
-Nothing else seems to matter to me right now, just this moment.
-
-//(Until player presses something)//
-
-*sighs of relief*
-
-Thank you.
-
--end-
+>loadroom-InvisibleRoom
+>Narrator-This time together has been pretty special don't you think? I wanna say thank you by showing you something. We can just stay here you know. I'm happy and I hope you are too. Nothing else seems to matter to me right now, just this moment.
+[[actionbutton-|Happy Ending end]]
 
 
 :: Coming Out Ending Finally
@@ -228,7 +220,6 @@ Goodbye.
 
 
 :: Happy
->loadroom-InvisibleRoom
 >narrator-I was so scared, you're all I have and if you didn't accept me then... I don't know what I would do...  I can't tell you how happy I am. You know... let me show you something.
 
 [[autointeract-SeventhRoom/FarWall/Door-|Happy Ending]]
@@ -285,13 +276,13 @@ Goodbye.
 
 :: Photo Interact 5
 >unloadroom-SeventhRoom
->loadroom-InvisibleRoom
 >narrator-What did I do wrong? Maybe I didn't do anything wrong. It's not my fault that they couldn't accept me the way I am. Maybe if they really loved me they would put in some effort to understand me instead of trying to change me. I wouldn't need to feel unsafe in a space that's supposed to shelter me. But I guess that was too hard for them. I guess that's why I left. I guess that's why I've had nobody up until now. That's none of my problem though, there is nothing wrong with me. Nothing. Oh... I'm so sorry. I don't know what got into me there. That photo just brought all of that out and I got carried away, I'm so sorry you had to hear all that. I feel good though. I feel so much more free. I feel... happy, with myself. That photo doesn't even bother me anymore, haha! I want to show you something!
 
 [[autointeract-SixthRoom/FarWall/Door-|Beautiful Happy Ending]]
 
 
 :: Beautiful Happy Ending
+>loadroom-InvisibleRoom
 >narrator-I want to share my happiness with you! I'm glad you were there with me through that. We can just be happy.
 
 

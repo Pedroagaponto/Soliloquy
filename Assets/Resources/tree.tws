@@ -5,7 +5,7 @@ VD:\u005cUni\u005cGDS6\u005cScripting\u005ctest1.html
 p2
 sS'saveDestination'
 p3
-VC:\u005cUsers\u005cAurora\u005cDocuments\u005cTest\u005cAssets\u005cResources\u005ctree.tws
+VC:\u005cUsers\u005cAurora\u005cDocuments\u005cchoiceBasedGame\u005cAssets\u005cResources\u005ctree.tws
 p4
 sS'metadata'
 p5
@@ -28,7 +28,7 @@ sS'pos'
 p15
 (lp16
 F3984.9166666666683
-aF87.7500000000006
+aF89.0000000000006
 asS'passage'
 p17
 (itiddlywiki
@@ -93,7 +93,7 @@ Tiddler
 p40
 (dp41
 g21
-V>narrator-I'm really glad that I could spend this time with you. We haven't really known each other for very long but it's just been us and I feel like I can talk to you. I'm scared. I'm really, really scared. I've been thinking a lot and I'm starting to wonder What am I? \u000a//[Give examples of things that have occured during the game for the narrator to question itself]\u000a//When you move, how do I follow?\u000a//When you touch, how do I feel?\u000a//When I express emotions, are they real?\u000a//When I love... I don't know.\u000a//It's become so apparent to me that I'm not like you and I'm scared. I accepted the reality which I was presented with, and that reality was you but it's not making any sense to me anymore.\u000a\u000a[[actionbutton-|Accept]]\u000a[[Wait-6-|Don't Accept]]
+V>narrator-I'm really glad that I could spend this time with you. We haven't really known each other for very long but it's just been us and I feel like I can talk to you. I'm scared. I'm really, really scared. I've been thinking a lot and I'm starting to wonder What am I? \u000a//[Give examples of things that have occured during the game for the narrator to question itself]\u000a//When you move, how do I follow?\u000a//When you touch, how do I feel?\u000a//When I express emotions, are they real?\u000a//When I love... I don't know.\u000a//It's become so apparent to me that I'm not like you and I'm scared. I accepted the reality which I was presented with, and that reality was you but it's not making any sense to me anymore.\u000a\u000a[[actionbutton-|Accept]]\u000a[[Wait-36-|Don't Accept]]
 p42
 sg23
 VComing Out Ending Stop
@@ -101,14 +101,14 @@ p43
 sg25
 g26
 ((I2015
-I9
-I17
 I10
-I55
-I55
+I15
 I3
-I260
-I0
+I35
+I4
+I3
+I288
+I1
 tp44
 (dp45
 tp46
@@ -135,15 +135,15 @@ g14
 I00
 sg15
 (lp54
-F4152.499999999996
-aF126.25000000000077
+F4154.999999999996
+aF125.00000000000077
 asg17
 (itiddlywiki
 Tiddler
 p55
 (dp56
 g21
-V>narrator-Oh, I guess it can wait. Okay, maybe it can't. Can we please talk?\u000a\u000a[[actionbutton-|Coming Out Ending Stop]]\u000a[[Wait-6-|Coming out Ending Frustrated]]
+V>narrator-Oh, I guess it can wait. Okay, maybe it can't. Can we please talk?\u000a\u000a[[actionbutton-|Coming Out Ending Stop]]\u000a[[Wait-10-|Coming out Ending Frustrated]]
 p57
 sg23
 VComing out Ending Walk
@@ -151,14 +151,14 @@ p58
 sg25
 g26
 ((I2015
-I9
-I17
 I10
-I54
-I52
+I15
 I3
-I260
-I0
+I33
+I18
+I3
+I288
+I1
 tp59
 (dp60
 tp61
@@ -185,7 +185,7 @@ g14
 I00
 sg15
 (lp69
-F4311.833333333331
+F4313.083333333331
 aF104.50000000000045
 asg17
 (itiddlywiki
@@ -193,7 +193,7 @@ Tiddler
 p70
 (dp71
 g21
-V>narrator-Look, I'm being serious. I really need you to listen to what I have to say. You're important to me so you need to hear this.\u000a\u000a[[actionbutton-|Coming Out Ending Stop]]\u000a[[Wait-6-|Coming Out Ending Frustrated 2]]
+V>narrator-Look, I'm being serious. I really need you to listen to what I have to say. You're important to me so you need to hear this.\u000a\u000a[[actionbutton-|Coming Out Ending Stop]]\u000a[[Wait-9-|Coming Out Ending Frustrated 2]]
 p72
 sg23
 VComing out Ending Frustrated
@@ -201,14 +201,14 @@ p73
 sg25
 g26
 ((I2015
-I9
-I17
 I10
-I55
-I1
+I15
 I3
-I260
-I0
+I33
+I38
+I3
+I288
+I1
 tp74
 (dp75
 tp76
@@ -243,7 +243,7 @@ Tiddler
 p85
 (dp86
 g21
-V>narrator-I guess you don't care after all. Don't you care? It's just been us two throughout, we've taken care of each other and now when I need to tell you something you decide not to listen? You are my only friend...\u000a\u000a[[actionbutton-|Coming Out Ending Finally]]\u000a[[Wait-6-|Angry]]\u000a\u000a
+V>narrator-I guess you don't care after all. Don't you care? It's just been us two throughout, we've taken care of each other and now when I need to tell you something you decide not to listen? You are my only friend...\u000a\u000a[[actionbutton-|Coming Out Ending Finally]]\u000a[[Wait-15-|Angry]]\u000a\u000a
 p87
 sg23
 VComing Out Ending Frustrated 2
@@ -251,14 +251,14 @@ p88
 sg25
 g26
 ((I2015
-I9
-I17
 I10
-I55
 I15
 I3
-I260
-I0
+I33
+I57
+I3
+I288
+I1
 tp89
 (dp90
 tp91
@@ -343,7 +343,7 @@ Tiddler
 p115
 (dp116
 g21
-V>narrator-I... I really thought for a second you didn't care. Don't do that again, you really scared me!\u000a[[Wait-3-|Coming Out Ending Stop]]
+V>narrator-I... I really thought for a second you didn't care. Don't do that again, you really scared me!\u000a[[Wait-10-|Coming Out Ending Stop]]
 p117
 sg23
 VComing Out Ending Finally
@@ -351,14 +351,14 @@ p118
 sg25
 g26
 ((I2015
-I9
-I17
 I10
-I55
-I23
+I15
 I3
-I260
-I0
+I34
+I21
+I3
+I288
+I1
 tp119
 (dp120
 tp121
@@ -393,7 +393,7 @@ Tiddler
 p130
 (dp131
 g21
-V>narrator-Hello? Did you hear anything I said? I could really use a friend right now, you know? This is something I've been having trouble with and you aren't even listening! \u000a\u000a[[Wait-6-|Dont' Accept 2]]
+V>narrator-Hello? Did you hear anything I said? I could really use a friend right now, you know? This is something I've been having trouble with and you aren't even listening! \u000a\u000a[[Wait-9-|Dont' Accept 2]]
 p132
 sg23
 VDon't Accept
@@ -401,14 +401,14 @@ p133
 sg25
 g26
 ((I2015
-I9
-I17
 I10
-I56
-I20
+I15
 I3
-I260
-I0
+I36
+I7
+I3
+I288
+I1
 tp134
 (dp135
 tp136
@@ -443,7 +443,7 @@ Tiddler
 p145
 (dp146
 g21
-V>narrator-I'm different and I don't know if I can change. I just want you to know that I'm still the same... "person" that has been through this with you. I haven't changed at all I've just realised now. Do you still... love me?\u000a\u000a[[actionbutton-|Happy]]\u000a[[Wait-6-|Don't Accept]]
+V>narrator-I'm different and I don't know if I can change. I just want you to know that I'm still the same... "person" that has been through this with you. I haven't changed at all I've just realised now. Do you still... love me?\u000a\u000a[[actionbutton-|Happy]]\u000a[[Wait-19-|Don't Accept]]
 p147
 sg23
 VAccept
@@ -451,14 +451,14 @@ p148
 sg25
 g26
 ((I2015
-I9
-I17
-I11
-I4
-I47
+I10
+I15
 I3
-I260
-I0
+I35
+I24
+I3
+I288
+I1
 tp149
 (dp150
 tp151
@@ -943,7 +943,7 @@ g14
 I00
 sg15
 (lp298
-F4641.999999999988
+F4640.749999999988
 aF356.33333333333394
 asg17
 (itiddlywiki
@@ -951,7 +951,7 @@ Tiddler
 p299
 (dp300
 g21
-V>narrator-I was so scared, you're all I have and if you didn't accept me then... I don't know what I would do...  I can't tell you how happy I am. You know... let me show you something.\u000a\u000a//[New path open up]\u000a\u000a//[[Continue|Happy Ending]]
+V>narrator-I was so scared, you're all I have and if you didn't accept me then... I don't know what I would do...  I can't tell you how happy I am. You know... let me show you something.\u000a\u000a[[autointeract-SeventhRoom/FarWall/Door-|Happy Ending]]
 p301
 sg23
 VHappy
@@ -959,14 +959,14 @@ p302
 sg25
 g26
 ((I2015
-I9
-I17
 I10
-I56
-I29
+I15
+I14
+I13
+I34
 I3
-I260
-I0
+I288
+I1
 tp303
 (dp304
 tp305
@@ -1357,7 +1357,7 @@ Tiddler
 p422
 (dp423
 g21
-VThis time together has been pretty special don't you think?\u000a\u000aI wanna say thank you by showing you something.\u000a\u000a//(Beautiful scenery occurs)//\u000a\u000aWe can just stay here you know. I'm happy and I hope you are too.\u000a\u000aNothing else seems to matter to me right now, just this moment.\u000a\u000a//(Until player presses something)//\u000a\u000a*sighs of relief*\u000a\u000aThank you.\u000a\u000a-end-
+V>Narrator-This time together has been pretty special don't you think? I wanna say thank you by showing you something. We can just stay here you know. I'm happy and I hope you are too. Nothing else seems to matter to me right now, just this moment.\u000a[[actionbutton-|Happy Ending end]]
 p424
 sg23
 VHappy Ending
@@ -1365,14 +1365,14 @@ p425
 sg25
 g26
 ((I2015
-I8
-I18
-I12
-I28
-I54
+I10
+I15
+I14
+I57
+I26
+I3
+I288
 I1
-I230
-I0
 tp426
 (dp427
 tp428
@@ -1966,12 +1966,12 @@ sg25
 g26
 ((I2015
 I10
-I13
-I23
-I50
-I53
-I1
-I286
+I15
+I2
+I20
+I17
+I3
+I288
 I1
 tp606
 (dp607
@@ -2007,7 +2007,7 @@ Tiddler
 p617
 (dp618
 g21
-V>narrator-Oh, it's the picture again. Uh... Maybe it's best if we just keep going don't you think?\u000a[[autointeract-SixthRoom/FarWall/Door-|Coming Out Ending 1]]\u000a[[buttoninteract-SixthRoom/Bureau-|Photo Interact 3]]
+V>loadroom-SeventhRoom\u000a>narrator-Oh, it's the picture again. Uh... Maybe it's best if we just keep going don't you think?\u000a[[autointeract-SixthRoom/FarWall/Door-|Coming Out Ending 1]]\u000a[[buttoninteract-SixthRoom/Bureau-|Photo Interact 3]]
 p619
 sg23
 VRight Door
@@ -2016,12 +2016,12 @@ sg25
 g26
 ((I2015
 I10
+I15
+I2
 I13
-I18
-I26
-I5
-I1
-I286
+I13
+I3
+I288
 I1
 tp621
 (dp622
@@ -2049,8 +2049,8 @@ g14
 I00
 sg15
 (lp631
-F3194.499999999999
-aF466.66666666666583
+F3195.749999999999
+aF477.91666666666583
 asg17
 (itiddlywiki
 Tiddler
@@ -2157,7 +2157,7 @@ Tiddler
 p662
 (dp663
 g21
-V>narrator-What did I do wrong? Maybe I didn't do anything wrong. It's not my fault that they couldn't accept me the way I am. Maybe if they really loved me they would put in some effort to understand me instead of trying to change me. I wouldn't need to feel unsafe in a space that's supposed to shelter me. But I guess that was too hard for them. I guess that's why I left. I guess that's why I've had nobody up until now. That's none of my problem though, there is nothing wrong with me. Nothing. Oh... I'm so sorry. I don't know what got into me there. That photo just brought all of that out and I got carried away, I'm so sorry you had to hear all that. I feel good though. I feel so much more free. I feel... happy, with myself. That photo doesn't even bother me anymore, haha! I want to show you something!\u000a\u000a[[autointeract-SeventhRoom/Floor-|Beautiful Happy Ending]]
+V>unloadroom-SeventhRoom\u000a>narrator-What did I do wrong? Maybe I didn't do anything wrong. It's not my fault that they couldn't accept me the way I am. Maybe if they really loved me they would put in some effort to understand me instead of trying to change me. I wouldn't need to feel unsafe in a space that's supposed to shelter me. But I guess that was too hard for them. I guess that's why I left. I guess that's why I've had nobody up until now. That's none of my problem though, there is nothing wrong with me. Nothing. Oh... I'm so sorry. I don't know what got into me there. That photo just brought all of that out and I got carried away, I'm so sorry you had to hear all that. I feel good though. I feel so much more free. I feel... happy, with myself. That photo doesn't even bother me anymore, haha! I want to show you something!\u000a\u000a[[autointeract-SixthRoom/FarWall/Door-|Beautiful Happy Ending]]
 p664
 sg23
 VPhoto Interact 5
@@ -2166,12 +2166,12 @@ sg25
 g26
 ((I2015
 I10
-I12
-I18
-I37
-I36
-I0
-I285
+I15
+I14
+I13
+I58
+I3
+I288
 I1
 tp666
 (dp667
@@ -2207,7 +2207,7 @@ Tiddler
 p677
 (dp678
 g21
-V>narrator-I want to share my happiness with you! I'm glad you were there with me through that. We can just be happy.
+V>loadroom-InvisibleRoom\u000a>narrator-I want to share my happiness with you! I'm glad you were there with me through that. We can just be happy.
 p679
 sg23
 VBeautiful Happy Ending
@@ -2216,12 +2216,12 @@ sg25
 g26
 ((I2015
 I10
-I12
-I18
-I35
-I19
-I0
-I285
+I15
+I14
+I13
+I52
+I3
+I288
 I1
 tp681
 (dp682
@@ -2896,7 +2896,7 @@ tp883
 Rp884
 sbsa(dp885
 g14
-I01
+I00
 sg15
 (lp886
 F2022.833333333333
@@ -4199,15 +4199,15 @@ g14
 I00
 sg15
 (lp1276
-F3652.5
-aF81.25
+F3651.25
+aF85.0
 asg17
 (itiddlywiki
 Tiddler
 p1277
 (dp1278
 g21
-V>narrator-Hm, that's probably it for this room. I know it's nice, but we've got stuff to do! I mean, I guess? I'm not really sure where we're going or whatever but... this has been pretty cool.\u000a[[autointeract-SixthRoom-|Coming Out Ending 1]]
+V>narrator-Hm, that's probably it for this room. I know it's nice, but we've got stuff to do! I mean, I guess? I'm not really sure where we're going or whatever but... this has been pretty cool.\u000a[[autointeract-SeventhRoom/Floor-|Coming Out Ending 1]]
 p1279
 sg23
 VSide interact
@@ -4216,12 +4216,12 @@ sg25
 g26
 ((I2015
 I10
-I14
-I0
+I15
 I2
-I23
-I2
-I287
+I12
+I24
+I3
+I288
 I1
 tp1281
 (dp1282
@@ -4257,7 +4257,7 @@ Tiddler
 p1292
 (dp1293
 g21
-V[[actionbutton-|Side force interact 2]]
+V>unloadroom-SixthRoom\u000a>loadroom-SeventhRoom\u000a[[actionbutton-|Side force interact 2]]
 p1294
 sg23
 VSide force interact
@@ -4266,12 +4266,12 @@ sg25
 g26
 ((I2015
 I10
-I13
+I15
+I2
+I20
 I23
-I51
-I31
-I1
-I286
+I3
+I288
 I1
 tp1296
 (dp1297
@@ -4394,10 +4394,60 @@ tp1331
 (dp1332
 tp1333
 Rp1334
+sbsa(dp1335
+g14
+I01
+sg15
+(lp1336
+F5803.25
+aF100.0
+asg17
+(itiddlywiki
+Tiddler
+p1337
+(dp1338
+g21
+V>loadroom-InvisibleRoom\u000a-narrator-*sighs of relief* Thank you.\u000a\u000a-end-
+p1339
+sg23
+VHappy Ending end
+p1340
+sg25
+g26
+((I2015
+I10
+I15
+I14
+I57
+I33
+I3
+I288
+I1
+tp1341
+(dp1342
+tp1343
+Rp1344
+sg31
+(lp1345
+sg33
+g26
+((I2015
+I10
+I15
+I6
+I20
+I18
+I3
+I288
+I1
+tp1346
+(dp1347
+tp1348
+Rp1349
 sbsasS'scale'
-p1335
+p1350
 F0.8
 sS'snapping'
-p1336
+p1351
 I00
 ss.
