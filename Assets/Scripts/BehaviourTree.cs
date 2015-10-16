@@ -12,7 +12,7 @@ public class BehaviourTree : MonoBehaviour {
 	private NarratorController narrator;
 	private List<GameObject> objList = new List<GameObject>();
 	private float oldTime, newTime;
-	private bool printed, positiveBehaviour;
+	private bool printed, positiveBehaviour, initialized = false;
 	private GameObject roomsManager;
 
 	public void TriggerNextChoice(int i) {
@@ -52,9 +52,6 @@ public class BehaviourTree : MonoBehaviour {
 		}
 		initTree(nodeList);
 		oldTime = newTime = Time.realtimeSinceStartup;
-		SetTriggers();
-		Debug.Log(behaviour.Narrator);
-		narrator.playDialog(behaviour.Id);
 	}
 
 	void initTree(List<Node> list)
@@ -70,6 +67,13 @@ public class BehaviourTree : MonoBehaviour {
 
 	void Update()
 	{
+		if (!initialized) {
+			SetTriggers ();
+			Debug.Log (behaviour.Narrator);
+			narrator.playDialog (behaviour.Id);
+			initialized = true;
+		}
+
 		if (!Input.GetButtonDown ("Interact"))
 			return;
 
