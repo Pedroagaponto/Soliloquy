@@ -11520,7 +11520,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 871748730}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.7299995, y: 0, z: 34.5}
+  m_LocalPosition: {x: 29.5599995, y: 0, z: 34.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1713640364}
@@ -12897,7 +12897,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
-  m_StereoMirrorMode: 0
 --- !u!4 &959698553
 Transform:
   m_ObjectHideFlags: 0
@@ -14743,7 +14742,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1028052492}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: .007717737, y: -.00694492972, z: .422356308}
+  m_LocalPosition: {x: .0610000007, y: -.00700000022, z: .400000006}
   m_LocalScale: {x: 5.46418142, y: 819.626709, z: 5.13150263}
   m_Children:
   - {fileID: 398597656}
@@ -19862,6 +19861,18 @@ Prefab:
     - target: {fileID: 5452318, guid: 65453d834bcb7423585ce75bf9b7bfc7, type: 2}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245888, guid: 65453d834bcb7423585ce75bf9b7bfc7, type: 2}
+      propertyPath: Priority
+      value: 232
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245888, guid: 65453d834bcb7423585ce75bf9b7bfc7, type: 2}
+      propertyPath: MinDistance
+      value: 54.5999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 8245888, guid: 65453d834bcb7423585ce75bf9b7bfc7, type: 2}
+      propertyPath: MaxDistance
+      value: 485
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6591188, guid: 65453d834bcb7423585ce75bf9b7bfc7, type: 2}
